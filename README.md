@@ -1,8 +1,8 @@
 # Owning Your AI Agent Systems
 
-Presentation, field guide, and first-week worksheet for Dan Schnurbusch's AI Era 2.0 talk. About twenty-five minutes, then questions. The audience is law firm owners.
+Presentation, field guide, and first-week worksheet for Dan Schnurbusch's AI Era 2.0 talk. About twenty-six minutes, then questions. The audience is law firm owners.
 
-Owning an agent system, in this version of the talk, means owning the setup: skills, the tools you choose to connect, your data, and the approval rules. Self-hosting a harness is a short caution, not a recommendation. Grok Bot is the commercial example, and the claims stay inside publicly documented features.
+Owning an agent system, in this version of the talk, means owning the setup: skills, the tools you choose to connect, your data, and the approval rules. Hermes is a powerful open-source agent. Most firms will still be happier with a ready-made system. Grok Bot is the commercial example, and the claims stay inside publicly documented features.
 
 ## Files
 

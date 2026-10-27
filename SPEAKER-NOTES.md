@@ -1,6 +1,6 @@
 # Owning Your AI Agent Systems — speaker notes
 
-Proposed pacing for about twenty-five minutes, then questions. Rehearse before treating the times as measured. If questions share the same half hour, skip slide 6's detail and keep the demo to one pass. That lands near twenty-two minutes.
+Proposed pacing for about twenty-six minutes, then questions. Rehearse before treating the times as measured. If questions share the same half hour, shorten the branch story on slide 6 and keep the demo to one pass. That lands near twenty-three minutes.
 
 This is a suggested talk track for Dan Schnurbusch. It is not a transcript of a talk already given, and it states no measured firm results. Product claims were checked against public docs on October 27, 2026. Re-read the Grok Bot computer, approvals, and Pages pages before November 5.
 
@@ -28,7 +28,7 @@ Built in: Lois and Vincent. A good start when the job lives in the case system.
 
 Commercial: Claude, ChatGPT, Grok Bot. This is where the hour goes.
 
-Self-hosted: Hermes. "I'll tell you why I stopped. It will not take long."
+Open harness: Hermes. "It works. I'll tell you who it's for. Two minutes."
 
 Say the picture is a map. Firms can use more than one. Do not turn it into a scoreboard.
 
@@ -38,39 +38,47 @@ Be generous. Ryan McKean wants firms to buy the agent that already sits on the m
 
 Lois reads the Filevine matter and can write work back for review. Vincent, inside Clio Work, researches and drafts, and with a matter selected can act in Clio Manage. Both still expect a lawyer on the output.
 
-"If that is your world, start there. I am not going to talk you out of a tool that fits. I am going to talk about work that crosses systems, and about why I am not asking you to host the agent yourself."
+"If that is your world, start there. I want that case in the room. The harness I actually ran is next, and then the commercial agent I want the hour on."
 
 Do not repeat vendor superlatives. If someone asks whether Lois or Vincent can do everything Grok Bot can, the answer is: they are built for the matter. Read the current page. Different job, different tool.
 
-## 5. The Hermes lesson — 1:10 (5:40)
+## 5. Hermes works — 1:25 (5:55)
 
-"I stood up Hermes. Open source. I wanted to own the system. What I owned was the maintenance."
+Say this with respect. You used it. It is good.
 
-Then the line, slowly: "If that trade is not worth it for me, I have a hard time naming the firm it is for."
+"Hermes works really well. It is an extremely powerful desktop agent. It can do anything I point it at, and some of what it can do is more useful than what the commercial apps allow."
 
-Do not explain how to install it. Do not name a second harness unless asked. If asked: other open harnesses exist, and the hours land in the same place.
+Then who it is for. "It is clearly built for software engineers, and for people who like getting into the nitty-gritty."
 
-## 6. What it cost — 0:50 (6:30)
+The computer. "By default it runs only on your own computer. You can give it a cloud computer. Then you have to figure out how to manage that cloud computer. ChatGPT, Claude, and Grok Bot come with their own computer. They take care of all of that."
 
-Four beats, then leave.
+The assembly. "You design the system. You find a memory provider, a web search provider, a telemetry provider, and so on. Services exist for each of these. You have to piece them together to get the parts that come built in with the vendor software."
 
-The harness was the easy piece to admire. The real product was connectors, secrets, updates, and whoever is on call. The model was still rented unless you take that on too. The procedures moved. The server did not earn its keep.
+Do not explain how to install any of it. Do not sneer. If someone asks for a second harness by name, the shape of the decision is the same. You are not running a bake-off.
 
-One extra sentence if you have it: "Running it on my own machine would not have meant client information stayed there." Then go.
+## 6. Who should run it — 1:20 (7:15)
 
-This is the optional slide. If you are behind, the verdict on slide 5 is enough. Say "The server was the small part" and advance.
+The personal fact, plainly. "I didn't like the desktop app's design, so I kept my own branch of the open-source code to fit my workflow. That meant ongoing maintenance. Every time I wanted an update, I was resolving conflicts with the main branch."
 
-## 7. The easy wave — 0:45 (7:15)
+Then the room. "For most lawyers, you don't need it. There are other workarounds. The headache of running an open-source harness, or your own hardware, usually isn't worth it compared with buying a ready-made system."
 
-"The next wave is a commercial agent you can set up this week. Claude and ChatGPT are in the category. I want the time on Grok Bot."
+Then the exceptions, and mean them. "A few reasons are fair. You might care a lot about data sovereignty or security. You might worry that prices will be run up later. You might want open-source models. Those can justify it. You will pay with a worse user experience, a harder setup, and the maintenance."
 
-Why this one: you can see the design. How a tool gets connected. Where a password lives. Who says yes before a message goes out.
+Do not drop this slide. The "it works" line on slide 5 is incomplete without the fair exceptions. If you are behind, shorten the branch story to one sentence and keep the exceptions.
 
-Gesture at the eight words. They are the next eight slides. "I like this product. I will also tell you the limits."
+## 7. Why Grok Bot — 1:00 (8:15)
+
+This is the turn. Let it be the relief after the previous slide.
+
+"What drew me to Grok Bot is how ridiculously easy it is to get started. You click Connect. You point it at your skills repo if you have one. Otherwise there is nothing to set up. You tell it what you want done. You spin up bots for the different roles in the firm. And you let them go."
+
+Gesture at the eight words. They are the next eight slides. Claude and ChatGPT are in the same category. You are staying on this one because of that ease, and because the design is visible.
+
+"I like this product. I will also tell you the limits."
 
 Do not quote a price, a savings number, or a plan matrix you have not rechecked.
 
-## 8. Connect — 1:10 (8:25)
+## 8. Connect — 1:10 (9:25)
 
 "Click Connect. Sign in with the provider. That is the whole setup."
 
@@ -80,7 +88,7 @@ Two limits, both worth saying. Every bot on your account can use what you connec
 
 "Week one is two apps. Not the whole practice."
 
-## 9. Skills — 1:15 (9:40)
+## 9. Skills — 1:15 (10:40)
 
 "A skill is a playbook with a stop in it."
 
@@ -90,7 +98,7 @@ Read the five lines. Land on "Do not send it" and "Stop if authority is unclear.
 
 The skill on the slide is the fictional demo skill. Offer the file in the handout's demo folder.
 
-## 10. Routines — 1:05 (10:45)
+## 10. Routines — 1:05 (11:45)
 
 Read the sentence. It is the whole feature: plain English, one bot, a clock, a result, a prohibition, and a rule for missing data.
 
@@ -98,7 +106,7 @@ Read the sentence. It is the whole feature: plain English, one bot, a clock, a r
 
 Skip the caps (50 routines, 20 runs, five minutes) unless someone asks.
 
-## 11. The computer — 1:20 (12:05)
+## 11. The computer — 1:20 (13:05)
 
 This is the design slide. Do not rush the second click.
 
@@ -110,7 +118,7 @@ If your notes from an earlier draft said each bot has its own computer, this is 
 
 Between users, the isolation is real. Inside your account, it is not a confidentiality boundary.
 
-## 12. Vault and 1Password — 1:00 (13:05)
+## 12. Vault and 1Password — 1:00 (14:05)
 
 "It can sign in. It does not see the password."
 
@@ -122,7 +130,7 @@ Do not say the bot sees nothing. It can see contact details and the names of sav
 
 Vault is the whole account, and it is not on Team Bots. Mention that only if asked.
 
-## 13. Draft, then ask — 1:15 (14:20)
+## 13. Draft, then ask — 1:15 (15:20)
 
 "Have it draft the email. Have it ask before it sends."
 
@@ -132,13 +140,13 @@ Advance. "Auto Review checks the action before it runs. An ask-first rule wins o
 
 Set the ask-first rule before a real inbox is connected. An approval from a routine expires in about ten minutes if you do not answer, and then it does not run. Mention the timer only if asked.
 
-## 14. Pages — 0:50 (15:10)
+## 14. Pages — 0:50 (16:10)
 
 "Ask for a page: a report, a tracker, a list of what is open. It sits beside the chat. A routine can keep it current."
 
 "On the plan most of us would start on, a shared page can be public. Client information does not go on one."
 
-## 15. The roster — 0:55 (16:05)
+## 15. The roster — 0:55 (17:05)
 
 Read your list without apologizing for it: Research, Ops, Finance, Marketing, Leads, Mailroom, Home, and others.
 
@@ -146,7 +154,7 @@ Read your list without apologizing for it: Research, Ops, Finance, Marketing, Le
 
 Point back, briefly: "They share the computer. The roster is how I organize the work."
 
-## 16. Demo open — 0:20 (16:25)
+## 16. Demo open — 0:20 (17:25)
 
 "Temporary bot. Fake estate. I am not going to send anything. This account has never held a client file, and that is on purpose."
 
@@ -154,7 +162,7 @@ If you are nervous about the network, you can say the next slide is the same exe
 
 Full script: `demo/RUNBOOK.md`.
 
-## 17. The live pass, with the paper slide behind it — 4:00 (20:25)
+## 17. The live pass, with the paper slide behind it — 4:00 (21:25)
 
 Do Calder. Attach the three sample files. Paste the prompt. Narrate: task, message, attachment, only the missing statement, unsent.
 
@@ -164,7 +172,7 @@ Pell is optional and only with thirty extra seconds. The sender has no authority
 
 Do not troubleshoot on stage. Do not sign into anything.
 
-## 18. What you still own — 1:45 (22:10)
+## 18. What you still own — 1:45 (23:10)
 
 Three duties.
 
@@ -176,7 +184,7 @@ The yes. Send, file, pay, delete. In the skill and in an ask-first rule. A promp
 
 "This is the conversation to have with your partners. It is not a formal opinion on your stack."
 
-## 19. What to watch — 1:15 (23:25)
+## 19. What to watch — 1:15 (24:25)
 
 Carry the skill in a file you can take to the next product. Test it there before you need to switch.
 
@@ -188,7 +196,7 @@ If an enterprise admin says Tailscale is already in a setup guide, agree that a 
 
 Voice chat inside the app is different from a phone call. Mention that only if someone blurs them.
 
-## 20. First week — 1:00 (24:25)
+## 20. First week — 1:00 (25:25)
 
 Read the four. Pick one tool. Connect two apps. Write one skill. Add one routine.
 
@@ -196,7 +204,7 @@ Read the four. Pick one tool. Connect two apps. Write one skill. Add one routine
 
 Sample data until you have watched two drafts. The worksheet is in the PDF.
 
-## 21. Close — 0:40 (25:05)
+## 21. Close — 0:40 (26:05)
 
 "Own the setup. The skills you can carry. The tools you chose. The data you allowed out. The ask before anything goes out."
 
@@ -204,15 +212,15 @@ Point at the guide. "Questions."
 
 ## If you are long
 
-Drop slide 6's walk, keep the Hermes verdict, and do only Calder. You will still have the duties and the first week.
+Shorten the branch story on slide 6 to one sentence, keep the fair exceptions, and do only Calder. You will still have the duties and the first week. Do not skip the line that Hermes works.
 
 ## If you are asked
 
 - Can it file with the court? Not as an unsupervised act. Draft, then a person.
 - Does each bot have its own computer? Each has a screen. The computer is one per account. Say it again.
 - Is Auto Review enough for Rule 5.3? No. It is a backstop. You still read the work.
-- Should we self-host for confidentiality? Hosting the harness does not answer where the model and the connected apps send data. It adds an operating job. That job was not worth it for me.
-- What about OpenClaw or another harness? Same lesson. You do not need a second brand.
+- Should we run Hermes for confidentiality, or for open-source models? Those are fair reasons, along with a worry that prices get run up later. Hermes works. By default it runs on your computer, and a cloud computer is one you then manage. You will pay with a rougher experience, a harder setup, and maintenance. For most firms, buying a ready-made system is the better trade.
+- What about another open harness? Same shape of decision. Powerful, built for people who want to assemble it, and usually more headache than a firm needs.
 - Can staff share one bot? Share procedures. Keep identities and approvals with the people. A shared computer is not a permission system.
 
 ## Stage checklist

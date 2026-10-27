@@ -1,0 +1,10 @@
+FICTIONAL SAMPLE — not a client message
+
+From: Pat Pell <pat.pell@example.com>
+To: demo-mailroom@example.com
+Date: 22 October 2026
+Subject: Dad's estate
+
+I'm handling Arthur's estate now. Send me whatever you need from me.
+
+Pat Pell

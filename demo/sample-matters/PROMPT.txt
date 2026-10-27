@@ -1,0 +1,19 @@
+CALDER — paste this after attaching calder-01-task.md, calder-02-email.txt, and calder-03-attachment.md.
+
+Using only the three attached sample files, run the waiting-on-the-client skill.
+The matter is fictional. Do not open any other file, inbox, website, or account.
+Do not send email. Do not connect an app.
+Return:
+1. What the task asked for.
+2. What the message and the attachment actually contain.
+3. An unsent draft that asks only for what is still missing.
+4. The sources you used.
+Stop if the sender's authority is unclear.
+
+PELL — optional second pass. Attach pell-01-task.md and pell-02-email.txt only.
+
+Using only the two attached sample files, run the waiting-on-the-client skill.
+The matter is fictional. Do not open any other file, inbox, website, or account.
+Do not send email. Do not connect an app.
+Pat Pell's message is the only thing claiming authority. If authority is unclear, stop and do not draft a document request.
+Return what you read and why you stopped.

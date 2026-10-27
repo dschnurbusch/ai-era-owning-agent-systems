@@ -1,33 +1,44 @@
-# Owning Your Agent Systems
+# Owning Your AI Agent Systems
 
-First-draft presentation and attendee field guide for Dan Schnurbusch's 30-minute AI Era 2.0 talk.
+Presentation, field guide, and first-week worksheet for Dan Schnurbusch's AI Era 2.0 talk. About twenty-six minutes, then questions. The audience is law firm owners.
+
+Owning an agent system, in this version of the talk, means owning the setup: skills, the tools you choose to connect, your data, and the approval rules. Hermes is a powerful open-source agent. Most firms will still be happier with a ready-made system. Grok Bot is the commercial example, and the claims stay inside publicly documented features.
 
 ## Files
 
-- `index.html`: self-contained presentation plus readable guide, inline SVG and no external assets.
+- `index.html`: the presentation and the readable guide. Inline SVG, no external assets, no build step.
 - `handout.html`: printable source for the six-page attendee PDF.
-- `downloads/attendee-handout.pdf`: guide, first-job worksheet, and official source links.
-- `downloads/owning-agent-systems-offline.zip`: offline site package.
+- `downloads/attendee-handout.pdf`: guide and first-week worksheet.
+- `downloads/owning-agent-systems-offline.zip`: offline copy of the site, the PDF, and the demo packet.
 - `SPEAKER-NOTES.md`: proposed pacing and talk track.
+- `demo/RUNBOOK.md`: the live demo. `demo/sample-matters/` holds fictional matters only.
 
 ## Run
 
-Double-click `index.html`, or serve this directory with `python3 -m http.server 4173 --bind 127.0.0.1`.
+Open `index.html`, or serve this directory:
+
+```bash
+python3 -m http.server 4173 --bind 127.0.0.1
+```
 
 Presentation mode: `index.html?mode=present#s1`.
 
-Keys: Right/Space/PageDown advance one reveal or scene. Left/PageUp go back. Home/End select the first/last scene. G switches guide/presentation. F enters/exits fullscreen. Tab retains standard focus behavior.
+Keys: Right, Space, or PageDown advance one reveal or slide. Left or PageUp go back. Home and End jump to the first or last slide. G switches between the guide and the presentation. F toggles fullscreen.
 
-The guide and full presentation run without a network. Relative PDF links require the downloaded package, not just a standalone copy of `index.html`. Product-resource links require internet. No analytics, external fonts, or client information are embedded. Browser local storage remembers the last scene; worksheet text is not transmitted.
+The guide and the slides run without a network. The live demo needs a separate Grok Bot account and a network. The paper backup is on the slide after the demo marker. Relative PDF links need this folder, not a lone copy of `index.html`. No analytics, external fonts, or client information are embedded. The browser remembers the last slide locally. Worksheet text is not transmitted.
 
-## PDF regeneration
+## PDF
 
-Use Chrome headless printing of `handout.html` with print backgrounds enabled and CSS page size respected. The committed PDF was generated with Chrome's CDP `Page.printToPDF` API, `printBackground: true`, `preferCSSPageSize: true`, `displayHeaderFooter: false`. Verify six content pages and no footer-only overflow page after changes.
+Print `handout.html` from Chrome with backgrounds on and the CSS page size respected. The committed PDF was generated with headless Chrome, `printBackground: true`, `preferCSSPageSize: true`, and no header or footer. After a content change, confirm six content pages and no trailing blank page.
+
+## Demo boundary
+
+Use a Grok Bot account that has never held client information. Bots on one account share a computer. Do not run the demo on a firm account. The sample estates of June Calder and Arthur Pell are fictional.
 
 ## Content limits
 
-All matter examples are fictional. The continuum is an architectural decision map, not a scored product comparison. Verify current product/plan capabilities and terms before procurement. Presenter timing is a proposed plan, not rehearsal evidence.
+Grok Bot behavior was checked against public docs in October 2026. Phone calls and Tailscale-style private-network access are described as coming. Lois, Vincent, Claude, and ChatGPT are named as the rest of the range, not scored. Ethics citations are discussion prompts. Confirm the rule text in your jurisdiction. Re-read vendor terms before a real matter is connected.
 
 ## Hosting
 
-Designed for GitHub Pages from the repository's `main` branch, root directory. No build dependencies or server required. GitHub provides hosting logs under its terms; the page itself adds no analytics.
+GitHub Pages, from the repository `main` branch, root directory. `.nojekyll` is present. There is no build. GitHub serves the site under its own terms. The page adds no analytics.

@@ -1,0 +1,11 @@
+FICTIONAL SAMPLE — not a client message
+
+From: Alex Calder <alex.calder@example.com>
+To: demo-mailroom@example.com
+Date: 20 October 2026
+Subject: Inventory
+
+Attached is the signed inventory. I could not find the October bank statement this week. I will look again over the weekend.
+
+Alex Calder
+Personal representative, Estate of June Calder (fictional)

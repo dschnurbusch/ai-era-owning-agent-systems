@@ -1,106 +1,225 @@
-# Owning Your Agent Systems — first-draft speaker notes
+# Owning Your AI Agent Systems — speaker notes
 
-Proposed pacing: 27 minutes of content plus 3 minutes of buffer. Rehearse before treating these as measured times. The 30-minute breakout is separate.
+Proposed pacing for about twenty-five minutes, then questions. Rehearse before treating the times as measured. If questions share the same half hour, skip slide 6's detail and keep the demo to one pass. That lands near twenty-two minutes.
 
-This is a suggested talk track, not attributed quotations or claims about Dan's measured firm results. Add a genuine personal example in rehearsal. No live client systems are needed.
+This is a suggested talk track for Dan Schnurbusch. It is not a transcript of a talk already given, and it states no measured firm results. Product claims were checked against public docs on October 27, 2026. Re-read the Grok Bot computer, approvals, and Pages pages before November 5.
 
-## 1. Owning your agent systems — 1:30
+Stage rule: the demo account has never held client information. Bots on one account share a computer. Do not run the demo on the account that runs Research, Ops, Finance, Mailroom, or any other firm bot.
 
-Open with the operating problem, not the software. “The question is not which AI is smartest. It is whether a useful job gets done, whether I can inspect it, and who owns the failure.”
+## 1. Title — 0:40 (0:40)
 
-State the promise: people will leave able to distinguish the system's parts and describe a first job worth delegating. “Digital employee” is a design metaphor. Software has no professional license or independent accountability.
+"Owning your AI agent systems." Pause on the subtitle. Own the setup: skills, tools, data, and the ask.
 
-## 2. Start with a job — 1:00
+Say who you are and that the hour is for firm owners. Point at the handout once. Tell them the demo is a fake estate.
 
-Read the bounded assignment. Draw attention to “for my review.” The useful deliverable is an unsent draft with evidence, not autonomous communication.
+## 2. What owning means now — 1:20 (2:00)
 
-Ask the audience to hold one recurring job in mind throughout the talk. Don't open a discussion yet.
+"A while ago, owning the system meant running it. I tried that. Owning, now, is the setup."
 
-## 3. The continuum — 2:30
+Walk the four: the playbooks, the tools you choose to connect, the data you allow out, and the person who says yes before anything is sent, filed, paid, or deleted.
 
-Explain buy, configure, operate. Advance once to trace the line, then again to reveal the tradeoff.
+"Those are the parts a client would recognize as the firm's. A rack of servers is not one of them."
 
-“The farther toward operating the system we go, the more control we can exercise. We also inherit more work.” The horizontal positions are teaching categories, not scores. They overlap.
+## 3. The range — 1:20 (3:20)
 
-Filevine LOIS and Clio Work / Vincent are examples of legal-platform agents. Claude and ChatGPT offer commercial general-purpose agent surfaces; specify the actual product and plan when evaluating them. Hermes and OpenClaw are examples of open harnesses. Do not say commercial products cannot use custom connectors or skills.
+Advance once, after the three columns are up, to land the line about staying on Grok Bot.
 
-## 4. Choose the responsibility — 2:00
+Built in: Lois and Vincent. A good start when the job lives in the case system.
 
-Walk each column by the job it fits, not by a feature inventory. “Buying is not failure. Maintaining software you didn't need is not sophistication.”
+Commercial: Claude, ChatGPT, Grok Bot. This is where the hour goes.
 
-Explain a concrete procurement question: can this system do the exact job, within the right permissions, and export the result? Test that instead of relying on the marketing label.
+Self-hosted: Hermes. "I'll tell you why I stopped. It will not take long."
 
-## 5. Separate the layers — 1:30
+Say the picture is a map. Firms can use more than one. Do not turn it into a scoreboard.
 
-Make the key distinctions: open/proprietary harness, local/hosted inference, and where the harness runs. These are separate decisions.
+## 4. Start in the legal software — 1:10 (4:30)
 
-“Running Hermes on your laptop doesn't mean client information never leaves the laptop.” Draw the data boundary around the model provider and each connected service. Avoid treating either self-hosting or vendor hosting as an automatic security conclusion.
+Be generous. Ryan McKean wants firms to buy the agent that already sits on the matter. Agree with him in the room.
 
-## 6. The architecture — 2:30
+Lois reads the Filevine matter and can write work back for review. Vincent, inside Clio Work, researches and drafts, and with a matter selected can act in Clio Manage. Both still expect a lawyer on the output.
 
-Define the layers in plain language. The model reasons. The harness coordinates the loop. Tools give access. Skills give procedure. Memory helps continuity; source records establish facts.
+"If that is your world, start there. I am not going to talk you out of a tool that fits. I am going to talk about work that crosses systems, and about why I am not asking you to host the agent yourself."
 
-Build the stack with three advances. End on permissions and verification as the boundary, not another optional feature. “The chat window is an entry point. It is not an authority grant.”
+Do not repeat vendor superlatives. If someone asks whether Lois or Vincent can do everything Grok Bot can, the answer is: they are built for the matter. Read the current page. Different job, different tool.
 
-## 7. Tools and skills — 1:30
+## 5. The Hermes lesson — 1:10 (5:40)
 
-Explain MCP as a connection standard. Show how three bounded tools let the agent read, find correspondence, and prepare an unsent draft.
+"I stood up Hermes. Open source. I wanted to own the system. What I owned was the maintenance."
 
-Read the skill example, especially its stop condition. Procedures can travel across systems more readily than bespoke runtime code, but actual compatibility and permission enforcement still need testing.
+Then the line, slowly: "If that trade is not worth it for me, I have a hard time naming the firm it is for."
 
-## 8. The work loop — 2:00
+Do not explain how to install it. Do not name a second harness unless asked. If asked: other open harnesses exist, and the hours land in the same place.
 
-Follow the line across retrieval and checking, down through drafting and approval, then back to verification. Advance twice to reveal the consequential steps.
+## 6. What it cost — 0:50 (6:30)
 
-“Approval is for a specific action. Verification checks the actual destination.” A successful tool response isn't proof that the intended result exists. If a write's outcome is uncertain, inspect before retrying.
+Four beats, then leave.
 
-## 9. A reviewable result — 3:00
+The harness was the easy piece to admire. The real product was connectors, secrets, updates, and whoever is on call. The model was still rented unless you take that on too. The procedures moved. The server did not earn its keep.
 
-Spend time here. Explain the fictional record asks for two items. The recent message contains one. The actual attachment must be reviewed, not merely inferred from its filename.
+One extra sentence if you have it: "Running it on my own machine would not have meant client information stayed there." Then go.
 
-Show the narrower draft and the sources. Ask: “What should the agent not do?” Briefly answer: send the message, mark everything complete, or pretend the missing statement arrived.
+This is the optional slide. If you are behind, the verdict on slide 5 is enough. Say "The server was the small part" and advance.
 
-This is a static walkthrough, deliberately reliable on stage. If adding a demonstration later, use a short sanitized recording and keep these still scenes as backup. Do not present this fictional example as a live production result.
+## 7. The easy wave — 0:45 (7:15)
 
-## 10. Failure and control — 2:00
+"The next wave is a commercial agent you can set up this week. Claude and ChatGPT are in the category. I want the time on Grok Bot."
 
-Two failures are enough: stale evidence and false completion. Show the control next to each.
+Why this one: you can see the design. How a tool gets connected. Where a password lives. Who says yes before a message goes out.
 
-Trust is not confidence in the model's tone. It is a review path, a stop rule, and evidence that the action happened. Preserve unknown facts instead of filling gaps with plausible values.
+Gesture at the eight words. They are the next eight slides. "I like this product. I will also tell you the limits."
 
-## 11. Team deployment — 2:30
+Do not quote a price, a savings number, or a plan matrix you have not rechecked.
 
-Separate shared procedure from shared identity. Each person needs the right role and matter access. “Read, draft, and send are three permissions, not one.”
+## 8. Connect — 1:10 (8:25)
 
-Explain the table as illustrative. A reviewer authorizes an exact action; the service checks authority. Staff don't acquire Dan's credentials because a prompt says they are acting for him.
+"Click Connect. Sign in with the provider. That is the whole setup."
 
-Name an operating owner. Someone must handle credentials, upgrades, incidents, and cost. Sensitive logs should not become a second client-data warehouse.
+The design choice: the token stays off the computer. The bot calls the tool. It does not receive the login.
 
-## 12. Cost — 3:00
+Two limits, both worth saying. Every bot on your account can use what you connected. A teammate's Team Bot has to ask before it uses your accounts.
 
-Use the before/after workflow shape instead of made-up savings numbers. Retrieve a narrow set of facts. Load the relevant skill. Use code for deterministic work; use reasoning where judgment warrants it.
+"Week one is two apps. Not the whole practice."
 
-The equation is an accounting framework: include the model, infrastructure, review, and maintenance for a consistent period, divided by accepted results. A cheaper model that doubles review time may be the more expensive workflow.
+## 9. Skills — 1:15 (9:40)
 
-Don't imply every extraction can safely skip human checking. Distinguish mechanical filtering from legal interpretation.
+"A skill is a playbook with a stop in it."
 
-## 13. First job — 1:00
+Read the five lines. Land on "Do not send it" and "Stop if authority is unclear."
 
-Point to the six elements on the slide and the fuller worksheet in the guide. Give people permission to start small.
+"Type slash to point the bot at it. The library is yours. You turn a skill on for the bot that should have it. Write it down in your own files too. That is how you leave later."
 
-The breakout can use one nonconfidential job to identify sources, a relevant connector, a procedure, and a review boundary. No need to install infrastructure in the main talk.
+The skill on the slide is the fictional demo skill. Offer the file in the handout's demo folder.
 
-## 14. Close — 1:00
+## 10. Routines — 1:05 (10:45)
 
-“Own the procedure. Choose what else to own.” Restate: know what you control, what you rent, and who is responsible.
+Read the sentence. It is the whole feature: plain English, one bot, a clock, a result, a prohibition, and a rule for missing data.
 
-Point to the downloadable guide and worksheet. Use the remaining three-minute buffer for pacing or a brief question if the session host permits it.
+"Confirm those six things when it shows you the routine. A test does real work, so the send stays off. And it runs while the laptop is in the bag, which is why the send stays off."
+
+Skip the caps (50 routines, 20 runs, five minutes) unless someone asks.
+
+## 11. The computer — 1:20 (12:05)
+
+This is the design slide. Do not rush the second click.
+
+First: a cloud computer with a browser, files, and a terminal. It keeps working after the laptop closes. Each bot has its own screen, so they can work at the same time. You can watch.
+
+Advance. Then: "On one account, that is a single computer. The screens are separate. The files and the sign-ins are not. I do not use a second bot as a wall around a client's file."
+
+If your notes from an earlier draft said each bot has its own computer, this is the correction. The overview says each bot works on a cloud computer. The security page says the computer belongs to the account. Say the second sentence out loud. It is the one this room needs.
+
+Between users, the isolation is real. Inside your account, it is not a confidentiality boundary.
+
+## 12. Vault and 1Password — 1:00 (13:05)
+
+"It can sign in. It does not see the password."
+
+1Password fills a login you approve. It does not hand over the vault. Vault does the same with a saved password, a one-time code, and a card number. You can take the screen and type the step yourself.
+
+Say the card line if you have the breath: a saved card can go through checkout without a fresh yes. Leave the firm card out.
+
+Do not say the bot sees nothing. It can see contact details and the names of saved logins. Passwords stay hidden.
+
+Vault is the whole account, and it is not on Team Bots. Mention that only if asked.
+
+## 13. Draft, then ask — 1:15 (14:20)
+
+"Have it draft the email. Have it ask before it sends."
+
+The card shows the action and what it will touch. Allow once, always allow, deny. Always-allow writes a rule, so keep the rule narrow.
+
+Advance. "Auto Review checks the action before it runs. An ask-first rule wins over an allow rule. That review is a backstop. It is not the lawyer."
+
+Set the ask-first rule before a real inbox is connected. An approval from a routine expires in about ten minutes if you do not answer, and then it does not run. Mention the timer only if asked.
+
+## 14. Pages — 0:50 (15:10)
+
+"Ask for a page: a report, a tracker, a list of what is open. It sits beside the chat. A routine can keep it current."
+
+"On the plan most of us would start on, a shared page can be public. Client information does not go on one."
+
+## 15. The roster — 0:55 (16:05)
+
+Read your list without apologizing for it: Research, Ops, Finance, Marketing, Leads, Mailroom, Home, and others.
+
+"That is my shop, not a template. The idea is a name, a job, and a boundary. A group chat when someone should see the handoff."
+
+Point back, briefly: "They share the computer. The roster is how I organize the work."
+
+## 16. Demo open — 0:20 (16:25)
+
+"Temporary bot. Fake estate. I am not going to send anything. This account has never held a client file, and that is on purpose."
+
+If you are nervous about the network, you can say the next slide is the same exercise on paper.
+
+Full script: `demo/RUNBOOK.md`.
+
+## 17. The live pass, with the paper slide behind it — 4:00 (20:25)
+
+Do Calder. Attach the three sample files. Paste the prompt. Narrate: task, message, attachment, only the missing statement, unsent.
+
+Read whatever it returns. If an approval card appears, leave it up and do not press it.
+
+Pell is optional and only with thirty extra seconds. The sender has no authority. The bot should stop. If you skip Pell, the paper slide's last line covers it. Advance past the paper slide if the live result was clear. Use the paper slide if the bot stalls, asks for an app, or wanders off the attachments.
+
+Do not troubleshoot on stage. Do not sign into anything.
+
+## 18. What you still own — 1:45 (22:10)
+
+Three duties.
+
+Rule 1.6. Where does this information go, who can see it, does it train a model, how long does it stay. Answer that before a real matter is connected. Missouri: 4-1.6. Say "Missouri numbers it 4-1.6" only if the room needs the local cite. The slide uses the ABA numbers on purpose.
+
+Rules 5.3 and 1.1. You supervise. You have to understand the tool well enough to check it. The bot is not a member of the bar. Opinion 512 is the longer ABA piece, in the handout.
+
+The yes. Send, file, pay, delete. In the skill and in an ask-first rule. A prompt is not access control.
+
+"This is the conversation to have with your partners. It is not a formal opinion on your stack."
+
+## 19. What to watch — 1:15 (23:25)
+
+Carry the skill in a file you can take to the next product. Test it there before you need to switch.
+
+Read the account terms while the pilot is still fake. Grok Bot stores data. Legacy Privacy Mode is not available. Training follows the privacy settings on the Cursor account Grok Bot uses. Say "Cursor account" if someone asks where those settings live.
+
+Coming, and say the word: phone calls, and private-network access such as Tailscale. "I am not building this month's workflow on either one."
+
+If an enterprise admin says Tailscale is already in a setup guide, agree that a team pattern exists and still tell a solo or small firm to treat it as coming. Do not demo it.
+
+Voice chat inside the app is different from a phone call. Mention that only if someone blurs them.
+
+## 20. First week — 1:00 (24:25)
+
+Read the four. Pick one tool. Connect two apps. Write one skill. Add one routine.
+
+"If the job lives in Clio or Filevine, the one tool can be Vincent or Lois. If it crosses systems, pick one commercial agent and stay there for the week."
+
+Sample data until you have watched two drafts. The worksheet is in the PDF.
+
+## 21. Close — 0:40 (25:05)
+
+"Own the setup. The skills you can carry. The tools you chose. The data you allowed out. The ask before anything goes out."
+
+Point at the guide. "Questions."
+
+## If you are long
+
+Drop slide 6's walk, keep the Hermes verdict, and do only Calder. You will still have the duties and the first week.
+
+## If you are asked
+
+- Can it file with the court? Not as an unsupervised act. Draft, then a person.
+- Does each bot have its own computer? Each has a screen. The computer is one per account. Say it again.
+- Is Auto Review enough for Rule 5.3? No. It is a backstop. You still read the work.
+- Should we self-host for confidentiality? Hosting the harness does not answer where the model and the connected apps send data. It adds an operating job. That job was not worth it for me.
+- What about OpenClaw or another harness? Same lesson. You do not need a second brand.
+- Can staff share one bot? Share procedures. Keep identities and approvals with the people. A shared computer is not a permission system.
 
 ## Stage checklist
 
-- Download and extract the offline package. Open `index.html?mode=present#s1`, or open `index.html` and click Present, then Home.
-- Test the actual clicker. Right/Space/PageDown reveal or advance; Left/PageUp reverse; G toggles guide; F fullscreen.
-- Use laptop power and disable notification banners before stage time. Do not depend on venue Wi-Fi.
-- Confirm the venue accepts a browser presentation from your laptop and test the projector's resolution.
-- Attendees use the guide link; keep the PDF as a durable takeaway. The site itself adds no analytics.
-- The draft has no live demo or embedded video. Those can be added after narrative review, with explicit sanitization.
+- Present from `index.html?mode=present#s1`, or open the page and click Present, then Home.
+- Clicker: Right, Space, or PageDown reveals or advances. Left or PageUp goes back. G is the guide. F is fullscreen. Home and End jump.
+- Demo account signed in, firm account signed out. Sample folder on the laptop and on a USB stick. `demo/RUNBOOK.md` is the script.
+- Do Not Disturb. Close firm inboxes and password managers.
+- The deck and the PDF work offline. The demo bot needs a network. The paper slide does not.
+- No analytics on the page. The QR opens the GitHub Pages guide.

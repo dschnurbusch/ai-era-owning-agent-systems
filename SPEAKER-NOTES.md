@@ -1,6 +1,6 @@
 # Owning Your AI Agent Systems — speaker notes
 
-Proposed pacing for about twenty-six minutes, then questions. Rehearse before treating the times as measured. If questions share the same half hour, shorten the branch story on slide 6 and keep the demo to one pass. That lands near twenty-three minutes.
+Proposed pacing for about twenty-seven minutes, then questions. Rehearse before treating the times as measured. If questions share the same half hour, shorten the branch story and the portal line on slide 6, and keep the demo to one pass. That lands near twenty-four minutes.
 
 This is a suggested talk track for Dan Schnurbusch. It is not a transcript of a talk already given, and it states no measured firm results. Product claims were checked against public docs on October 27, 2026. Re-read the Grok Bot computer, approvals, and Pages pages before November 5.
 
@@ -19,6 +19,10 @@ Say who you are and that the hour is for firm owners. Point at the handout once.
 Walk the four: the playbooks, the tools you choose to connect, the data you allow out, and the person who says yes before anything is sent, filed, paid, or deleted.
 
 "Those are the parts a client would recognize as the firm's. A rack of servers is not one of them."
+
+Then the conclusion, so the room hears it twice, here and at the close. "Maintaining that setup is now very easy. Business accounts for ChatGPT, Claude, and Grok have the admin controls. Grok Bot is my favorite right now, because it is so easy to use."
+
+Do not unpack the admin example yet. That beat is its own slide, after the duties. Here, name the conclusion and move on.
 
 ## 3. The range — 1:20 (3:20)
 
@@ -54,17 +58,23 @@ The computer. "By default it runs only on your own computer. You can give it a c
 
 The assembly. "You design the system. You find a memory provider, a web search provider, a telemetry provider, and so on. Services exist for each of these. You have to piece them together to get the parts that come built in with the vendor software."
 
-Do not explain how to install any of it. Do not sneer. If someone asks for a second harness by name, the shape of the decision is the same. You are not running a bake-off.
+The second pain, and do not rush it. "Deploying it across a team was the harder part. Getting skills and connectors out so people could share them, and update them for each other, took more technical work to set up and to maintain."
+
+Do not explain how to install any of it. Do not sneer. If someone asks for a second harness by name, the shape of the decision is the same. You are not running a bake-off. The portal improvement belongs on the next slide, so this one stays the honest cost.
 
 ## 6. Who should run it — 1:20 (7:15)
 
 The personal fact, plainly. "I didn't like the desktop app's design, so I kept my own branch of the open-source code to fit my workflow. That meant ongoing maintenance. Every time I wanted an update, I was resolving conflicts with the main branch."
 
+Then the team, which slide 5 already named. "Rolling that out so people could share skills and connectors, and update them for each other, took real technical work. Their newer portal has improved this. It is better than it was. It is still more system to run than an admin console."
+
+Say the portal fairly. It is a real improvement. It is not the same thing as the business-account controls later in the hour. Do not wave it away, and do not promote it into a recommendation.
+
 Then the room. "For most lawyers, you don't need it. There are other workarounds. The headache of running an open-source harness, or your own hardware, usually isn't worth it compared with buying a ready-made system."
 
 Then the exceptions, and mean them. "A few reasons are fair. You might care a lot about data sovereignty or security. You might worry that prices will be run up later. You might want open-source models. Those can justify it. You will pay with a worse user experience, a harder setup, and the maintenance."
 
-Do not drop this slide. The "it works" line on slide 5 is incomplete without the fair exceptions. If you are behind, shorten the branch story to one sentence and keep the exceptions.
+Do not drop this slide. The "it works" line on slide 5 is incomplete without the team point, the fair portal line, and the fair exceptions. If you are behind, shorten the branch story to one sentence and keep the team line, the portal, and the exceptions.
 
 ## 7. Why Grok Bot — 1:00 (8:15)
 
@@ -196,7 +206,19 @@ If an enterprise admin says Tailscale is already in a setup guide, agree that a 
 
 Voice chat inside the app is different from a phone call. Mention that only if someone blurs them.
 
-## 20. First week — 1:00 (25:25)
+## 20. Admin controls — 1:00 (25:25)
+
+This is the beat the thesis promised. Three columns. Stay inside what you can stand behind.
+
+ChatGPT, and attribute it. "In our business account, the skills marketplace is connected at the admin level. Skills get packaged into plugins, and those plugins install themselves for everyone in our ChatGPT accounts. The admin maintenance is remarkably easy." That is your account. It is not a promise about every ChatGPT plan in the room.
+
+Grok Bot, from the public Team Bot docs, checked October 27, 2026. "A Team Bot shares plugins, secrets, skills, and memory. Each person signs in for their own connectors, so one person's login is not lent to the team. Admins set the connector policy, including turning a connector off for the team." If someone wants the finer print: team skills apply in every teammate's conversation and only an owner or manager saves them. Team memory is shared, and a person can keep private notes. A key or token uses the bot's credential. Secrets stay hidden from teammates and from the model. Admins can also put the Team Bot in people's sidebars. Vault is still not on Team Bots. Say that only if asked.
+
+Claude, generally. "Claude has business and admin controls too. I would describe the current console, not a switch I have not rechecked."
+
+"On a business account, maintaining your own agent setup is now the easy part. That is true for ChatGPT, for Claude, and for Grok. Grok Bot is my favorite right now because it is so easy to use."
+
+## 21. First week — 1:00 (26:25)
 
 Read the four. Pick one tool. Connect two apps. Write one skill. Add one routine.
 
@@ -204,24 +226,25 @@ Read the four. Pick one tool. Connect two apps. Write one skill. Add one routine
 
 Sample data until you have watched two drafts. The worksheet is in the PDF.
 
-## 21. Close — 0:40 (26:05)
+## 22. Close — 0:40 (27:05)
 
-"Own the setup. The skills you can carry. The tools you chose. The data you allowed out. The ask before anything goes out."
+"Maintaining your own agent setup is now very easy. The admin controls in a business account do that work, for ChatGPT, for Claude, and for Grok. Grok Bot is my favorite right now, because it is so easy to use."
 
-Point at the guide. "Questions."
+The four parts are still on the thesis slide if someone asks what "the setup" is. Do not rebuild that list here. Point at the guide. "Questions."
 
 ## If you are long
 
-Shorten the branch story on slide 6 to one sentence, keep the fair exceptions, and do only Calder. You will still have the duties and the first week. Do not skip the line that Hermes works.
+Shorten the branch story on slide 6 to one sentence. Keep the team-rollout line, the fair note on the newer portal, and the fair exceptions. Do only Calder. You will still have the duties, the admin slide, and the first week. Do not skip the line that Hermes works, and do not skip the close.
 
 ## If you are asked
 
 - Can it file with the court? Not as an unsupervised act. Draft, then a person.
 - Does each bot have its own computer? Each has a screen. The computer is one per account. Say it again.
 - Is Auto Review enough for Rule 5.3? No. It is a backstop. You still read the work.
-- Should we run Hermes for confidentiality, or for open-source models? Those are fair reasons, along with a worry that prices get run up later. Hermes works. By default it runs on your computer, and a cloud computer is one you then manage. You will pay with a rougher experience, a harder setup, and maintenance. For most firms, buying a ready-made system is the better trade.
-- What about another open harness? Same shape of decision. Powerful, built for people who want to assemble it, and usually more headache than a firm needs.
-- Can staff share one bot? Share procedures. Keep identities and approvals with the people. A shared computer is not a permission system.
+- Should we run Hermes for confidentiality, or for open-source models? Those are fair reasons, along with a worry that prices get run up later. Hermes works. By default it runs on your computer, and a cloud computer is one you then manage. Rolling skills and connectors out to a team took more technical work. A newer portal has improved that sharing. It is still more to run than a business admin console. You will pay with a rougher experience, a harder setup, and maintenance. For most firms, buying a ready-made system is the better trade.
+- What about another open harness? Same shape of decision. Powerful, built for people who want to assemble it, and usually more headache than a firm needs, especially once more than one person has to share and update it.
+- Can staff share one bot? On a business account, yes, with admin controls. In our ChatGPT account, admin-level skills install for everyone. On Grok Bot, a Team Bot shares plugins, secrets, skills, and memory, each person signs in for their own connectors, and admins set connector policy. A shared computer on a personal account is still not a permission system. Keep approvals with the people.
+- Is the Hermes portal the same as those admin controls? It has improved team sharing. Say that. It is still more technical work than the business-account consoles.
 
 ## Stage checklist
 

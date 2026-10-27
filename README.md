@@ -1,8 +1,8 @@
 # Owning Your AI Agent Systems
 
-Presentation, field guide, and first-week worksheet for Dan Schnurbusch's AI Era 2.0 talk. About twenty-six minutes, then questions. The audience is law firm owners.
+Presentation, field guide, and first-week worksheet for Dan Schnurbusch's AI Era 2.0 talk. About twenty-seven minutes, then questions. The audience is law firm owners.
 
-Owning an agent system, in this version of the talk, means owning the setup: skills, the tools you choose to connect, your data, and the approval rules. Hermes is a powerful open-source agent. Most firms will still be happier with a ready-made system. Grok Bot is the commercial example, and the claims stay inside publicly documented features.
+Owning an agent system means owning the setup: skills, the tools you choose to connect, your data, and the approval rules. Hermes is a powerful open-source agent. Deploying its skills and connectors across a team took more technical work. A newer portal has improved that, and it is still more to run than a business admin console. The takeaway is that maintaining your own agent setup is now very easy with the admin controls in business-level accounts for ChatGPT, Claude, and Grok. Grok Bot is Dan's favorite right now because it is so easy to use. Grok Bot claims stay inside publicly documented features. The ChatGPT admin example is his firm's business account.
 
 ## Files
 

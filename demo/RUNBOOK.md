@@ -2,7 +2,7 @@
 
 A five-minute stage demo for "Owning Your AI Agent Systems." The room should see a temporary Grok Bot do one fictional estate task, draft a reply, and stop before sending.
 
-Proposed time: four minutes inside a twenty-seven-minute talk. If questions are inside the same half hour, do one pass and stop at three.
+Proposed time: four minutes inside a twenty-minute talk. If questions are inside the same half hour, do one pass and stop at three.
 
 ## Hard rules
 

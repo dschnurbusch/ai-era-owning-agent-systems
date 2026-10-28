@@ -1,256 +1,137 @@
 # Owning Your AI Agent Systems — speaker notes
 
-Proposed pacing for about twenty-seven minutes, then questions. Rehearse before treating the times as measured. If questions share the same half hour, shorten the branch story and the portal line on slide 6, and keep the demo to one pass. That lands near twenty-four minutes.
+About twenty minutes, then questions. The times below are a rehearsal plan, not a measured run. If questions share the half hour, keep the demo to one pass.
 
-This is a suggested talk track for Dan Schnurbusch. It is not a transcript of a talk already given, and it states no measured firm results. Product claims were checked against public docs on October 27, 2026. Re-read the Grok Bot computer, approvals, and Pages pages before November 5.
+Plain talk track for Dan Schnurbusch. Not a transcript. No firm results. Grok Bot claims were checked against public docs on October 27, 2026. Re-read the computer, approvals, and Team Bot pages before November 5.
 
-Stage rule: the demo account has never held client information. Bots on one account share a computer. Do not run the demo on the account that runs Research, Ops, Finance, Mailroom, or any other firm bot.
+Demo rule: use an account that has never held client information. Bots on one account share a computer. Do not use the account that runs Research, Ops, Finance, Mailroom, or any other firm bot. The script and the fictional files are in `demo/RUNBOOK.md`.
 
-## 1. Title — 0:40 (0:40)
+## 1. Title — 0:30 (0:30)
 
-"Owning your AI agent systems." Pause on the subtitle. Own the setup: skills, tools, data, and the ask.
+Say the title. Say your name and that the hour is for firm owners. Point once at the handout. The handout is a separate document. Tell them the demo uses fictional matters.
 
-Say who you are and that the hour is for firm owners. Point at the handout once. Tell them the demo is a fake estate.
+## 2. What owning means — 1:30 (2:00)
 
-## 2. What owning means now — 1:20 (2:00)
+Owning used to sound like running the server. You tried that. It is not what this talk means.
 
-"A while ago, owning the system meant running it. I tried that. Owning, now, is the setup."
+Walk the four parts. Skills and playbooks: how the firm does one job, including the stop. Choice of tools: what you connect, and what stays closed. Your data: what may leave, and where it goes. Who approves what: a person says yes before anything is sent, filed, paid, or deleted.
 
-Walk the four: the playbooks, the tools you choose to connect, the data you allow out, and the person who says yes before anything is sent, filed, paid, or deleted.
+Those are the parts that make the firm different. A rack of servers is not one of them.
 
-"Those are the parts a client would recognize as the firm's. A rack of servers is not one of them."
+## 3. The range of options — 1:20 (3:20)
 
-Then the conclusion, so the room hears it twice, here and at the close. "Maintaining that setup is now very easy. Business accounts for ChatGPT, Claude, and Grok have the admin controls. Grok Bot is my favorite right now, because it is so easy to use."
+Three places. Do not score them.
 
-Do not unpack the admin example yet. That beat is its own slide, after the duties. Here, name the conclusion and move on.
+Built-in agents: Lois in Filevine, Vincent in Clio. A fine starting point when the job already lives on the matter. Ryan McKean is right to favor buying that ready-made when the work does not need to leave the case system. Lois can read the matter and write work back for review. Vincent, in Clio Work, researches and drafts, and with a matter selected can act in Clio Manage. A lawyer still reviews the output.
 
-## 3. The range — 1:20 (3:20)
+General agents: Claude, ChatGPT, Grok Bot. This is where the rest of the hour goes, on Grok Bot.
 
-Advance once, after the three columns are up, to land the line about staying on Grok Bot.
+Running your own: Hermes. One slide, next.
 
-Built in: Lois and Vincent. A good start when the job lives in the case system.
+Firms can use more than one. The picture is a map.
 
-Commercial: Claude, ChatGPT, Grok Bot. This is where the hour goes.
+## 4. Hermes — 2:00 (5:20)
 
-Open harness: Hermes. "It works. I'll tell you who it's for. Two minutes."
+Say this plainly. You built it. It works. It is a lot of work.
 
-Say the picture is a map. Firms can use more than one. Do not turn it into a scoreboard.
+Hermes is an extremely powerful desktop agent. Some of what it can do is more useful than what the commercial apps allow. It is built for people who want to assemble the system.
 
-## 4. Start in the legal software — 1:10 (4:30)
+By default it runs only on your computer. You can give it a cloud computer. Then you manage that computer. ChatGPT, Claude, and Grok Bot come with a computer, and they take care of it.
 
-Be generous. Ryan McKean wants firms to buy the agent that already sits on the matter. Agree with him in the room.
+You also piece together memory, web search, telemetry, and the rest. Those services exist. Vendor agents ship them already joined.
 
-Lois reads the Filevine matter and can write work back for review. Vincent, inside Clio Work, researches and drafts, and with a matter selected can act in Clio Manage. Both still expect a lawyer on the output.
+You did not like the desktop app's design, so you kept your own branch. Every update meant resolving conflicts with the main branch.
 
-"If that is your world, start there. I want that case in the room. The harness I actually ran is next, and then the commercial agent I want the hour on."
+The second cost was the team. Getting skills and connectors out so people could share them, and update them for each other, took more technical work to set up and to maintain. A newer portal has improved that. Say so. It is better than it was. It is still more to run than an admin console.
 
-Do not repeat vendor superlatives. If someone asks whether Lois or Vincent can do everything Grok Bot can, the answer is: they are built for the matter. Read the current page. Different job, different tool.
+Fair reasons to take this on: data sovereignty or security, a worry that prices get run up later, and open-source models. You pay with a rougher experience, a harder setup, and the maintenance. Most firms can buy a ready-made system instead.
 
-## 5. Hermes works — 1:25 (5:55)
+Do not explain how to install it.
 
-Say this with respect. You used it. It is good.
+## 5. Grok Bot — 2:00 (7:20)
 
-"Hermes works really well. It is an extremely powerful desktop agent. It can do anything I point it at, and some of what it can do is more useful than what the commercial apps allow."
+This is the product you use. Walk the six lines. Do not sell them.
 
-Then who it is for. "It is clearly built for software engineers, and for people who like getting into the nitty-gritty."
+Connect an app and sign in with that provider. The token stays off the computer. The bot calls the tool and does not receive the login. A connected app is available to every bot on the account. Week one is two apps.
 
-The computer. "By default it runs only on your own computer. You can give it a cloud computer. Then you have to figure out how to manage that cloud computer. ChatGPT, Claude, and Grok Bot come with their own computer. They take care of all of that."
+Point it at a skill library if you have one. Otherwise there is nothing extra to set up. A skill is the procedure: when to use it, the steps, how to check, and what needs a person. Type / to call one.
 
-The assembly. "You design the system. You find a memory provider, a web search provider, a telemetry provider, and so on. Services exist for each of these. You have to piece them together to get the parts that come built in with the vendor software."
+Routines are a sentence: when, which bot, what it returns, what it must not send, and what to do if the source is missing. A test run does real work. It can run with the laptop closed.
 
-The second pain, and do not rush it. "Deploying it across a team was the harder part. Getting skills and connectors out so people could share them, and update them for each other, took more technical work to set up and to maintain."
+A cloud computer, with a browser, files, and a terminal. It keeps working after the laptop closes. The next slide is the limit on that computer.
 
-Do not explain how to install any of it. Do not sneer. If someone asks for a second harness by name, the shape of the decision is the same. You are not running a bake-off. The portal improvement belongs on the next slide, so this one stays the honest cost.
+Password vault, or 1Password. The bot can sign in. It does not see the password, the one-time code, or the card number. A saved card can be used at checkout without a fresh approval. Leave the firm card out if you want a yes on every charge. Vault is the whole account, and it is not on Team Bots. Say the card line if you have the breath. Say the Team Bot line only if asked.
 
-## 6. Who should run it — 1:20 (7:15)
+It asks before sending. The card shows the action. Allow once, always allow, or deny. An ask-first rule beats an allow rule. Auto Review is a backstop. The lawyer still reviews the work.
 
-The personal fact, plainly. "I didn't like the desktop app's design, so I kept my own branch of the open-source code to fit my workflow. That meant ongoing maintenance. Every time I wanted an update, I was resolving conflicts with the main branch."
+Phone calls, and private-network reach such as Tailscale, are coming. Do not build this month's workflow on either one. Voice chat inside the app is a different, shipped control. Mention it only if someone mixes the two up.
 
-Then the team, which slide 5 already named. "Rolling that out so people could share skills and connectors, and update them for each other, took real technical work. Their newer portal has improved this. It is better than it was. It is still more system to run than an admin console."
+## 6. One bot per job — 1:00 (8:20)
 
-Say the portal fairly. It is a real improvement. It is not the same thing as the business-account controls later in the hour. Do not wave it away, and do not promote it into a recommendation.
+Read your list without apologizing: Research, Ops, Finance, Marketing, Leads, Mailroom, Home, and others. It is your shop. The idea is a name, a job, and a boundary. A group chat when someone should see the handoff.
 
-Then the room. "For most lawyers, you don't need it. There are other workarounds. The headache of running an open-source harness, or your own hardware, usually isn't worth it compared with buying a ready-made system."
+Then the limit, out loud. On one account there is one computer. Each bot has its own screen. Files and sign-ins are shared. A second bot is not a wall around a client's file. Between users, the computers are isolated.
 
-Then the exceptions, and mean them. "A few reasons are fair. You might care a lot about data sovereignty or security. You might worry that prices will be run up later. You might want open-source models. Those can justify it. You will pay with a worse user experience, a harder setup, and the maintenance."
+## 7. Admin controls — 2:00 (10:20)
 
-Do not drop this slide. The "it works" line on slide 5 is incomplete without the team point, the fair portal line, and the fair exceptions. If you are behind, shorten the branch story to one sentence and keep the team line, the portal, and the exceptions.
+Business account, not a personal login.
 
-## 7. Why Grok Bot — 1:00 (8:15)
+ChatGPT, and say it is your firm's account, not every plan. The skills marketplace is connected at the admin level. Skills are packaged into plugins that install themselves for everyone in those ChatGPT accounts. The admin work is light.
 
-This is the turn. Let it be the relief after the previous slide.
+Grok Bot, from the public Team Bot docs. A Team Bot shares plugins, secrets, skills, and memory. The owner sets those once, and changes reach the people using the bot. Each person signs in for their own connectors, so one person's login is not lent to the team. Admins set connector policy, including turning a connector off for the team. Team memory is shared. A person can keep private notes. If someone wants the finer print: only an owner or manager saves team skills, a key or token uses the bot's credential, and secret values stay hidden from teammates and from the model.
 
-"What drew me to Grok Bot is how ridiculously easy it is to get started. You click Connect. You point it at your skills repo if you have one. Otherwise there is nothing to set up. You tell it what you want done. You spin up bots for the different roles in the firm. And you let them go."
+Claude. Business and enterprise plans include admin controls for the organization. Describe the current console. Do not name a switch you have not rechecked.
 
-Gesture at the eight words. They are the next eight slides. Claude and ChatGPT are in the same category. You are staying on this one because of that ease, and because the design is visible.
+Then the point of the slide. On a business account, an admin keeps the setup current. That is true for ChatGPT, Claude, and Grok. Grok Bot is the one you use, because it is easy to use.
 
-"I like this product. I will also tell you the limits."
+## 8. Live demo — 4:30 (14:50)
 
-Do not quote a price, a savings number, or a plan matrix you have not rechecked.
+Say what they are about to see: a few bots, a routine, a skill, a connector. This account has never held a client file. You will not send anything.
 
-## 8. Connect — 1:10 (9:25)
+Do Calder, from `demo/RUNBOOK.md`. Temporary bot. Fictional estate. Read the draft. If an approval card appears, leave it up.
 
-"Click Connect. Sign in with the provider. That is the whole setup."
+Pell is optional, and only with extra time. The sender has no authority, so the bot should stop.
 
-The design choice: the token stays off the computer. The bot calls the tool. It does not receive the login.
+If the network stalls, do not troubleshoot. Narrate the same steps from the runbook. Do not sign into firm email, Clio, Filevine, trust, or 1Password.
 
-Two limits, both worth saying. Every bot on your account can use what you connected. A teammate's Team Bot has to ask before it uses your accounts.
+## 9. What you still own — 2:00 (16:50)
 
-"Week one is two apps. Not the whole practice."
+Confidentiality. Rule 1.6. Where the information goes, who can see it, whether it trains a model, how long it is kept. Answer that before a real matter is connected. Missouri numbers the same duty 4-1.6. Say the Missouri number only if the room needs it. Grok Bot stores data and does not offer Legacy Privacy Mode. Training choices follow the account's privacy settings.
 
-## 9. Skills — 1:15 (10:40)
+Approval rules. Send, file, pay, and delete wait for a person. Put that in the skill and in an ask-first rule. A sentence in a prompt is not the control.
 
-"A skill is a playbook with a stop in it."
+Checking and supervising. Rules 5.3 and 1.1. You read the output. Competence includes understanding the tool. The bot is not a member of the bar. Missouri: 4-5.3 and 4-1.1. ABA Formal Opinion 512 is the longer piece, in the handout. This is a discussion for owners, not an opinion on anyone's stack.
 
-Read the five lines. Land on "Do not send it" and "Stop if authority is unclear."
+Skill portability. Keep a plain-language copy outside the product. Test it on the next platform before you need to switch. The open Agent Skills format is one way to structure the file.
 
-"Type slash to point the bot at it. The library is yours. You turn a skill on for the bot that should have it. Write it down in your own files too. That is how you leave later."
+## 10. First week — 1:10 (18:00)
 
-The skill on the slide is the fictional demo skill. Offer the file in the handout's demo folder.
+Read the four. One tool. Two apps. One process written as a skill. One routine.
 
-## 10. Routines — 1:05 (11:45)
+If the job lives in Clio or Filevine, the tool can be Vincent or Lois. If it crosses systems, pick one general agent and stay there for the week.
 
-Read the sentence. It is the whole feature: plain English, one bot, a clock, a result, a prohibition, and a rule for missing data.
+Sample data until you have watched the draft. The worksheet is in the handout, which is separate from these slides.
 
-"Confirm those six things when it shows you the routine. A test does real work, so the send stays off. And it runs while the laptop is in the bag, which is why the send stays off."
+## 11. Sources — 0:30 (18:30)
 
-Skip the caps (50 routines, 20 runs, five minutes) unless someone asks.
-
-## 11. The computer — 1:20 (13:05)
-
-This is the design slide. Do not rush the second click.
-
-First: a cloud computer with a browser, files, and a terminal. It keeps working after the laptop closes. Each bot has its own screen, so they can work at the same time. You can watch.
-
-Advance. Then: "On one account, that is a single computer. The screens are separate. The files and the sign-ins are not. I do not use a second bot as a wall around a client's file."
-
-If your notes from an earlier draft said each bot has its own computer, this is the correction. The overview says each bot works on a cloud computer. The security page says the computer belongs to the account. Say the second sentence out loud. It is the one this room needs.
-
-Between users, the isolation is real. Inside your account, it is not a confidentiality boundary.
-
-## 12. Vault and 1Password — 1:00 (14:05)
-
-"It can sign in. It does not see the password."
-
-1Password fills a login you approve. It does not hand over the vault. Vault does the same with a saved password, a one-time code, and a card number. You can take the screen and type the step yourself.
-
-Say the card line if you have the breath: a saved card can go through checkout without a fresh yes. Leave the firm card out.
-
-Do not say the bot sees nothing. It can see contact details and the names of saved logins. Passwords stay hidden.
-
-Vault is the whole account, and it is not on Team Bots. Mention that only if asked.
-
-## 13. Draft, then ask — 1:15 (15:20)
-
-"Have it draft the email. Have it ask before it sends."
-
-The card shows the action and what it will touch. Allow once, always allow, deny. Always-allow writes a rule, so keep the rule narrow.
-
-Advance. "Auto Review checks the action before it runs. An ask-first rule wins over an allow rule. That review is a backstop. It is not the lawyer."
-
-Set the ask-first rule before a real inbox is connected. An approval from a routine expires in about ten minutes if you do not answer, and then it does not run. Mention the timer only if asked.
-
-## 14. Pages — 0:50 (16:10)
-
-"Ask for a page: a report, a tracker, a list of what is open. It sits beside the chat. A routine can keep it current."
-
-"On the plan most of us would start on, a shared page can be public. Client information does not go on one."
-
-## 15. The roster — 0:55 (17:05)
-
-Read your list without apologizing for it: Research, Ops, Finance, Marketing, Leads, Mailroom, Home, and others.
-
-"That is my shop, not a template. The idea is a name, a job, and a boundary. A group chat when someone should see the handoff."
-
-Point back, briefly: "They share the computer. The roster is how I organize the work."
-
-## 16. Demo open — 0:20 (17:25)
-
-"Temporary bot. Fake estate. I am not going to send anything. This account has never held a client file, and that is on purpose."
-
-If you are nervous about the network, you can say the next slide is the same exercise on paper.
-
-Full script: `demo/RUNBOOK.md`.
-
-## 17. The live pass, with the paper slide behind it — 4:00 (21:25)
-
-Do Calder. Attach the three sample files. Paste the prompt. Narrate: task, message, attachment, only the missing statement, unsent.
-
-Read whatever it returns. If an approval card appears, leave it up and do not press it.
-
-Pell is optional and only with thirty extra seconds. The sender has no authority. The bot should stop. If you skip Pell, the paper slide's last line covers it. Advance past the paper slide if the live result was clear. Use the paper slide if the bot stalls, asks for an app, or wanders off the attachments.
-
-Do not troubleshoot on stage. Do not sign into anything.
-
-## 18. What you still own — 1:45 (23:10)
-
-Three duties.
-
-Rule 1.6. Where does this information go, who can see it, does it train a model, how long does it stay. Answer that before a real matter is connected. Missouri: 4-1.6. Say "Missouri numbers it 4-1.6" only if the room needs the local cite. The slide uses the ABA numbers on purpose.
-
-Rules 5.3 and 1.1. You supervise. You have to understand the tool well enough to check it. The bot is not a member of the bar. Opinion 512 is the longer ABA piece, in the handout.
-
-The yes. Send, file, pay, delete. In the skill and in an ask-first rule. A prompt is not access control.
-
-"This is the conversation to have with your partners. It is not a formal opinion on your stack."
-
-## 19. What to watch — 1:15 (24:25)
-
-Carry the skill in a file you can take to the next product. Test it there before you need to switch.
-
-Read the account terms while the pilot is still fake. Grok Bot stores data. Legacy Privacy Mode is not available. Training follows the privacy settings on the Cursor account Grok Bot uses. Say "Cursor account" if someone asks where those settings live.
-
-Coming, and say the word: phone calls, and private-network access such as Tailscale. "I am not building this month's workflow on either one."
-
-If an enterprise admin says Tailscale is already in a setup guide, agree that a team pattern exists and still tell a solo or small firm to treat it as coming. Do not demo it.
-
-Voice chat inside the app is different from a phone call. Mention that only if someone blurs them.
-
-## 20. Admin controls — 1:00 (25:25)
-
-This is the beat the thesis promised. Three columns. Stay inside what you can stand behind.
-
-ChatGPT, and attribute it. "In our business account, the skills marketplace is connected at the admin level. Skills get packaged into plugins, and those plugins install themselves for everyone in our ChatGPT accounts. The admin maintenance is remarkably easy." That is your account. It is not a promise about every ChatGPT plan in the room.
-
-Grok Bot, from the public Team Bot docs, checked October 27, 2026. "A Team Bot shares plugins, secrets, skills, and memory. Each person signs in for their own connectors, so one person's login is not lent to the team. Admins set the connector policy, including turning a connector off for the team." If someone wants the finer print: team skills apply in every teammate's conversation and only an owner or manager saves them. Team memory is shared, and a person can keep private notes. A key or token uses the bot's credential. Secrets stay hidden from teammates and from the model. Admins can also put the Team Bot in people's sidebars. Vault is still not on Team Bots. Say that only if asked.
-
-Claude, generally. "Claude has business and admin controls too. I would describe the current console, not a switch I have not rechecked."
-
-"On a business account, maintaining your own agent setup is now the easy part. That is true for ChatGPT, for Claude, and for Grok. Grok Bot is my favorite right now because it is so easy to use."
-
-## 21. First week — 1:00 (26:25)
-
-Read the four. Pick one tool. Connect two apps. Write one skill. Add one routine.
-
-"If the job lives in Clio or Filevine, the one tool can be Vincent or Lois. If it crosses systems, pick one commercial agent and stay there for the week."
-
-Sample data until you have watched two drafts. The worksheet is in the PDF.
-
-## 22. Close — 0:40 (27:05)
-
-"Maintaining your own agent setup is now very easy. The admin controls in a business account do that work, for ChatGPT, for Claude, and for Grok. Grok Bot is my favorite right now, because it is so easy to use."
-
-The four parts are still on the thesis slide if someone asks what "the setup" is. Do not rebuild that list here. Point at the guide. "Questions."
+Do not read the list. Say the docs were checked in October 2026, and that the current page wins if a control has moved. Point at the handout. Questions.
 
 ## If you are long
 
-Shorten the branch story on slide 6 to one sentence. Keep the team-rollout line, the fair note on the newer portal, and the fair exceptions. Do only Calder. You will still have the duties, the admin slide, and the first week. Do not skip the line that Hermes works, and do not skip the close.
+Shorten the branch story on Hermes to one sentence. Keep the team line and the note that the newer portal improved sharing. Do only Calder. Do not skip Hermes, the admin slide, or the duties.
 
 ## If you are asked
 
-- Can it file with the court? Not as an unsupervised act. Draft, then a person.
-- Does each bot have its own computer? Each has a screen. The computer is one per account. Say it again.
-- Is Auto Review enough for Rule 5.3? No. It is a backstop. You still read the work.
-- Should we run Hermes for confidentiality, or for open-source models? Those are fair reasons, along with a worry that prices get run up later. Hermes works. By default it runs on your computer, and a cloud computer is one you then manage. Rolling skills and connectors out to a team took more technical work. A newer portal has improved that sharing. It is still more to run than a business admin console. You will pay with a rougher experience, a harder setup, and maintenance. For most firms, buying a ready-made system is the better trade.
-- What about another open harness? Same shape of decision. Powerful, built for people who want to assemble it, and usually more headache than a firm needs, especially once more than one person has to share and update it.
-- Can staff share one bot? On a business account, yes, with admin controls. In our ChatGPT account, admin-level skills install for everyone. On Grok Bot, a Team Bot shares plugins, secrets, skills, and memory, each person signs in for their own connectors, and admins set connector policy. A shared computer on a personal account is still not a permission system. Keep approvals with the people.
-- Is the Hermes portal the same as those admin controls? It has improved team sharing. Say that. It is still more technical work than the business-account consoles.
+- Can it file with the court? Not unsupervised. Draft, then a person.
+- Does each bot have its own computer? Each has a screen. The computer is one per account.
+- Is Auto Review enough? No. It is a backstop. You still read the work.
+- Should we run Hermes? It works. It is a lot of work: your computer or a cloud computer you manage, your own branch, and more technical work to share skills and connectors with a team. A newer portal has improved the sharing. Data control, later prices, and open-source models are fair reasons. Most firms are better off buying a ready-made system.
+- Can staff share one setup? On a business account, yes, through admin controls. In our ChatGPT account, admin-level skills install for everyone. On Grok Bot, a Team Bot shares plugins, secrets, skills, and memory. Each person signs in for their own connectors. A shared computer on a personal account is not a permission system.
+- Are phone calls or Tailscale ready? Treat both as coming for this room. A team pattern for private networks exists in enterprise material. Do not demo it.
 
-## Stage checklist
+## Stage
 
-- Present from `index.html?mode=present#s1`, or open the page and click Present, then Home.
-- Clicker: Right, Space, or PageDown reveals or advances. Left or PageUp goes back. G is the guide. F is fullscreen. Home and End jump.
-- Demo account signed in, firm account signed out. Sample folder on the laptop and on a USB stick. `demo/RUNBOOK.md` is the script.
-- Do Not Disturb. Close firm inboxes and password managers.
-- The deck and the PDF work offline. The demo bot needs a network. The paper slide does not.
-- No analytics on the page. The QR opens the GitHub Pages guide.
+- Open `index.html`. Right, Down, Page Down, or Space advances. Left, Up, or Page Up goes back. Home and End jump. F toggles fullscreen.
+- Demo account signed in. Firm account signed out. Sample folder on the laptop. `demo/RUNBOOK.md` is the script.
+- The deck and the handout PDF work offline. The demo bot needs a network.
+- The handout link is in the top bar. No analytics on the page.

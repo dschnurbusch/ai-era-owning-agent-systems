@@ -6,49 +6,136 @@
 <meta name="description" content="Owning Your AI Agent Systems. Slide deck for Dan Schnurbusch, AI Era 2.0.">
 <title>Owning Your AI Agent Systems</title>
 <style>
-:root{--ivory:#FAF9F5;--slate:#141413;--clay:#D97757;--gray-300:#D1CFC5;--gray-700:#3D3D3A;--serif:ui-serif,Georgia,"Times New Roman",serif;--sans:system-ui,-apple-system,"Segoe UI",sans-serif;--mono:ui-monospace,"SF Mono",Menlo,monospace}
+:root{
+  --ivory:#FAF9F5;
+  --slate:#141413;
+  --ink:#0C0C0B;
+  --clay:#D97757;
+  --clay-deep:#A84E32;
+  --serif:ui-serif,Georgia,"Times New Roman",serif;
+  --sans:system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,monospace;
+}
 *{box-sizing:border-box}
 html,body{margin:0;height:100%}
-body{background:var(--slate);color:var(--slate);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+body{background:var(--ink);color:var(--ivory);font-family:var(--sans);-webkit-font-smoothing:antialiased}
 button,a{font:inherit;color:inherit}
 button{cursor:pointer}
 a{text-underline-offset:3px}
 button:focus-visible,a:focus-visible{outline:3px solid var(--clay);outline-offset:3px}
-.toolbar,.footer{position:fixed;left:0;right:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 24px;color:#FAF9F5;background:var(--slate)}
-.toolbar{top:0;height:56px;border-bottom:1px solid #3D3D3A}
-.footer{bottom:0;height:52px;border-top:1px solid #3D3D3A}
-.brand,.hint,.counter,.kicker{font:12px var(--mono);letter-spacing:.08em;text-transform:uppercase}
-.hint{color:#D1CFC5}
+.toolbar,.footer{position:fixed;left:0;right:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 24px;color:var(--ivory);background:#080807}
+.toolbar{top:0;height:56px;border-bottom:1px solid #2A2926}
+.footer{bottom:0;height:52px;border-top:1px solid #2A2926}
+.brand,.hint,.counter,.kicker{font:13px var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.hint{color:#C8C4B8}
 .toolbar a{font-size:14px;letter-spacing:0;text-transform:none}
 .nav{display:flex;align-items:center;gap:10px}
-button{border:1px solid #3D3D3A;background:transparent;color:#FAF9F5;border-radius:999px;min-height:36px;padding:4px 14px}
-button:hover{background:#3D3D3A}
+button{border:1px solid #3A3935;background:transparent;color:var(--ivory);border-radius:999px;min-height:36px;padding:4px 14px}
+button:hover{background:#2A2926}
 button:disabled{opacity:.35;cursor:default}
 .counter{min-width:72px;text-align:center}
-.progress{position:absolute;left:0;top:0;height:2px;background:var(--clay);width:0}
-.stage{position:fixed;top:56px;bottom:52px;left:0;right:0;display:flex;align-items:center;justify-content:center}
-.slide{display:none;width:1600px;height:900px;position:absolute;background:var(--ivory);padding:80px 100px;overflow:hidden;transform:scale(var(--scale,1));transform-origin:center center}
-.slide.active{display:block}
-.kicker{color:var(--gray-700);margin:0 0 18px}
+.progress{position:absolute;left:0;top:0;height:3px;background:var(--clay);width:0}
+.stage{position:fixed;top:56px;bottom:52px;left:0;right:0;display:flex;align-items:center;justify-content:center;background:var(--ink)}
+.slide{
+  display:block;width:1600px;height:900px;position:absolute;padding:68px 80px 60px;
+  overflow:hidden;color:var(--ivory);background:var(--ink);
+  transform:scale(var(--scale,1));transform-origin:center center;
+  opacity:0;visibility:hidden;pointer-events:none;
+  transition:opacity .42s ease, visibility 0s linear .42s;
+}
+.slide.active{opacity:1;visibility:visible;pointer-events:auto;z-index:1;transition:opacity .42s ease, visibility 0s}
+.num{position:absolute;top:28px;right:48px;font-family:var(--serif);font-size:168px;line-height:.8;letter-spacing:-.04em;color:var(--clay);pointer-events:none}
+.kicker{color:#E7E2D6;margin:8px 0 14px}
 .kicker span{color:var(--clay)}
-h1{font-family:var(--serif);font-weight:400;font-size:64px;line-height:1.08;letter-spacing:-.03em;margin:0 0 36px;max-width:1240px}
-ul{list-style:none;margin:0;padding:0}
-ul li{position:relative;padding:13px 0 13px 28px;font-size:30px;line-height:1.35;max-width:1320px}
-ul li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--slate)}
-.sources{display:grid;grid-template-columns:1fr 1fr;column-gap:64px}
-.sources li{font-size:22px;padding:7px 0 7px 22px}
-.sources li::before{width:6px;height:6px;top:.72em}
-.sources a{color:inherit}
+h1{font-family:var(--serif);font-weight:400;font-size:72px;line-height:1.02;letter-spacing:-.035em;margin:0 0 28px;max-width:1180px}
+ul,ol{list-style:none;margin:0;padding:0}
+.ico{width:42px;height:42px;display:block;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.rise{opacity:0}
+.slide.active .rise{animation:rise .46s ease both;animation-delay:calc(var(--i,0) * 75ms)}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+
+.s-title{background:radial-gradient(900px 680px at 88% 42%, #4A2A20 0%, #1A100E 38%, #0C0C0B 72%)}
+.s-title h1{font-size:92px;max-width:1040px;margin-top:36px}
+.s-title .num{font-size:280px;top:180px;right:64px}
+.s-title ul li{font-size:32px;padding:6px 0;max-width:900px}
+
+.s-own{background:radial-gradient(1100px 700px at 0% 100%, #3A2218 0%, #120E0C 46%, #0C0C0B 100%)}
+.quad{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:1280px}
+.quad li,.icon-grid li,.steps li,.cards li,.demo-grid li{background:rgba(250,249,245,.04);border:1px solid rgba(250,249,245,.12)}
+.lead-line{font-size:34px;margin:0 0 22px;max-width:1100px}
+.quad li{padding:22px 26px 20px;min-height:148px}
+.quad .mark{font-family:var(--serif);font-size:42px;color:var(--clay);display:block;line-height:1;margin-bottom:10px}
+.quad li{font-size:30px;line-height:1.25}
+
+.s-range{background:linear-gradient(115deg, #1C1411 0%, #12100F 42%, #0E1418 100%)}
+.spectrum{position:relative;margin-top:48px}
+.stations{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;position:relative;padding-top:42px}
+.stations::before{content:"";position:absolute;left:8px;right:28px;top:8px;height:4px;background:var(--clay)}
+.stations::after{content:"";position:absolute;right:0;top:0;border-style:solid;border-width:10px 0 10px 18px;border-color:transparent transparent transparent var(--clay)}
+.stations li{position:relative;font-size:28px;line-height:1.32;padding-right:16px;max-width:none}
+.stations li::before{content:"";position:absolute;left:0;top:-42px;width:20px;height:20px;border-radius:50%;background:var(--clay);box-shadow:0 0 0 7px #161311}
+
+.s-hermes{background:linear-gradient(180deg, #141A22 0%, #0C0E12 100%)}
+.rail{border-left:4px solid var(--clay);margin:8px 0 0 6px;padding-left:28px;max-width:1240px}
+.rail li{font-size:28px;line-height:1.32;padding:11px 0}
+
+.s-grok{background:radial-gradient(820px 560px at 100% 0%, #3D241C 0%, #100E0C 50%)}
+.icon-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+.icon-grid li{padding:20px 20px 18px;min-height:168px;color:var(--ivory)}
+.icon-grid .ico{color:var(--clay);margin-bottom:14px}
+.icon-grid li{font-size:26px;line-height:1.28}
+
+.s-bots{background:linear-gradient(160deg, #1A1410 0%, #0C0C0B 55%)}
+.bot-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px}
+.bot-grid li{background:rgba(250,249,245,.05);border:1px solid rgba(217,119,87,.45);min-height:132px;padding:16px 16px 14px;font-family:var(--serif);font-size:28px;line-height:1.15}
+.bot-grid .ico{color:var(--clay);width:32px;height:32px;margin-bottom:12px}
+.notes li{font-size:26px;line-height:1.35;padding:4px 0 4px 22px;position:relative}
+.notes li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--clay)}
+
+.s-admin{background:linear-gradient(128deg, #1A120F 0%, #0E0E0D 48%, #12161C 100%)}
+.cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:8px 0 16px}
+.cards li{padding:20px 18px;font-size:23px;line-height:1.32;border-top:4px solid var(--clay);background:rgba(250,249,245,.04)}
+.s-admin .lead-line{font-size:30px}
+
+.s-demo{background:linear-gradient(145deg, #F0B08E 0%, #D97757 46%, #B85A3C 100%);color:var(--slate)}
+.s-demo .kicker,.s-demo .kicker span,.s-demo .num{color:var(--slate)}
+.s-demo .num{opacity:.35}
+.demo-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin-bottom:16px}
+.demo-grid li{background:rgba(20,20,19,.08);border-color:rgba(20,20,19,.18);min-height:210px;padding:20px;font-family:var(--serif);font-size:40px;line-height:1.1}
+.demo-grid .mark{font-family:var(--mono);font-size:16px;letter-spacing:.08em;display:block;margin-bottom:28px}
+.stop{background:var(--slate);color:var(--ivory);font-size:28px;line-height:1.35;padding:22px 26px}
+
+.s-duty{background:radial-gradient(900px 640px at 0% 0%, #2C1C16 0%, #0C0C0B 58%)}
+.duty{grid-template-columns:1fr 1fr;gap:16px}
+.duty li{min-height:210px;font-size:28px}
+
+.s-week{background:linear-gradient(180deg, #241812 0%, #0C0C0B 62%)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;position:relative;margin:18px 0 26px}
+.steps::before{content:"";position:absolute;left:6%;right:6%;top:36px;height:4px;background:var(--clay)}
+.steps li{background:transparent;border:0;padding:0 8px 0 0;font-size:28px;line-height:1.25}
+.steps .n{width:72px;height:72px;border-radius:50%;background:var(--clay);color:var(--slate);display:grid;place-items:center;font-family:var(--serif);font-size:34px;margin-bottom:18px;position:relative;z-index:1}
+.watch{font-size:28px;line-height:1.35;border-top:1px solid rgba(250,249,245,.2);padding-top:18px;max-width:1100px}
+
+.s-sources{background:#0C0C0B}
+.s-sources h1{margin-bottom:18px}
+.sources{display:grid;grid-auto-flow:column;grid-template-rows:repeat(10,auto);grid-template-columns:1fr 1fr;column-gap:56px}
+.sources li{font-size:22px;line-height:1.35;padding:5px 0}
+.sources a{color:var(--ivory);text-decoration-color:var(--clay)}
+
 @media(max-width:750px){.hint{display:none}.toolbar,.footer{padding:0 12px}.brand{font-size:10px}}
-@media(prefers-reduced-motion:reduce){.slide.active{animation:none}}
+@media(prefers-reduced-motion:reduce){
+  .slide,.slide.active{transition:none}
+  .rise,.slide.active .rise{animation:none;opacity:1;transform:none}
+}
 @media print{
-  @page{size:letter landscape;margin:.6in}
+  @page{size:letter landscape;margin:.45in}
+  *{print-color-adjust:exact;-webkit-print-color-adjust:exact}
   body{background:white;height:auto;overflow:visible}
   .toolbar,.footer{display:none}
-  .stage{position:static;display:block}
-  .slide,.slide.active{display:block;position:static;transform:none!important;width:auto;height:auto;padding:0 0 28px;break-after:page;overflow:visible}
+  .stage{position:static;display:block;background:white}
+  .slide,.slide.active{opacity:1!important;visibility:visible!important;position:static;transform:none!important;width:auto;height:auto;min-height:7.2in;break-after:page;overflow:visible}
+  .rise{opacity:1!important;transform:none!important}
   h1{font-size:28pt}
-  ul li{font-size:14pt}
 }
 </style>
 </head>
@@ -58,142 +145,165 @@ ul li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px
   <a href="downloads/attendee-handout.pdf" download>Attendee handout</a>
 </header>
 <main class="stage" id="deck">
-  <article class="slide" id="s1" data-title="Owning your AI agent systems">
-    <p class="kicker">01 <span>/</span> AI Era 2.0 · Charleston · November 2026</p>
-    <h1>Owning your AI agent systems</h1>
+
+  <article class="slide s-title" id="s1" data-title="Owning your AI agent systems">
+    <span class="num" aria-hidden="true">01</span>
+    <p class="kicker rise" style="--i:0">01 <span>/</span> AI Era 2.0 · Charleston · November 2026</p>
+    <h1 class="rise" style="--i:1">Owning your AI agent systems</h1>
     <ul>
-      <li>Dan Schnurbusch, Schnurbusch Law.</li>
-      <li>For firm owners.</li>
+      <li class="rise" style="--i:2">Dan Schnurbusch, Schnurbusch Law.</li>
+      <li class="rise" style="--i:3">For firm owners.</li>
     </ul>
   </article>
 
-  <article class="slide" id="s2" data-title="What owning means">
-    <p class="kicker">02 <span>/</span> What owning means</p>
-    <h1>What owning means</h1>
-    <ul>
-      <li>Not hosting the software.</li>
-      <li>Skills and playbooks.</li>
-      <li>Choice of tools.</li>
-      <li>Your data.</li>
-      <li>Who approves what.</li>
+  <article class="slide s-own" id="s2" data-title="What owning means">
+    <span class="num" aria-hidden="true">02</span>
+    <p class="kicker rise" style="--i:0">02 <span>/</span> What owning means</p>
+    <h1 class="rise" style="--i:1">What owning means</h1>
+    <p class="lead-line rise" style="--i:2">Not hosting the software.</p>
+    <ul class="quad">
+      <li class="rise" style="--i:3"><span class="mark" aria-hidden="true">01</span>Skills and playbooks.</li>
+      <li class="rise" style="--i:4"><span class="mark" aria-hidden="true">02</span>Choice of tools.</li>
+      <li class="rise" style="--i:5"><span class="mark" aria-hidden="true">03</span>Your data.</li>
+      <li class="rise" style="--i:6"><span class="mark" aria-hidden="true">04</span>Who approves what.</li>
     </ul>
   </article>
 
-  <article class="slide" id="s3" data-title="The range of options">
-    <p class="kicker">03 <span>/</span> The range of options</p>
-    <h1>The range of options</h1>
-    <ul>
-      <li>Built-in agents: Filevine Lois and Clio Vincent. A fine starting point when the work lives in that system.</li>
-      <li>General agents: Claude, ChatGPT, and Grok Bot.</li>
-      <li>Running your own: Hermes.</li>
+  <article class="slide s-range" id="s3" data-title="The range of options">
+    <span class="num" aria-hidden="true">03</span>
+    <p class="kicker rise" style="--i:0">03 <span>/</span> The range of options</p>
+    <h1 class="rise" style="--i:1">The range of options</h1>
+    <div class="spectrum">
+      <ul class="stations">
+        <li class="rise" style="--i:2">Built-in agents: Filevine Lois and Clio Vincent. A fine starting point when the work lives in that system.</li>
+        <li class="rise" style="--i:3">General agents: Claude, ChatGPT, and Grok Bot.</li>
+        <li class="rise" style="--i:4">Running your own: Hermes.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="slide s-hermes" id="s4" data-title="Hermes">
+    <span class="num" aria-hidden="true">04</span>
+    <p class="kicker rise" style="--i:0">04 <span>/</span> Hermes</p>
+    <h1 class="rise" style="--i:1">Hermes</h1>
+    <ul class="rail">
+      <li class="rise" style="--i:2">Dan built his own setup. It is a lot of work.</li>
+      <li class="rise" style="--i:3">It is a powerful desktop agent. By default it runs on your computer. A cloud computer is one you manage.</li>
+      <li class="rise" style="--i:4">He kept his own branch. Updates meant resolving conflicts.</li>
+      <li class="rise" style="--i:5">Sharing skills and connectors across a team took more technical work. A newer portal has improved that. It is still more to maintain than an admin console.</li>
+      <li class="rise" style="--i:6">Fair reasons to take it on: data control, later prices, open-source models. The maintenance remains.</li>
     </ul>
   </article>
 
-  <article class="slide" id="s4" data-title="Hermes">
-    <p class="kicker">04 <span>/</span> Hermes</p>
-    <h1>Hermes</h1>
-    <ul>
-      <li>Dan built his own setup. It is a lot of work.</li>
-      <li>It is a powerful desktop agent. By default it runs on your computer. A cloud computer is one you manage.</li>
-      <li>He kept his own branch. Updates meant resolving conflicts.</li>
-      <li>Sharing skills and connectors across a team took more technical work. A newer portal has improved that. It is still more to maintain than an admin console.</li>
-      <li>Fair reasons to take it on: data control, later prices, open-source models. The maintenance remains.</li>
+  <article class="slide s-grok" id="s5" data-title="Grok Bot">
+    <span class="num" aria-hidden="true">05</span>
+    <p class="kicker rise" style="--i:0">05 <span>/</span> Grok Bot</p>
+    <h1 class="rise" style="--i:1">Grok Bot</h1>
+    <ul class="icon-grid">
+      <li class="rise" style="--i:2"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="14" cy="24" r="6"/><circle cx="34" cy="24" r="6"/><path d="M20 24h8"/></svg>Connect an app and sign in.</li>
+      <li class="rise" style="--i:3"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 14h12v22H10zM26 14h12v22H26z"/><path d="M16 14v22M32 14v22"/></svg>Point it at a skill library.</li>
+      <li class="rise" style="--i:4"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="13"/><path d="M24 16v9l6 3"/></svg>Routines in plain English.</li>
+      <li class="rise" style="--i:5"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="12" width="32" height="20" rx="2"/><path d="M18 38h12M24 32v6"/></svg>A cloud computer.</li>
+      <li class="rise" style="--i:6"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="13" y="22" width="22" height="16" rx="2"/><path d="M18 22v-5a6 6 0 0 1 12 0v5"/></svg>A password vault. The bot does not see the password.</li>
+      <li class="rise" style="--i:7"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 14h28v16H20l-8 7v-7h-2z"/><path d="M18 22h12"/></svg>It asks before sending.</li>
     </ul>
   </article>
 
-  <article class="slide" id="s5" data-title="Grok Bot">
-    <p class="kicker">05 <span>/</span> Grok Bot</p>
-    <h1>Grok Bot</h1>
-    <ul>
-      <li>Connect an app and sign in.</li>
-      <li>Point it at a skill library.</li>
-      <li>Routines in plain English.</li>
-      <li>A cloud computer.</li>
-      <li>A password vault. The bot does not see the password.</li>
-      <li>It asks before sending.</li>
+  <article class="slide s-bots" id="s6" data-title="One bot per job">
+    <span class="num" aria-hidden="true">06</span>
+    <p class="kicker rise" style="--i:0">06 <span>/</span> One bot per job</p>
+    <h1 class="rise" style="--i:1">One bot per job</h1>
+    <ul class="bot-grid">
+      <li class="rise" style="--i:2"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="20" cy="20" r="9"/><path d="M27 27l10 10"/></svg>Research</li>
+      <li class="rise" style="--i:3"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="6"/><path d="M24 8v6M24 34v6M8 24h6M34 24h6M12 12l4 4M32 32l4 4M36 12l-4 4M16 32l-4 4"/></svg>Ops</li>
+      <li class="rise" style="--i:4"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 36V22M20 36V14M30 36V26M40 36V10"/></svg>Finance</li>
+      <li class="rise" style="--i:5"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 20h22v14H8z"/><path d="M30 24h8l-4 5 4 5h-8"/></svg>Marketing</li>
+      <li class="rise" style="--i:6"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="16" r="6"/><path d="M12 38c2-8 8-12 12-12s10 4 12 12"/></svg>Leads</li>
+      <li class="rise" style="--i:7"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="14" width="32" height="22" rx="2"/><path d="M8 16l16 12L40 16"/></svg>Mailroom</li>
+      <li class="rise" style="--i:8"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 22 L24 10 L40 22"/><path d="M14 20v16h20V20"/></svg>Home</li>
+      <li class="rise" style="--i:9"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 12v24M12 24h24"/></svg>and others.</li>
+    </ul>
+    <ul class="notes">
+      <li class="rise" style="--i:10">That list is Dan's. It is not a template.</li>
+      <li class="rise" style="--i:11">On one account they share a computer. Each bot has its own screen.</li>
     </ul>
   </article>
 
-  <article class="slide" id="s6" data-title="One bot per job">
-    <p class="kicker">06 <span>/</span> One bot per job</p>
-    <h1>One bot per job</h1>
-    <ul>
-      <li>Research, Ops, Finance, Marketing, Leads, Mailroom, Home, and others.</li>
-      <li>That list is Dan's. It is not a template.</li>
-      <li>On one account they share a computer. Each bot has its own screen.</li>
+  <article class="slide s-admin" id="s7" data-title="Admin controls">
+    <span class="num" aria-hidden="true">07</span>
+    <p class="kicker rise" style="--i:0">07 <span>/</span> Admin controls</p>
+    <h1 class="rise" style="--i:1">Admin controls</h1>
+    <p class="lead-line rise" style="--i:2">Business accounts, not a personal login.</p>
+    <ul class="cards">
+      <li class="rise" style="--i:3">ChatGPT, in our account: the skills marketplace is connected at the admin level. Skills are packaged into plugins that install for everyone.</li>
+      <li class="rise" style="--i:4">Grok Bot: a Team Bot shares plugins, secrets, skills, and memory. Each person signs in for their own connectors. Admins set connector policy.</li>
+      <li class="rise" style="--i:5">Claude business and enterprise plans include admin controls for the organization.</li>
+    </ul>
+    <p class="lead-line rise" style="--i:6">An admin keeps the setup current. Grok Bot is the one Dan uses, because it is easy to use.</p>
+  </article>
+
+  <article class="slide s-demo" id="s8" data-title="Live demo">
+    <span class="num" aria-hidden="true">08</span>
+    <p class="kicker rise" style="--i:0">08 <span>/</span> Live demo</p>
+    <h1 class="rise" style="--i:1">Live demo</h1>
+    <ul class="demo-grid">
+      <li class="rise" style="--i:2"><span class="mark" aria-hidden="true">01</span>A few bots.</li>
+      <li class="rise" style="--i:3"><span class="mark" aria-hidden="true">02</span>A routine.</li>
+      <li class="rise" style="--i:4"><span class="mark" aria-hidden="true">03</span>A skill.</li>
+      <li class="rise" style="--i:5"><span class="mark" aria-hidden="true">04</span>A connector.</li>
+    </ul>
+    <p class="stop rise" style="--i:6">Client information stays off this account. Nothing is sent.</p>
+  </article>
+
+  <article class="slide s-duty" id="s9" data-title="What you still own">
+    <span class="num" aria-hidden="true">09</span>
+    <p class="kicker rise" style="--i:0">09 <span>/</span> What you still own</p>
+    <h1 class="rise" style="--i:1">What you still own</h1>
+    <ul class="icon-grid duty">
+      <li class="rise" style="--i:2"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 8l14 6v10c0 9-6 14-14 16C16 38 10 33 10 24V14z"/></svg>Confidentiality. Rule 1.6.</li>
+      <li class="rise" style="--i:3"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="14"/><path d="M16 24l5 5 11-12"/></svg>Approval rules for send, file, pay, and delete.</li>
+      <li class="rise" style="--i:4"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 24s7-12 18-12 18 12 18 12-7 12-18 12S6 24 6 24z"/><circle cx="24" cy="24" r="5"/></svg>Checking and supervising the output. Rules 5.3 and 1.1.</li>
+      <li class="rise" style="--i:5"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M14 10h14l8 8v20H14z"/><path d="M28 10v8h8M18 32h8M30 26h8M34 22v8"/></svg>A copy of each skill that can move to another product.</li>
     </ul>
   </article>
 
-  <article class="slide" id="s7" data-title="Admin controls">
-    <p class="kicker">07 <span>/</span> Admin controls</p>
-    <h1>Admin controls</h1>
-    <ul>
-      <li>Business accounts, not a personal login.</li>
-      <li>ChatGPT, in our account: the skills marketplace is connected at the admin level. Skills are packaged into plugins that install for everyone.</li>
-      <li>Grok Bot: a Team Bot shares plugins, secrets, skills, and memory. Each person signs in for their own connectors. Admins set connector policy.</li>
-      <li>Claude business and enterprise plans include admin controls for the organization.</li>
-      <li>An admin keeps the setup current. Grok Bot is the one Dan uses, because it is easy to use.</li>
-    </ul>
+  <article class="slide s-week" id="s10" data-title="First week">
+    <span class="num" aria-hidden="true">10</span>
+    <p class="kicker rise" style="--i:0">10 <span>/</span> First week</p>
+    <h1 class="rise" style="--i:1">First week</h1>
+    <ol class="steps">
+      <li class="rise" style="--i:2"><span class="n" aria-hidden="true">1</span>One tool.</li>
+      <li class="rise" style="--i:3"><span class="n" aria-hidden="true">2</span>Two apps.</li>
+      <li class="rise" style="--i:4"><span class="n" aria-hidden="true">3</span>One process, written as a skill.</li>
+      <li class="rise" style="--i:5"><span class="n" aria-hidden="true">4</span>One routine.</li>
+    </ol>
+    <p class="watch rise" style="--i:6">Sample data until you have watched it.</p>
   </article>
 
-  <article class="slide" id="s8" data-title="Live demo">
-    <p class="kicker">08 <span>/</span> Live demo</p>
-    <h1>Live demo</h1>
-    <ul>
-      <li>A few bots.</li>
-      <li>A routine.</li>
-      <li>A skill.</li>
-      <li>A connector.</li>
-      <li>Client information stays off this account. Nothing is sent.</li>
-    </ul>
-  </article>
-
-  <article class="slide" id="s9" data-title="What you still own">
-    <p class="kicker">09 <span>/</span> What you still own</p>
-    <h1>What you still own</h1>
-    <ul>
-      <li>Confidentiality. Rule 1.6.</li>
-      <li>Approval rules for send, file, pay, and delete.</li>
-      <li>Checking and supervising the output. Rules 5.3 and 1.1.</li>
-      <li>A copy of each skill that can move to another product.</li>
-    </ul>
-  </article>
-
-  <article class="slide" id="s10" data-title="First week">
-    <p class="kicker">10 <span>/</span> First week</p>
-    <h1>First week</h1>
-    <ul>
-      <li>One tool.</li>
-      <li>Two apps.</li>
-      <li>One process, written as a skill.</li>
-      <li>One routine.</li>
-      <li>Sample data until you have watched it.</li>
-    </ul>
-  </article>
-
-  <article class="slide" id="s11" data-title="Sources">
-    <p class="kicker">11 <span>/</span> Sources</p>
-    <h1>Sources</h1>
+  <article class="slide s-sources" id="s11" data-title="Sources">
+    <span class="num" aria-hidden="true">11</span>
+    <p class="kicker rise" style="--i:0">11 <span>/</span> Sources</p>
+    <h1 class="rise" style="--i:1">Sources</h1>
     <ul class="sources">
-      <li><a href="https://docs.x.ai/grok-bot/overview">Grok Bot overview</a></li>
-      <li><a href="https://docs.x.ai/grok-bot/computer-and-apps">Computer and Connect apps</a></li>
-      <li><a href="https://docs.x.ai/grok-bot/skills-routines-and-automations">Skills and routines</a></li>
-      <li><a href="https://docs.x.ai/grok-bot/approvals-security-and-privacy">Approvals and the shared computer</a></li>
-      <li><a href="https://docs.x.ai/grok-bot/bots">Bots</a></li>
-      <li><a href="https://docs.x.ai/grok-bot/team-bots">Team Bots</a></li>
-      <li><a href="https://docs.x.ai/grok-bot/teams-and-enterprises">Teams and connector policy</a></li>
-      <li><a href="https://cursor.com/help/grok-bot/secrets">Vault</a></li>
-      <li><a href="https://1password.com/partners/spacexsi-grokbot">1Password</a></li>
-      <li><a href="https://www.filevine.com/news/filevine-launches-lois-console-ai-that-runs-the-firm">Filevine Lois</a></li>
-      <li><a href="https://help.clio.com/hc/en-us/articles/48791655710235-Understand-Clio-Work">Clio Vincent</a></li>
-      <li><a href="https://claude.com/solutions/enterprise">Claude for enterprise</a></li>
-      <li><a href="https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt">ChatGPT connected apps</a></li>
-      <li><a href="https://hermes-agent.nousresearch.com/docs/">Hermes Agent</a></li>
-      <li><a href="https://agentskills.io/">Agent Skills</a></li>
-      <li><a href="https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_6_confidentiality_of_information/">ABA Rule 1.6</a></li>
-      <li><a href="https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_1_competence/">ABA Rule 1.1</a></li>
-      <li><a href="https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_5_3_responsibilities_regarding_nonlawyer_assistant/">ABA Rule 5.3</a></li>
-      <li><a href="https://www.americanbar.org/news/abanews/aba-news-archives/2024/07/aba-issues-first-ethics-guidance-ai-tools/">ABA Formal Opinion 512</a></li>
+      <li class="rise" style="--i:2"><a href="https://docs.x.ai/grok-bot/overview">Grok Bot overview</a></li>
+      <li class="rise" style="--i:3"><a href="https://docs.x.ai/grok-bot/computer-and-apps">Computer and Connect apps</a></li>
+      <li class="rise" style="--i:4"><a href="https://docs.x.ai/grok-bot/skills-routines-and-automations">Skills and routines</a></li>
+      <li class="rise" style="--i:5"><a href="https://docs.x.ai/grok-bot/approvals-security-and-privacy">Approvals and the shared computer</a></li>
+      <li class="rise" style="--i:6"><a href="https://docs.x.ai/grok-bot/bots">Bots</a></li>
+      <li class="rise" style="--i:7"><a href="https://docs.x.ai/grok-bot/team-bots">Team Bots</a></li>
+      <li class="rise" style="--i:8"><a href="https://docs.x.ai/grok-bot/teams-and-enterprises">Teams and connector policy</a></li>
+      <li class="rise" style="--i:9"><a href="https://cursor.com/help/grok-bot/secrets">Vault</a></li>
+      <li class="rise" style="--i:10"><a href="https://1password.com/partners/spacexsi-grokbot">1Password</a></li>
+      <li class="rise" style="--i:11"><a href="https://www.filevine.com/news/filevine-launches-lois-console-ai-that-runs-the-firm">Filevine Lois</a></li>
+      <li class="rise" style="--i:12"><a href="https://help.clio.com/hc/en-us/articles/48791655710235-Understand-Clio-Work">Clio Vincent</a></li>
+      <li class="rise" style="--i:13"><a href="https://claude.com/solutions/enterprise">Claude for enterprise</a></li>
+      <li class="rise" style="--i:14"><a href="https://help.openai.com/en/articles/11487775-connected-apps-in-chatgpt">ChatGPT connected apps</a></li>
+      <li class="rise" style="--i:15"><a href="https://hermes-agent.nousresearch.com/docs/">Hermes Agent</a></li>
+      <li class="rise" style="--i:16"><a href="https://agentskills.io/">Agent Skills</a></li>
+      <li class="rise" style="--i:17"><a href="https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_6_confidentiality_of_information/">ABA Rule 1.6</a></li>
+      <li class="rise" style="--i:18"><a href="https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_1_1_competence/">ABA Rule 1.1</a></li>
+      <li class="rise" style="--i:19"><a href="https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/rule_5_3_responsibilities_regarding_nonlawyer_assistant/">ABA Rule 5.3</a></li>
+      <li class="rise" style="--i:20"><a href="https://www.americanbar.org/news/abanews/aba-news-archives/2024/07/aba-issues-first-ethics-guidance-ai-tools/">ABA Formal Opinion 512</a></li>
     </ul>
   </article>
 </main>

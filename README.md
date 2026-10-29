@@ -6,7 +6,7 @@ Owning an agent system means owning the setup: skills, the tools you choose to c
 
 ## Files
 
-- `index.html`: the slide deck. One idea per slide. No build step and no external assets.
+- `index.html`: the slide deck. Dark full-bleed slides, one clay accent, inline SVG only. One idea per slide. No build step and no external assets.
 - `handout.html`: printable source for the six-page attendee PDF.
 - `downloads/attendee-handout.pdf`: guide and first-week worksheet.
 - `downloads/owning-agent-systems-offline.zip`: offline copy of the site, the PDF, and the demo packet.

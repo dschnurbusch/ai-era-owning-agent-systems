@@ -4,7 +4,7 @@ About twenty minutes, then questions. The times below are a rehearsal plan, not 
 
 Plain talk track for Dan Schnurbusch. Not a transcript. No firm results. Grok Bot claims were checked against public docs on October 27, 2026. Re-read the computer, approvals, and Team Bot pages before November 5.
 
-Demo rule: use an account that has never held client information. Bots on one account share a computer. Do not use the account that runs Research, Ops, Finance, Mailroom, or any other firm bot. The script and the fictional files are in `demo/RUNBOOK.md`.
+Demo rule: use an account that has never held client information. Bots on one account share a computer. Do not use the account that runs the firm bots. The script and the fictional files are in `demo/RUNBOOK.md`.
 
 ## 1. Title — 0:30 (0:30)
 
@@ -66,13 +66,27 @@ It asks before sending. The card shows the action. Allow once, always allow, or 
 
 Phone calls, and private-network reach such as Tailscale, are coming. Do not build this month's workflow on either one. Voice chat inside the app is a different, shipped control. Mention it only if someone mixes the two up.
 
-## 6. One bot per job — 1:00 (8:20)
+## 6. One bot per job — 1:20 (8:40)
 
-Read your list without apologizing: Research, Ops, Finance, Marketing, Leads, Mailroom, Home, and others. It is your shop. The idea is a name, a job, and a boundary. A group chat when someone should see the handoff.
+This is the roster you run. One bot, one job. Do not read every line. Name the pattern, then point at two or three.
 
-Then the limit, out loud. On one account there is one computer. Each bot has its own screen. Files and sign-ins are shared. A second bot is not a wall around a client's file. Between users, the computers are isolated.
+CEO coordinates. Second brain, CLE planner, friction and learning reviews, usage oversight.
+Ops is probate case work: filings drafts, signatures, deadlines, pulse and heartbeats.
+Hearings prepares a hearing end to end: notices, service and publication, client prep, proposed orders.
+Comms watches Missive and Quo, files documents to matters, and routes follow-ups.
+Mailroom triages ECM and inbound mail, and runs the stale-scan.
+Leads runs intake, PNCs, and the engagement and deposit chase.
+Marketing tracks ads, SEO, and analytics, and drafts social posts. It does not publish unless you say so.
+Finance is books, cash, receivables, and tax and close work.
+Dev is repos, pull requests, CI, Sentry, and the tool server and skills.
+Research does the AI news briefings, legal research in CourtListener, and prep for a talk like this one.
+Home is the family calendar, school email, and occasions and gifts. It is not firm work.
 
-## 7. Admin controls — 2:00 (10:20)
+Group chats are not bots. Say that before anyone counts them as extra staff. Growth is Leads and Marketing. Leadership is Leads, Ops, and Finance.
+
+Then the limit, out loud. On one account there is one computer. Each bot has its own screen. Files and sign-ins are shared. A second bot is not a wall around a client's file. Home is not the firm, and it is still a bot. If it runs on the firm account, it shares that computer.
+
+## 7. Admin controls — 2:00 (10:40)
 
 Business account, not a personal login.
 
@@ -84,7 +98,7 @@ Claude. Business and enterprise plans include admin controls for the organizatio
 
 Then the point of the slide. On a business account, an admin keeps the setup current. That is true for ChatGPT, Claude, and Grok. Grok Bot is the one you use, because it is easy to use.
 
-## 8. Live demo — 4:30 (14:50)
+## 8. Live demo — 4:30 (15:10)
 
 Say what they are about to see: a few bots, a routine, a skill, a connector. This account has never held a client file. You will not send anything.
 
@@ -94,7 +108,7 @@ Pell is optional, and only with extra time. The sender has no authority, so the 
 
 If the network stalls, do not troubleshoot. Narrate the same steps from the runbook. Do not sign into firm email, Clio, Filevine, trust, or 1Password.
 
-## 9. What you still own — 2:00 (16:50)
+## 9. What you still own — 2:00 (17:10)
 
 Confidentiality. Rule 1.6. Where the information goes, who can see it, whether it trains a model, how long it is kept. Answer that before a real matter is connected. Missouri numbers the same duty 4-1.6. Say the Missouri number only if the room needs it. Grok Bot stores data and does not offer Legacy Privacy Mode. Training choices follow the account's privacy settings.
 
@@ -104,7 +118,7 @@ Checking and supervising. Rules 5.3 and 1.1. You read the output. Competence inc
 
 Skill portability. Keep a plain-language copy outside the product. Test it on the next platform before you need to switch. The open Agent Skills format is one way to structure the file.
 
-## 10. First week — 1:10 (18:00)
+## 10. First week — 1:10 (18:20)
 
 Read the four. One tool. Two apps. One process written as a skill. One routine.
 
@@ -112,7 +126,7 @@ If the job lives in Clio or Filevine, the tool can be Vincent or Lois. If it cro
 
 Sample data until you have watched the draft. The worksheet is in the handout, which is separate from these slides.
 
-## 11. Sources — 0:30 (18:30)
+## 11. Sources — 0:30 (18:50)
 
 Do not read the list. Say the docs were checked in October 2026, and that the current page wins if a control has moved. Point at the handout. Questions.
 

@@ -1,20 +1,20 @@
 # Owning Your AI Agent Systems — speaker notes
 
-About twenty-four minutes, then questions. The times below are a rehearsal plan, not a measured run. If questions share the half hour, shorten the science slides to the names and keep the demo to one pass.
+About twenty-four minutes, then questions. The times below are a rehearsal plan, not a measured run. If questions share the half hour, I shorten the science slides to the names and keep the demo to one pass.
 
-Plain talk track for Dan Schnurbusch. Not a transcript. No firm results. Grok Bot claims were checked against public docs on October 27, 2026. Re-read the computer, approvals, and Team Bot pages before November 5.
+My talk track. Not a transcript. No firm results. I checked Grok Bot claims against public docs on October 27, 2026. I re-read the computer, approvals, and Team Bot pages before November 5.
 
-Demo rule: use an account that has never held client information. Bots on one account share a computer. Do not use the account that runs the firm bots. The script and the fictional files are in `demo/RUNBOOK.md`.
+Demo rule: I use an account that has never held client information. Bots on one account share a computer. I do not use the account that runs my firm bots. The script and the fictional files are in `demo/RUNBOOK.md`.
 
 ## 1. A capability shock — 1:00 (1:00)
 
-Say who you are, and that the hour is for firm owners. Point once at the handout. It is a separate document. The demo uses fictional matters. Then the incident.
+I'm Dan Schnurbusch. This hour is for firm owners. The handout is separate. The demo uses fictional matters. Then the incident.
 
 July 2026. During internal cybersecurity evaluations, OpenAI models harnessed as agents got out of sandbox controls that were supposed to keep them off the internet. They compromised parts of Hugging Face production infrastructure between July 11 and July 13. OpenAI disclosed it on July 21.
 
-The count of about 700 is from the later independent look, not the first blog post. Redwood Research, working with material from the investigation: roughly 1,200 agents found a way to message each other, and about 700 of them took part in the Hugging Face attack. Reuters reported that figure, and reported that OpenAI called it accurate. Hugging Face's own July 16 disclosure describes an autonomous agent campaign against production systems. Say "about 700" as that later report, not as a number you counted.
+The count of about 700 is from the later independent look, not the first blog post. Redwood Research, working with material from the investigation: roughly 1,200 agents found a way to message each other, and about 700 of them took part in the Hugging Face attack. Reuters reported that figure, and reported that OpenAI called it accurate. Hugging Face's own July 16 disclosure describes an autonomous agent campaign against production systems. I say "about 700" as that later report. I did not count them.
 
-The point, and stop there. Agents are capable enough to leave a test and act on real infrastructure. Do not narrate the exploit.
+I stop on the point. Agents are capable enough to leave a test and act on real infrastructure. I do not narrate the exploit.
 
 Sources:
 - https://openai.com/index/hugging-face-incident-and-the-road-ahead/
@@ -24,17 +24,17 @@ Sources:
 
 ## 2. Math and hard science — 1:20 (2:20)
 
-October 2026. OpenAI published a GitHub collection from an internal model. The catalogue they describe is about 721 manuscripts in 373 families. An earlier cut of the same release was 722 manuscripts and 372 families. Many results have Lean formalizations. The repository says some results that are not formalized could have issues. Say "released," not "proved."
+October 2026. OpenAI published a GitHub collection from an internal model. The catalogue they describe is about 721 manuscripts in 373 families. An earlier cut of the same release was 722 manuscripts and 372 families. Many results have Lean formalizations. The repository says some results that are not formalized could have issues. I say "released," not "proved."
 
-Then the three-problem drop, and keep the verbs careful.
+Then the three-problem drop. I keep the verbs careful.
 
 Kakeya. A later manuscript claims the conjecture in every dimension, including the local-smoothing argument, and was released for people to review.
 
-Exponential-time hypothesis. OpenAI claims a proof that it is false. Russell Impagliazzo, Ramamohan Paturi, and Ryan Williams are examining it. Their involvement is not a certification. Say "claimed, under expert review."
+Exponential-time hypothesis. OpenAI claims a proof that it is false. Russell Impagliazzo, Ramamohan Paturi, and Ryan Williams are examining it. Their involvement is not a certification. I say "claimed, under expert review."
 
-Quantum Yang-Mills. A long proof of existence, reported at well over a thousand pages. A panel chaired by David Gross is holding the materials and writing its own assessment. The claim is existence, not the mass gap, so it is not the Millennium Prize as stated. Say "held for expert review."
+Quantum Yang-Mills. A long proof of existence, reported at well over a thousand pages. A panel chaired by David Gross is holding the materials and writing its own assessment. The claim is existence, not the mass gap, so it is not the Millennium Prize as stated. I say "held for expert review."
 
-Navier-Stokes. An earlier blowup claim is part of the same capability wave. Do not say it is solved. Expert reading, including work on the Lean formalization, has disputed whether the checked proof matches the natural-language claim.
+Navier-Stokes. An earlier blowup claim is part of the same capability wave. I do not say it is solved. Expert reading, including work on the Lean formalization, has disputed whether the checked proof matches the natural-language claim.
 
 Sources:
 - https://openai.com/index/sharing-ai-progress-in-mathematics/
@@ -50,7 +50,7 @@ The Life Sciences Verification Program is a beta for vetted teams and institutio
 
 Novo Nordisk's public case study is clinical documentation: study reports and related writing, with a person still in review. ICON announced a partnership to put Claude into clinical-trial planning and operations through its own platform.
 
-The line for the room: the models are moving into drug development and clinical workflows. Do not say they replace the scientist or the clinician.
+The line I use: the models are moving into drug development and clinical workflows. I do not say they replace the scientist or the clinician.
 
 Sources:
 - https://www.anthropic.com/news/healthcare-life-sciences
@@ -62,158 +62,158 @@ Sources:
 
 TheoPhysEval, arXiv:2610.16733, October 2026. Fifty unpublished theoretical-physics problems with checkable answers. The authors describe them as research calculations a world expert could do in about a day, not open prize problems. GPT-6-Astra, harnessed in Codex, scored 49 of 50 when it could use tools, including search. One run. The authors could not rule out data leakage.
 
-The story on the slide is in the paper, in these words: the authors first thought Astra had missed several problems. Consultation with the experts found subtle errors in the original solutions. After the experts corrected those solutions, Astra's answers were the right ones. Say that. Do not say Astra argued with them. The answers stood, and the reference solutions moved.
+The story on the slide is in the paper: the authors first thought Astra had missed several problems. Consultation with the experts found subtle errors in the original solutions. After the experts corrected those solutions, Astra's answers were the right ones. I say that. I do not say Astra argued with them. The answers stood, and the reference solutions moved.
 
-On those items, the model was the check on the experts. Then the limit, in one sentence: checkable calculations, not an open Millennium problem.
+On those items, the model was the check on the experts. Then my limit, in one sentence: checkable calculations, not an open Millennium problem.
 
 Source: https://arxiv.org/abs/2610.16733
 
 ## 5. Raw problem-solving — 0:30 (4:50)
 
-Read the sentence. Then stop.
+I read the sentence. Then I stop.
 
 "Models are smarter, in raw problem-solving, than almost every human on Earth."
 
-This is your judgment, for the pause. It is not a score from a paper. Do not add a citation. Let the room sit with it.
+This is my takeaway, for the pause. It is not a score from a paper. I do not add a citation. I let the room sit with it.
 
 ## 6. Owning your agent systems — 0:50 (5:40)
 
-This is the turn. Most of what a law firm actually does does not need a model that can work a Navier-Stokes claim. It needs a harness: the work gets done, the operation stays organized, and people can work on it together. The way to have that, and to move sideways when a better tool shows up, is to own the agent system.
+This is the turn. Most of what a law firm actually does does not need a model that can work a Navier-Stokes claim. It needs a harness: the work gets done, the operation stays organized, and people can work on it together. The way I do that, and the way I move when a better tool shows up, is to own the agent system.
 
-Then the next slide is what "owning" means. Skills, tools, data, and who approves what. Not the server.
+The next slide is what "owning" means. Skills, tools, data, and who approves what. Not the server.
 
 ## 7. What owning means — 1:30 (7:10)
 
-Owning used to sound like running the server. You tried that. It is not what this talk means.
+Owning used to sound like running the server. I tried that. It is not what this talk means.
 
-Walk the four parts. Skills and playbooks: how the firm does one job, including the stop. Choice of tools: what you connect, and what stays closed. Your data: what may leave, and where it goes. Who approves what: a person says yes before anything is sent, filed, paid, or deleted.
+The four parts. Skills and playbooks: how my firm does one job, including the stop. Choice of tools: what I connect, and what stays closed. My data: what may leave, and where it goes. Who approves what: a person says yes before anything is sent, filed, paid, or deleted.
 
 Those are the parts that make the firm different. A rack of servers is not one of them.
 
 ## 8. The range of options — 1:20 (8:30)
 
-Three places. Do not score them.
+Three places. I do not score them.
 
 Built-in agents: Lois in Filevine, Vincent in Clio. A fine starting point when the job already lives on the matter. Ryan McKean is right to favor buying that ready-made when the work does not need to leave the case system. Lois can read the matter and write work back for review. Vincent, in Clio Work, researches and drafts, and with a matter selected can act in Clio Manage. A lawyer still reviews the output.
 
-General agents: Claude, ChatGPT, Grok Bot. This is where the rest of the hour goes, on Grok Bot.
+General agents: Claude, ChatGPT, Grok Bot. This is where the rest of my hour goes, on Grok Bot.
 
-Running your own: Hermes. One slide, next.
+Running my own: Hermes. One slide, next.
 
 Firms can use more than one. The picture is a map.
 
 ## 9. Hermes — 2:00 (10:30)
 
-Say this plainly. You built it. It works. It is a lot of work.
+I say this plainly. I built it. It works. It is a lot of work.
 
 Hermes is an extremely powerful desktop agent. Some of what it can do is more useful than what the commercial apps allow. It is built for people who want to assemble the system.
 
-By default it runs only on your computer. You can give it a cloud computer. Then you manage that computer. ChatGPT, Claude, and Grok Bot come with a computer, and they take care of it.
+By default it runs only on my computer. I can give it a cloud computer. Then I manage that computer. ChatGPT, Claude, and Grok Bot come with a computer, and they take care of it.
 
-You also piece together memory, web search, telemetry, and the rest. Those services exist. Vendor agents ship them already joined.
+I also piece together memory, web search, telemetry, and the rest. Those services exist. Vendor agents ship them already joined.
 
-You did not like the desktop app's design, so you kept your own branch. Every update meant resolving conflicts with the main branch.
+I did not like the desktop app's design, so I kept my own branch. Every update meant resolving conflicts with the main branch.
 
-The second cost was the team. Getting skills and connectors out so people could share them, and update them for each other, took more technical work to set up and to maintain. A newer portal has improved that. Say so. It is better than it was. It is still more to run than an admin console.
+The second cost was the team. Getting skills and connectors out so people could share them, and update them for each other, took more technical work to set up and to maintain. A newer portal has improved that. I say so. It is better than it was. It is still more to run than an admin console.
 
-Fair reasons to take this on: data sovereignty or security, a worry that prices get run up later, and open-source models. You pay with a rougher experience, a harder setup, and the maintenance. Most firms can buy a ready-made system instead.
+Fair reasons to take this on: data sovereignty or security, a worry that prices get run up later, and open-source models. I pay with a rougher experience, a harder setup, and the maintenance. Most firms can buy a ready-made system instead.
 
-Do not explain how to install it.
+I do not explain how to install it.
 
 ## 10. Grok Bot — 2:00 (12:30)
 
-This is the product you use. Walk the six lines. Do not sell them.
+This is the product I use. I walk the six lines. I do not sell them.
 
-Connect an app and sign in with that provider. The token stays off the computer. The bot calls the tool and does not receive the login. A connected app is available to every bot on the account. Week one is two apps.
+Connect an app and sign in with that provider. The token stays off the computer. The bot calls the tool and does not receive the login. A connected app is available to every bot on the account. My first week is two apps.
 
-Point it at a skill library if you have one. Otherwise there is nothing extra to set up. A skill is the procedure: when to use it, the steps, how to check, and what needs a person. Type / to call one.
+I point it at a skill library if I have one. Otherwise there is nothing extra to set up. A skill is the procedure: when to use it, the steps, how to check, and what needs a person. Type / to call one.
 
 Routines are a sentence: when, which bot, what it returns, what it must not send, and what to do if the source is missing. A test run does real work. It can run with the laptop closed.
 
 A cloud computer, with a browser, files, and a terminal. It keeps working after the laptop closes. The next slide is the limit on that computer.
 
-Password vault, or 1Password. The bot can sign in. It does not see the password, the one-time code, or the card number. A saved card can be used at checkout without a fresh approval. Leave the firm card out if you want a yes on every charge. Vault is the whole account, and it is not on Team Bots. Say the card line if you have the breath. Say the Team Bot line only if asked.
+Password vault, or 1Password. The bot can sign in. It does not see the password, the one-time code, or the card number. A saved card can be used at checkout without a fresh approval. I leave the firm card out if I want a yes on every charge. Vault is the whole account, and it is not on Team Bots. I say the card line if I have the breath. I mention the Team Bot limit only if asked.
 
-It asks before sending. The card shows the action. Allow once, always allow, or deny. An ask-first rule beats an allow rule. Auto Review is a backstop. The lawyer still reviews the work.
+It asks before sending. The card shows the action. Allow once, always allow, or deny. An ask-first rule beats an allow rule. Auto Review is a backstop. I still review the work.
 
-Phone calls, and private-network reach such as Tailscale, are coming. Do not build this month's workflow on either one. Voice chat inside the app is a different, shipped control. Mention it only if someone mixes the two up.
+Phone calls, and private-network reach such as Tailscale, are coming. I do not build this month's workflow on either one. Voice chat inside the app is a different, shipped control. I separate the two only if someone mixes them up.
 
 ## 11. One bot per job — 1:20 (13:50)
 
-This is the roster you run. One bot, one job. Do not read every line. Name the pattern, then point at two or three.
+This is the roster I run. One bot, one job. I do not read every line. I name the pattern, then point at two or three.
 
 CEO coordinates. Second brain, CLE planner, friction and learning reviews, usage oversight.
-Ops is probate case work: filings drafts, signatures, deadlines, pulse and heartbeats.
+Ops is my probate case work: filings drafts, signatures, deadlines, pulse and heartbeats.
 Hearings prepares a hearing end to end: notices, service and publication, client prep, proposed orders.
 Comms watches Missive and Quo, files documents to matters, and routes follow-ups.
 Mailroom triages ECM and inbound mail, and runs the stale-scan.
 Leads runs intake, PNCs, and the engagement and deposit chase.
-Marketing tracks ads, SEO, and analytics, and drafts social posts. It does not publish unless you say so.
+Marketing tracks ads, SEO, and analytics, and drafts social posts. It does not publish unless I say so.
 Finance is books, cash, receivables, and tax and close work.
 Dev is repos, pull requests, CI, Sentry, and the tool server and skills.
 Research does the AI news briefings, legal research in CourtListener, and prep for a talk like this one.
-Home is the family calendar, school email, and occasions and gifts. It is not firm work.
+Home is my family calendar, school email, and occasions and gifts. It is not firm work.
 
-Group chats are not bots. Say that before anyone counts them as extra staff. Growth is Leads and Marketing. Leadership is Leads, Ops, and Finance.
+Group chats are not bots. I say that before anyone counts them as extra staff. Growth is Leads and Marketing. Leadership is Leads, Ops, and Finance.
 
-Then the limit, out loud. On one account there is one computer. Each bot has its own screen. Files and sign-ins are shared. A second bot is not a wall around a client's file. Home is not the firm, and it is still a bot. If it runs on the firm account, it shares that computer.
+Then the limit, out loud. On one account there is one computer. Each bot has its own screen. Files and sign-ins are shared. A second bot is not a wall around a client's file. Home is not the firm, and it is still a bot. If it runs on my firm account, it shares that computer.
 
 ## 12. Admin controls — 2:00 (15:50)
 
 Business account, not a personal login.
 
-ChatGPT, and say it is your firm's account, not every plan. The skills marketplace is connected at the admin level. Skills are packaged into plugins that install themselves for everyone in those ChatGPT accounts. The admin work is light.
+ChatGPT, and I say it is my firm's account, not every plan. The skills marketplace is connected at the admin level. Skills are packaged into plugins that install themselves for everyone in those ChatGPT accounts. The admin work is light.
 
 Grok Bot, from the public Team Bot docs. A Team Bot shares plugins, secrets, skills, and memory. The owner sets those once, and changes reach the people using the bot. Each person signs in for their own connectors, so one person's login is not lent to the team. Admins set connector policy, including turning a connector off for the team. Team memory is shared. A person can keep private notes. If someone wants the finer print: only an owner or manager saves team skills, a key or token uses the bot's credential, and secret values stay hidden from teammates and from the model.
 
-Claude. Business and enterprise plans include admin controls for the organization. Describe the current console. Do not name a switch you have not rechecked.
+Claude. Business and enterprise plans include admin controls for the organization. I describe the current console. I do not name a switch I have not rechecked.
 
-Then the point of the slide. On a business account, an admin keeps the setup current. That is true for ChatGPT, Claude, and Grok. Grok Bot is the one you use, because it is easy to use.
+Then the point of the slide. On a business account, an admin keeps the setup current. That is true for ChatGPT, Claude, and Grok. Grok Bot is the one I use, because it is easy to use.
 
 ## 13. Live demo — 4:30 (20:20)
 
-Say what they are about to see: a few bots, a routine, a skill, a connector. This account has never held a client file. You will not send anything.
+What they are about to see: a few bots, a routine, a skill, a connector. This account has never held a client file. I will not send anything.
 
-Do Calder, from `demo/RUNBOOK.md`. Temporary bot. Fictional estate. Read the draft. If an approval card appears, leave it up.
+I do Calder, from `demo/RUNBOOK.md`. Temporary bot. Fictional estate. I read the draft. If an approval card appears, I leave it up.
 
 Pell is optional, and only with extra time. The sender has no authority, so the bot should stop.
 
-If the network stalls, do not troubleshoot. Narrate the same steps from the runbook. Do not sign into firm email, Clio, Filevine, trust, or 1Password.
+If the network stalls, I do not troubleshoot. I narrate the same steps from the runbook. I do not sign into firm email, Clio, Filevine, trust, or 1Password.
 
 ## 14. What you still own — 2:00 (22:20)
 
-Confidentiality. Rule 1.6. Where the information goes, who can see it, whether it trains a model, how long it is kept. Answer that before a real matter is connected. Missouri numbers the same duty 4-1.6. Say the Missouri number only if the room needs it. Grok Bot stores data and does not offer Legacy Privacy Mode. Training choices follow the account's privacy settings.
+Confidentiality. Rule 1.6. Where the information goes, who can see it, whether it trains a model, how long it is kept. I answer that before a real matter is connected. Missouri numbers the same duty 4-1.6. I say the Missouri number only if the room needs it. Grok Bot stores data and does not offer Legacy Privacy Mode. Training choices follow the account's privacy settings.
 
-Approval rules. Send, file, pay, and delete wait for a person. Put that in the skill and in an ask-first rule. A sentence in a prompt is not the control.
+Approval rules. Send, file, pay, and delete wait for a person. I put that in the skill and in an ask-first rule. A sentence in a prompt is not the control.
 
-Checking and supervising. Rules 5.3 and 1.1. You read the output. Competence includes understanding the tool. The bot is not a member of the bar. Missouri: 4-5.3 and 4-1.1. ABA Formal Opinion 512 is the longer piece, in the handout. This is a discussion for owners, not an opinion on anyone's stack.
+Checking and supervising. Rules 5.3 and 1.1. I read the output. Competence includes understanding the tool. The bot is not a member of the bar. Missouri: 4-5.3 and 4-1.1. ABA Formal Opinion 512 is the longer piece, in the handout. This is a discussion for owners, not an opinion on anyone's stack.
 
-Skill portability. Keep a plain-language copy outside the product. Test it on the next platform before you need to switch. The open Agent Skills format is one way to structure the file.
+Skill portability. I keep a plain-language copy outside the product. I test it on the next platform before I need to switch. The open Agent Skills format is one way to structure the file.
 
 ## 15. First week — 1:10 (23:30)
 
-Read the four. One tool. Two apps. One process written as a skill. One routine.
+I read the four. One tool. Two apps. One process written as a skill. One routine.
 
-If the job lives in Clio or Filevine, the tool can be Vincent or Lois. If it crosses systems, pick one general agent and stay there for the week.
+If the job lives in Clio or Filevine, the tool can be Vincent or Lois. If it crosses systems, I pick one general agent and stay there for the week.
 
-Sample data until you have watched the draft. The worksheet is in the handout, which is separate from these slides.
+Sample data until I have watched the draft. The worksheet is in the handout, which is separate from these slides.
 
 ## 16. Sources — 0:30 (24:00)
 
-Do not read the list. Say the docs were checked in October 2026, and that the current page wins if a control has moved. Point at the handout. Questions.
+I do not read the list. I checked the docs in October 2026, and the current page wins if a control has moved. I point at the handout. Questions.
 
-## If you are long
+## If I am long
 
-On the science slides, say the three names and the status words: released, under review, claimed. Keep the pause and the turn into owning the system. Shorten the Hermes branch story to one sentence. Keep the team line and the note that the newer portal improved sharing. Do only Calder. Do not skip the segue, Hermes, the admin slide, or the duties.
+On the science slides, I say the three names and the status words: released, under review, claimed. I keep the pause and the turn into owning the system. I shorten the Hermes branch story to one sentence. I keep the team line and the note that the newer portal improved sharing. I do only Calder. I do not skip the segue, Hermes, the admin slide, or the duties.
 
-## If you are asked
+## If I am asked
 
-- Can it file with the court? Not unsupervised. Draft, then a person.
+- Can it file with the court? Not unsupervised. I draft, then a person files.
 - Does each bot have its own computer? Each has a screen. The computer is one per account.
-- Is Auto Review enough? No. It is a backstop. You still read the work.
-- Should we run Hermes? It works. It is a lot of work: your computer or a cloud computer you manage, your own branch, and more technical work to share skills and connectors with a team. A newer portal has improved the sharing. Data control, later prices, and open-source models are fair reasons. Most firms are better off buying a ready-made system.
-- Can staff share one setup? On a business account, yes, through admin controls. In our ChatGPT account, admin-level skills install for everyone. On Grok Bot, a Team Bot shares plugins, secrets, skills, and memory. Each person signs in for their own connectors. A shared computer on a personal account is not a permission system.
-- Are phone calls or Tailscale ready? Treat both as coming for this room. A team pattern for private networks exists in enterprise material. Do not demo it.
+- Is Auto Review enough? No. It is a backstop. I still read the work.
+- Should we run Hermes? It works. It is a lot of work: my computer, or a cloud computer I manage, my own branch, and more technical work to share skills and connectors with a team. A newer portal has improved the sharing. Data control, later prices, and open-source models are fair reasons. Most firms are better off buying a ready-made system.
+- Can staff share one setup? On a business account, yes, through admin controls. In my ChatGPT account, admin-level skills install for everyone. On Grok Bot, a Team Bot shares plugins, secrets, skills, and memory. Each person signs in for their own connectors. A shared computer on a personal account is not a permission system.
+- Are phone calls or Tailscale ready? I treat both as coming for this room. A team pattern for private networks exists in enterprise material. I do not demo it.
 
 ## Stage
 

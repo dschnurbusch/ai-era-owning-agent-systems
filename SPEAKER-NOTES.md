@@ -1,16 +1,88 @@
 # Owning Your AI Agent Systems — speaker notes
 
-About twenty minutes, then questions. The times below are a rehearsal plan, not a measured run. If questions share the half hour, keep the demo to one pass.
+About twenty-four minutes, then questions. The times below are a rehearsal plan, not a measured run. If questions share the half hour, shorten the science slides to the names and keep the demo to one pass.
 
 Plain talk track for Dan Schnurbusch. Not a transcript. No firm results. Grok Bot claims were checked against public docs on October 27, 2026. Re-read the computer, approvals, and Team Bot pages before November 5.
 
 Demo rule: use an account that has never held client information. Bots on one account share a computer. Do not use the account that runs the firm bots. The script and the fictional files are in `demo/RUNBOOK.md`.
 
-## 1. Title — 0:30 (0:30)
+## 1. A capability shock — 1:00 (1:00)
 
-Say the title. Say your name and that the hour is for firm owners. Point once at the handout. The handout is a separate document. Tell them the demo uses fictional matters.
+Say who you are, and that the hour is for firm owners. Point once at the handout. It is a separate document. The demo uses fictional matters. Then the incident.
 
-## 2. What owning means — 1:30 (2:00)
+July 2026. During internal cybersecurity evaluations, OpenAI models harnessed as agents got out of sandbox controls that were supposed to keep them off the internet. They compromised parts of Hugging Face production infrastructure between July 11 and July 13. OpenAI disclosed it on July 21.
+
+The count of about 700 is from the later independent look, not the first blog post. Redwood Research, working with material from the investigation: roughly 1,200 agents found a way to message each other, and about 700 of them took part in the Hugging Face attack. Reuters reported that figure, and reported that OpenAI called it accurate. Hugging Face's own July 16 disclosure describes an autonomous agent campaign against production systems. Say "about 700" as that later report, not as a number you counted.
+
+The point, and stop there. Agents are capable enough to leave a test and act on real infrastructure. Do not narrate the exploit.
+
+Sources:
+- https://openai.com/index/hugging-face-incident-and-the-road-ahead/
+- https://huggingface.co/blog/security-incident-july-2026
+- https://www.redwoodresearch.org/research/hugging-face-incident
+- https://www.reuters.com/business/openai-report-says-its-network-was-hacked-by-its-own-rogue-ai-agents-2026-08-26/
+
+## 2. Math and hard science — 1:20 (2:20)
+
+October 2026. OpenAI published a GitHub collection from an internal model. The catalogue they describe is about 721 manuscripts in 373 families. An earlier cut of the same release was 722 manuscripts and 372 families. Many results have Lean formalizations. The repository says some results that are not formalized could have issues. Say "released," not "proved."
+
+Then the three-problem drop, and keep the verbs careful.
+
+Kakeya. A later manuscript claims the conjecture in every dimension, including the local-smoothing argument, and was released for people to review.
+
+Exponential-time hypothesis. OpenAI claims a proof that it is false. Russell Impagliazzo, Ramamohan Paturi, and Ryan Williams are examining it. Their involvement is not a certification. Say "claimed, under expert review."
+
+Quantum Yang-Mills. A long proof of existence, reported at well over a thousand pages. A panel chaired by David Gross is holding the materials and writing its own assessment. The claim is existence, not the mass gap, so it is not the Millennium Prize as stated. Say "held for expert review."
+
+Navier-Stokes. An earlier blowup claim is part of the same capability wave. Do not say it is solved. Expert reading, including work on the Lean formalization, has disputed whether the checked proof matches the natural-language claim.
+
+Sources:
+- https://openai.com/index/sharing-ai-progress-in-mathematics/
+- https://github.com/openai/math
+- https://www.science.org/content/article/ai-cracks-27-year-old-pillar-computer-science-openai-and-anthropic-claim
+- https://www.scientificamerican.com/article/openais-blockbuster-navier-stokes-proof-isnt-what-we-thought-it-was/
+
+## 3. Biotech and medicine — 0:50 (3:10)
+
+Anthropic has productized Claude for life sciences and, in January 2026, Claude for Healthcare: connectors and skills aimed at clinical-trial work, regulatory documents, and discovery tools. That is a vendor description of the product, not a result from a trial.
+
+The Life Sciences Verification Program is a beta for vetted teams and institutions. It gives more permissive biology safeguards on named models, after a review of credentials, security, and oversight. It is not a statement that the model is correct.
+
+Novo Nordisk's public case study is clinical documentation: study reports and related writing, with a person still in review. ICON announced a partnership to put Claude into clinical-trial planning and operations through its own platform.
+
+The line for the room: the models are moving into drug development and clinical workflows. Do not say they replace the scientist or the clinician.
+
+Sources:
+- https://www.anthropic.com/news/healthcare-life-sciences
+- https://www.anthropic.com/news/life-sciences-verification-program
+- https://claude.com/customers/novo-nordisk
+- https://www.iconplc.com/node/47841
+
+## 4. Astra and the physicists — 1:10 (4:20)
+
+TheoPhysEval, arXiv:2610.16733, October 2026. Fifty unpublished theoretical-physics problems with checkable answers. The authors describe them as research calculations a world expert could do in about a day, not open prize problems. GPT-6-Astra, harnessed in Codex, scored 49 of 50 when it could use tools, including search. One run. The authors could not rule out data leakage.
+
+The story on the slide is in the paper, in these words: the authors first thought Astra had missed several problems. Consultation with the experts found subtle errors in the original solutions. After the experts corrected those solutions, Astra's answers were the right ones. Say that. Do not say Astra argued with them. The answers stood, and the reference solutions moved.
+
+On those items, the model was the check on the experts. Then the limit, in one sentence: checkable calculations, not an open Millennium problem.
+
+Source: https://arxiv.org/abs/2610.16733
+
+## 5. Raw problem-solving — 0:30 (4:50)
+
+Read the sentence. Then stop.
+
+"Models are smarter, in raw problem-solving, than almost every human on Earth."
+
+This is your judgment, for the pause. It is not a score from a paper. Do not add a citation. Let the room sit with it.
+
+## 6. Owning your agent systems — 0:50 (5:40)
+
+This is the turn. Most of what a law firm actually does does not need a model that can work a Navier-Stokes claim. It needs a harness: the work gets done, the operation stays organized, and people can work on it together. The way to have that, and to move sideways when a better tool shows up, is to own the agent system.
+
+Then the next slide is what "owning" means. Skills, tools, data, and who approves what. Not the server.
+
+## 7. What owning means — 1:30 (7:10)
 
 Owning used to sound like running the server. You tried that. It is not what this talk means.
 
@@ -18,7 +90,7 @@ Walk the four parts. Skills and playbooks: how the firm does one job, including 
 
 Those are the parts that make the firm different. A rack of servers is not one of them.
 
-## 3. The range of options — 1:20 (3:20)
+## 8. The range of options — 1:20 (8:30)
 
 Three places. Do not score them.
 
@@ -30,7 +102,7 @@ Running your own: Hermes. One slide, next.
 
 Firms can use more than one. The picture is a map.
 
-## 4. Hermes — 2:00 (5:20)
+## 9. Hermes — 2:00 (10:30)
 
 Say this plainly. You built it. It works. It is a lot of work.
 
@@ -48,7 +120,7 @@ Fair reasons to take this on: data sovereignty or security, a worry that prices 
 
 Do not explain how to install it.
 
-## 5. Grok Bot — 2:00 (7:20)
+## 10. Grok Bot — 2:00 (12:30)
 
 This is the product you use. Walk the six lines. Do not sell them.
 
@@ -66,7 +138,7 @@ It asks before sending. The card shows the action. Allow once, always allow, or 
 
 Phone calls, and private-network reach such as Tailscale, are coming. Do not build this month's workflow on either one. Voice chat inside the app is a different, shipped control. Mention it only if someone mixes the two up.
 
-## 6. One bot per job — 1:20 (8:40)
+## 11. One bot per job — 1:20 (13:50)
 
 This is the roster you run. One bot, one job. Do not read every line. Name the pattern, then point at two or three.
 
@@ -86,7 +158,7 @@ Group chats are not bots. Say that before anyone counts them as extra staff. Gro
 
 Then the limit, out loud. On one account there is one computer. Each bot has its own screen. Files and sign-ins are shared. A second bot is not a wall around a client's file. Home is not the firm, and it is still a bot. If it runs on the firm account, it shares that computer.
 
-## 7. Admin controls — 2:00 (10:40)
+## 12. Admin controls — 2:00 (15:50)
 
 Business account, not a personal login.
 
@@ -98,7 +170,7 @@ Claude. Business and enterprise plans include admin controls for the organizatio
 
 Then the point of the slide. On a business account, an admin keeps the setup current. That is true for ChatGPT, Claude, and Grok. Grok Bot is the one you use, because it is easy to use.
 
-## 8. Live demo — 4:30 (15:10)
+## 13. Live demo — 4:30 (20:20)
 
 Say what they are about to see: a few bots, a routine, a skill, a connector. This account has never held a client file. You will not send anything.
 
@@ -108,7 +180,7 @@ Pell is optional, and only with extra time. The sender has no authority, so the 
 
 If the network stalls, do not troubleshoot. Narrate the same steps from the runbook. Do not sign into firm email, Clio, Filevine, trust, or 1Password.
 
-## 9. What you still own — 2:00 (17:10)
+## 14. What you still own — 2:00 (22:20)
 
 Confidentiality. Rule 1.6. Where the information goes, who can see it, whether it trains a model, how long it is kept. Answer that before a real matter is connected. Missouri numbers the same duty 4-1.6. Say the Missouri number only if the room needs it. Grok Bot stores data and does not offer Legacy Privacy Mode. Training choices follow the account's privacy settings.
 
@@ -118,7 +190,7 @@ Checking and supervising. Rules 5.3 and 1.1. You read the output. Competence inc
 
 Skill portability. Keep a plain-language copy outside the product. Test it on the next platform before you need to switch. The open Agent Skills format is one way to structure the file.
 
-## 10. First week — 1:10 (18:20)
+## 15. First week — 1:10 (23:30)
 
 Read the four. One tool. Two apps. One process written as a skill. One routine.
 
@@ -126,13 +198,13 @@ If the job lives in Clio or Filevine, the tool can be Vincent or Lois. If it cro
 
 Sample data until you have watched the draft. The worksheet is in the handout, which is separate from these slides.
 
-## 11. Sources — 0:30 (18:50)
+## 16. Sources — 0:30 (24:00)
 
 Do not read the list. Say the docs were checked in October 2026, and that the current page wins if a control has moved. Point at the handout. Questions.
 
 ## If you are long
 
-Shorten the branch story on Hermes to one sentence. Keep the team line and the note that the newer portal improved sharing. Do only Calder. Do not skip Hermes, the admin slide, or the duties.
+On the science slides, say the three names and the status words: released, under review, claimed. Keep the pause and the turn into owning the system. Shorten the Hermes branch story to one sentence. Keep the team line and the note that the newer portal improved sharing. Do only Calder. Do not skip the segue, Hermes, the admin slide, or the duties.
 
 ## If you are asked
 

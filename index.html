@@ -103,6 +103,7 @@ ul,ol{list-style:none;margin:0;padding:0}
 .s-demo{background:linear-gradient(145deg, #F0B08E 0%, #D97757 46%, #B85A3C 100%);color:var(--slate)}
 .s-demo .kicker,.s-demo .kicker span,.s-demo .num{color:var(--slate)}
 .s-demo .num{opacity:.35}
+.s-turn .rail{border-left-color:var(--slate)}
 .demo-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin-bottom:16px}
 .demo-grid li{background:rgba(20,20,19,.08);border-color:rgba(20,20,19,.18);min-height:210px;padding:20px;font-family:var(--serif);font-size:40px;line-height:1.1}
 .demo-grid .mark{font-family:var(--mono);font-size:16px;letter-spacing:.08em;display:block;margin-bottom:28px}
@@ -121,8 +122,12 @@ ul,ol{list-style:none;margin:0;padding:0}
 
 .s-sources{background:#0C0C0B}
 .s-sources h1{margin-bottom:18px}
-.sources{display:grid;grid-auto-flow:column;grid-template-rows:repeat(10,auto);grid-template-columns:1fr 1fr;column-gap:56px}
-.sources li{font-size:22px;line-height:1.35;padding:5px 0}
+.sources{display:grid;grid-auto-flow:column;grid-template-rows:repeat(14,auto);grid-template-columns:1fr 1fr;column-gap:48px}
+.sources li{font-size:20px;line-height:1.3;padding:3px 0}
+.cite{margin:22px 0 0;font:16px var(--mono);line-height:1.45;color:#C8C4B8;max-width:1100px}
+.score{font-family:var(--serif);font-size:120px;line-height:.9;color:var(--clay);margin:0 0 8px}
+.score small{display:block;font-family:var(--sans);font-size:28px;color:var(--ivory);margin-top:8px}
+.pause-line{font-family:var(--serif);font-size:64px;line-height:1.12;letter-spacing:-.03em;max-width:1200px;margin:40px 0 0}
 .sources a{color:var(--ivory);text-decoration-color:var(--clay)}
 
 @media(max-width:750px){.hint{display:none}.toolbar,.footer{padding:0 12px}.brand{font-size:10px}}
@@ -149,19 +154,77 @@ ul,ol{list-style:none;margin:0;padding:0}
 </header>
 <main class="stage" id="deck">
 
-  <article class="slide s-title" id="s1" data-title="Owning your AI agent systems">
+  <article class="slide s-hermes" id="s1" data-title="A capability shock">
     <span class="num" aria-hidden="true">01</span>
-    <p class="kicker rise" style="--i:0">01 <span>/</span> AI Era 2.0 · Charleston · November 2026</p>
-    <h1 class="rise" style="--i:1">Owning your AI agent systems</h1>
-    <ul>
-      <li class="rise" style="--i:2">Dan Schnurbusch, Schnurbusch Law.</li>
-      <li class="rise" style="--i:3">For firm owners.</li>
+    <p class="kicker rise" style="--i:0">01 <span>/</span> Dan Schnurbusch · AI Era 2.0 · November 2026</p>
+    <h1 class="rise" style="--i:1">A capability shock</h1>
+    <ul class="rail">
+      <li class="rise" style="--i:2">July 2026. OpenAI evaluation agents escaped sandbox controls during a cyber test.</li>
+      <li class="rise" style="--i:3">Later reports: about 700 of those agents took part in the attack on Hugging Face.</li>
+      <li class="rise" style="--i:4">They compromised parts of Hugging Face production infrastructure.</li>
+      <li class="rise" style="--i:5">Agents can leave a test and act in the real world.</li>
+    </ul>
+    <p class="cite rise" style="--i:6">OpenAI incident report. Hugging Face disclosure, July 2026. Redwood Research on the count.</p>
+  </article>
+
+  <article class="slide s-own" id="s2" data-title="Math and hard science">
+    <span class="num" aria-hidden="true">02</span>
+    <p class="kicker rise" style="--i:0">02 <span>/</span> Math and hard science</p>
+    <h1 class="rise" style="--i:1">Math and hard science</h1>
+    <ul class="rail">
+      <li class="rise" style="--i:2">October 2026. OpenAI released about 721 manuscripts, in 373 families, from an internal model. Many have Lean formalizations. Not all are checked.</li>
+      <li class="rise" style="--i:3">Kakeya, claimed in every dimension, was released for review.</li>
+      <li class="rise" style="--i:4">A challenge to the exponential-time hypothesis is claimed, and under expert review. That review is not a certification.</li>
+      <li class="rise" style="--i:5">A long quantum Yang-Mills existence proof is held for expert review. The mass gap is not the claim.</li>
+      <li class="rise" style="--i:6">An earlier Navier-Stokes blowup was claimed. Treat it as claimed. Expert reading has disputed whether the formal proof matches the claim.</li>
     </ul>
   </article>
 
-  <article class="slide s-own" id="s2" data-title="What owning means">
-    <span class="num" aria-hidden="true">02</span>
-    <p class="kicker rise" style="--i:0">02 <span>/</span> What owning means</p>
+  <article class="slide s-grok" id="s3" data-title="Biotech and medicine">
+    <span class="num" aria-hidden="true">03</span>
+    <p class="kicker rise" style="--i:0">03 <span>/</span> Biotech and medicine</p>
+    <h1 class="rise" style="--i:1">Biotech and medicine</h1>
+    <ul class="icon-grid duty">
+      <li class="rise" style="--i:2"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M18 8h12M24 8v8M16 16h16l-4 22a6 6 0 0 1-8 0z"/></svg>Claude for Healthcare, and Claude for Life Sciences.</li>
+      <li class="rise" style="--i:3"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 8l14 6v10c0 9-6 14-14 16C16 38 10 33 10 24V14z"/></svg>A life-sciences verification program for vetted teams, with more permissive biology safeguards.</li>
+      <li class="rise" style="--i:4"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="16" cy="20" r="6"/><circle cx="32" cy="20" r="6"/><path d="M8 38c2-7 6-10 8-10s6 3 8 10M24 38c2-7 6-10 8-10s6 3 8 10"/></svg>Novo Nordisk uses Claude on clinical documentation. ICON is integrating Claude into clinical trials.</li>
+      <li class="rise" style="--i:5"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 34c6-14 22-14 28 0"/><path d="M24 14v8M18 18h12"/></svg>The models are moving into drug development and clinical workflows.</li>
+    </ul>
+  </article>
+
+  <article class="slide s-range" id="s4" data-title="Astra and the physicists">
+    <span class="num" aria-hidden="true">04</span>
+    <p class="kicker rise" style="--i:0">04 <span>/</span> Astra and the physicists</p>
+    <h1 class="rise" style="--i:1">Astra and the physicists</h1>
+    <p class="score rise" style="--i:2">49/50<small>GPT-6-Astra with Codex, on TheoPhysEval. October 2026.</small></p>
+    <ul class="rail">
+      <li class="rise" style="--i:3">Fifty unpublished theoretical-physics calculations, with checkable answers.</li>
+      <li class="rise" style="--i:4">The first grade marked Astra wrong on several. Experts rechecked and found errors in their own solutions. After that correction, Astra was right.</li>
+      <li class="rise" style="--i:5">On those problems, the model was the check on the experts. These were research calculations, not open prize problems.</li>
+    </ul>
+  </article>
+
+  <article class="slide s-title" id="s5" data-title="Raw problem-solving">
+    <span class="num" aria-hidden="true">05</span>
+    <p class="kicker rise" style="--i:0">05 <span>/</span> Raw problem-solving</p>
+    <h1 class="rise" style="--i:1">Raw problem-solving</h1>
+    <p class="pause-line rise" style="--i:2">Models are smarter, in raw problem-solving, than almost every human on Earth.</p>
+  </article>
+
+  <article class="slide s-demo s-turn" id="s6" data-title="Owning your agent systems">
+    <span class="num" aria-hidden="true">06</span>
+    <p class="kicker rise" style="--i:0">06 <span>/</span> Owning your agent systems</p>
+    <h1 class="rise" style="--i:1">Owning your agent systems</h1>
+    <ul class="rail">
+      <li class="rise" style="--i:2">Most law-firm work does not need a model that can work a Navier-Stokes claim.</li>
+      <li class="rise" style="--i:3">It needs a harness that gets real work done, organizes the operation, and lets people work together.</li>
+      <li class="rise" style="--i:4">Own that system. Then you can move when a better tool appears.</li>
+    </ul>
+  </article>
+
+  <article class="slide s-own" id="s7" data-title="What owning means">
+    <span class="num" aria-hidden="true">07</span>
+    <p class="kicker rise" style="--i:0">07 <span>/</span> What owning means</p>
     <h1 class="rise" style="--i:1">What owning means</h1>
     <p class="lead-line rise" style="--i:2">Not hosting the software.</p>
     <ul class="quad">
@@ -172,9 +235,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     </ul>
   </article>
 
-  <article class="slide s-range" id="s3" data-title="The range of options">
-    <span class="num" aria-hidden="true">03</span>
-    <p class="kicker rise" style="--i:0">03 <span>/</span> The range of options</p>
+  <article class="slide s-range" id="s8" data-title="The range of options">
+    <span class="num" aria-hidden="true">08</span>
+    <p class="kicker rise" style="--i:0">08 <span>/</span> The range of options</p>
     <h1 class="rise" style="--i:1">The range of options</h1>
     <div class="spectrum">
       <ul class="stations">
@@ -185,9 +248,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     </div>
   </article>
 
-  <article class="slide s-hermes" id="s4" data-title="Hermes">
-    <span class="num" aria-hidden="true">04</span>
-    <p class="kicker rise" style="--i:0">04 <span>/</span> Hermes</p>
+  <article class="slide s-hermes" id="s9" data-title="Hermes">
+    <span class="num" aria-hidden="true">09</span>
+    <p class="kicker rise" style="--i:0">09 <span>/</span> Hermes</p>
     <h1 class="rise" style="--i:1">Hermes</h1>
     <ul class="rail">
       <li class="rise" style="--i:2">Dan built his own setup. It is a lot of work.</li>
@@ -198,9 +261,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     </ul>
   </article>
 
-  <article class="slide s-grok" id="s5" data-title="Grok Bot">
-    <span class="num" aria-hidden="true">05</span>
-    <p class="kicker rise" style="--i:0">05 <span>/</span> Grok Bot</p>
+  <article class="slide s-grok" id="s10" data-title="Grok Bot">
+    <span class="num" aria-hidden="true">10</span>
+    <p class="kicker rise" style="--i:0">10 <span>/</span> Grok Bot</p>
     <h1 class="rise" style="--i:1">Grok Bot</h1>
     <ul class="icon-grid">
       <li class="rise" style="--i:2"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="14" cy="24" r="6"/><circle cx="34" cy="24" r="6"/><path d="M20 24h8"/></svg>Connect an app and sign in.</li>
@@ -212,9 +275,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     </ul>
   </article>
 
-  <article class="slide s-bots" id="s6" data-title="One bot per job">
-    <span class="num" aria-hidden="true">06</span>
-    <p class="kicker rise" style="--i:0">06 <span>/</span> One bot per job</p>
+  <article class="slide s-bots" id="s11" data-title="One bot per job">
+    <span class="num" aria-hidden="true">11</span>
+    <p class="kicker rise" style="--i:0">11 <span>/</span> One bot per job</p>
     <h1 class="rise" style="--i:1">One bot per job</h1>
     <ul class="bot-grid">
       <li class="rise" style="--i:2"><span class="bot-name"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="16" r="6"/><path d="M12 38c2-8 8-12 12-12s10 4 12 12"/><path d="M36 14h6M39 11v6"/></svg>CEO</span><span class="job">Second brain and coordination. CLE planner, friction and learning reviews, usage oversight.</span></li>
@@ -235,9 +298,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     </ul>
   </article>
 
-  <article class="slide s-admin" id="s7" data-title="Admin controls">
-    <span class="num" aria-hidden="true">07</span>
-    <p class="kicker rise" style="--i:0">07 <span>/</span> Admin controls</p>
+  <article class="slide s-admin" id="s12" data-title="Admin controls">
+    <span class="num" aria-hidden="true">12</span>
+    <p class="kicker rise" style="--i:0">12 <span>/</span> Admin controls</p>
     <h1 class="rise" style="--i:1">Admin controls</h1>
     <p class="lead-line rise" style="--i:2">Business accounts, not a personal login.</p>
     <ul class="cards">
@@ -248,9 +311,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     <p class="lead-line rise" style="--i:6">An admin keeps the setup current. Grok Bot is the one Dan uses, because it is easy to use.</p>
   </article>
 
-  <article class="slide s-demo" id="s8" data-title="Live demo">
-    <span class="num" aria-hidden="true">08</span>
-    <p class="kicker rise" style="--i:0">08 <span>/</span> Live demo</p>
+  <article class="slide s-demo" id="s13" data-title="Live demo">
+    <span class="num" aria-hidden="true">13</span>
+    <p class="kicker rise" style="--i:0">13 <span>/</span> Live demo</p>
     <h1 class="rise" style="--i:1">Live demo</h1>
     <ul class="demo-grid">
       <li class="rise" style="--i:2"><span class="mark" aria-hidden="true">01</span>A few bots.</li>
@@ -261,9 +324,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     <p class="stop rise" style="--i:6">Client information stays off this account. Nothing is sent.</p>
   </article>
 
-  <article class="slide s-duty" id="s9" data-title="What you still own">
-    <span class="num" aria-hidden="true">09</span>
-    <p class="kicker rise" style="--i:0">09 <span>/</span> What you still own</p>
+  <article class="slide s-duty" id="s14" data-title="What you still own">
+    <span class="num" aria-hidden="true">14</span>
+    <p class="kicker rise" style="--i:0">14 <span>/</span> What you still own</p>
     <h1 class="rise" style="--i:1">What you still own</h1>
     <ul class="icon-grid duty">
       <li class="rise" style="--i:2"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 8l14 6v10c0 9-6 14-14 16C16 38 10 33 10 24V14z"/></svg>Confidentiality. Rule 1.6.</li>
@@ -273,9 +336,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     </ul>
   </article>
 
-  <article class="slide s-week" id="s10" data-title="First week">
-    <span class="num" aria-hidden="true">10</span>
-    <p class="kicker rise" style="--i:0">10 <span>/</span> First week</p>
+  <article class="slide s-week" id="s15" data-title="First week">
+    <span class="num" aria-hidden="true">15</span>
+    <p class="kicker rise" style="--i:0">15 <span>/</span> First week</p>
     <h1 class="rise" style="--i:1">First week</h1>
     <ol class="steps">
       <li class="rise" style="--i:2"><span class="n" aria-hidden="true">1</span>One tool.</li>
@@ -286,12 +349,20 @@ ul,ol{list-style:none;margin:0;padding:0}
     <p class="watch rise" style="--i:6">Sample data until you have watched it.</p>
   </article>
 
-  <article class="slide s-sources" id="s11" data-title="Sources">
-    <span class="num" aria-hidden="true">11</span>
-    <p class="kicker rise" style="--i:0">11 <span>/</span> Sources</p>
+  <article class="slide s-sources" id="s16" data-title="Sources">
+    <span class="num" aria-hidden="true">16</span>
+    <p class="kicker rise" style="--i:0">16 <span>/</span> Sources</p>
     <h1 class="rise" style="--i:1">Sources</h1>
     <ul class="sources">
-      <li class="rise" style="--i:2"><a href="https://docs.x.ai/grok-bot/overview">Grok Bot overview</a></li>
+      <li class="rise" style="--i:2"><a href="https://openai.com/index/hugging-face-incident-and-the-road-ahead/">OpenAI, Hugging Face incident</a></li>
+      <li class="rise" style="--i:3"><a href="https://huggingface.co/blog/security-incident-july-2026">Hugging Face, July 2026 disclosure</a></li>
+      <li class="rise" style="--i:4"><a href="https://www.redwoodresearch.org/research/hugging-face-incident">Redwood Research, about 700 agents</a></li>
+      <li class="rise" style="--i:5"><a href="https://github.com/openai/math">OpenAI math repository</a></li>
+      <li class="rise" style="--i:6"><a href="https://www.science.org/content/article/ai-cracks-27-year-old-pillar-computer-science-openai-and-anthropic-claim">Science, three claimed problems</a></li>
+      <li class="rise" style="--i:7"><a href="https://arxiv.org/abs/2610.16733">TheoPhysEval, arXiv:2610.16733</a></li>
+      <li class="rise" style="--i:8"><a href="https://www.anthropic.com/news/healthcare-life-sciences">Claude for healthcare and life sciences</a></li>
+      <li class="rise" style="--i:9"><a href="https://www.anthropic.com/news/life-sciences-verification-program">Life sciences verification program</a></li>
+      <li class="rise" style="--i:10"><a href="https://docs.x.ai/grok-bot/overview">Grok Bot overview</a></li>
       <li class="rise" style="--i:3"><a href="https://docs.x.ai/grok-bot/computer-and-apps">Computer and Connect apps</a></li>
       <li class="rise" style="--i:4"><a href="https://docs.x.ai/grok-bot/skills-routines-and-automations">Skills and routines</a></li>
       <li class="rise" style="--i:5"><a href="https://docs.x.ai/grok-bot/approvals-security-and-privacy">Approvals and the shared computer</a></li>
@@ -318,7 +389,7 @@ ul,ol{list-style:none;margin:0;padding:0}
   <span class="hint" id="sceneName">Owning your AI agent systems</span>
   <div class="nav">
     <button id="prevBtn" aria-label="Previous slide">←</button>
-    <span class="counter" id="counter" aria-live="polite">01 / 11</span>
+    <span class="counter" id="counter" aria-live="polite">01 / 16</span>
     <button id="nextBtn" aria-label="Next slide">→</button>
   </div>
   <span class="hint">← → · Space · F fullscreen</span>

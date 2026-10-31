@@ -80,13 +80,15 @@ This is my takeaway, for the pause. It is not a score from a paper. I do not add
 
 This is the turn. Most of what a law firm actually does does not need a model that can work a Navier-Stokes claim. It needs a harness: the work gets done, the operation stays organized, and people can work on it together. The way I do that, and the way I move when a better tool shows up, is to own the agent system.
 
+Then the posture. I stop doing the tasks myself. My bots do them, once, or on a routine. My job is to manage that work.
+
 The next slide is what "owning" means. Skills, tools, data, and who approves what. Not the server.
 
 ## 7. What owning means — 1:30 (7:10)
 
 Owning used to sound like running the server. I tried that. It is not what this talk means.
 
-The four parts. Skills and playbooks: how my firm does one job, including the stop. Choice of tools: what I connect, and what stays closed. My data: what may leave, and where it goes. Who approves what: a person says yes before anything is sent, filed, paid, or deleted.
+The four parts. Skills and playbooks: how my firm does one job, including the stop. I keep those skills in one GitHub library, a shared marketplace, so the whole firm works from the same procedures. Choice of tools: what I connect, and what stays closed. If a tool cannot speak MCP, or a solid API, I cut it. My data: what may leave, and where it goes. Who approves what: a person says yes before anything is sent, filed, paid, or deleted.
 
 Those are the parts that make the firm different. A rack of servers is not one of them.
 
@@ -124,11 +126,11 @@ I do not explain how to install it.
 
 This is the product I use. I walk the six lines. I do not sell them.
 
-Connect an app and sign in with that provider. The token stays off the computer. The bot calls the tool and does not receive the login. A connected app is available to every bot on the account. My first week is two apps.
+Connect an app and sign in with that provider. The token stays off the computer. The bot calls the tool and does not receive the login. A connected app is available to every bot on the account. My first week is two apps. Connectivity is a buy-or-keep test. If the tool cannot speak MCP, or a solid API, I cut it. I do not keep a tool I have to drive by clicking around a website.
 
 I point it at a skill library if I have one. Otherwise there is nothing extra to set up. A skill is the procedure: when to use it, the steps, how to check, and what needs a person. Type / to call one.
 
-Routines are a sentence: when, which bot, what it returns, what it must not send, and what to do if the source is missing. A test run does real work. It can run with the laptop closed.
+Routines are how the schedule works. I say when, which bot, what it returns, what it must not send, and what to do if the source is missing. A test run does real work. It can run with the laptop closed. Ad hoc is the same job without the clock. Either way, I am not the one doing the task.
 
 A cloud computer, with a browser, files, and a terminal. It keeps working after the laptop closes. The next slide is the limit on that computer.
 
@@ -140,7 +142,7 @@ Phone calls, and private-network reach such as Tailscale, are coming. I do not b
 
 ## 11. One bot per job — 1:20 (13:50)
 
-This is the roster I run. One bot, one job. I do not read every line. I name the pattern, then point at two or three.
+This is the roster I run. One bot, one job, the way I would describe an employee. I do not read every line. I name the pattern, then point at two or three. They are not a pile of chats. They message each other and hand work off.
 
 CEO coordinates. Second brain, CLE planner, friction and learning reviews, usage oversight.
 Ops is my probate case work: filings drafts, signatures, deadlines, pulse and heartbeats.
@@ -154,7 +156,7 @@ Dev is repos, pull requests, CI, Sentry, and the tool server and skills.
 Research does the AI news briefings, legal research in CourtListener, and prep for a talk like this one.
 Home is my family calendar, school email, and occasions and gifts. It is not firm work.
 
-Group chats are not bots. I say that before anyone counts them as extra staff. Growth is Leads and Marketing. Leadership is Leads, Ops, and Finance.
+Group chats are how that handoff is visible. They are not bots. I say that before anyone counts them as extra staff. Growth is Leads and Marketing. Leadership is Leads, Ops, and Finance.
 
 Then the limit, out loud. On one account there is one computer. Each bot has its own screen. Files and sign-ins are shared. A second bot is not a wall around a client's file. Home is not the firm, and it is still a bot. If it runs on my firm account, it shares that computer.
 
@@ -168,11 +170,11 @@ Grok Bot, from the public Team Bot docs. A Team Bot shares plugins, secrets, ski
 
 Claude. Business and enterprise plans include admin controls for the organization. I describe the current console. I do not name a switch I have not rechecked.
 
-Then the point of the slide. On a business account, an admin keeps the setup current. That is true for ChatGPT, Claude, and Grok. Grok Bot is the one I use, because it is easy to use.
+Then the point of the slide. The playbooks stay in the GitHub library, so I can point another harness at the same procedures. On a business account, an admin keeps the setup current. In my ChatGPT account that means the skills marketplace installs them for everyone. That is true as a category for ChatGPT, Claude, and Grok. Grok Bot is the one I use, because it is easy to use.
 
 ## 13. Live demo — 4:30 (20:20)
 
-What they are about to see: a few bots, a routine, a skill, a connector. This account has never held a client file. I will not send anything.
+What they are about to see: a few bots, handing work to each other, plus a routine, a skill, and a connector. This account has never held a client file. I will not send anything.
 
 I do Calder, from `demo/RUNBOOK.md`. Temporary bot. Fictional estate. I read the draft. If an approval card appears, I leave it up.
 
@@ -188,13 +190,15 @@ Approval rules. Send, file, pay, and delete wait for a person. I put that in the
 
 Checking and supervising. Rules 5.3 and 1.1. I read the output. Competence includes understanding the tool. The bot is not a member of the bar. Missouri: 4-5.3 and 4-1.1. ABA Formal Opinion 512 is the longer piece, in the handout. This is a discussion for owners, not an opinion on anyone's stack.
 
-Skill portability. I keep a plain-language copy outside the product. I test it on the next platform before I need to switch. The open Agent Skills format is one way to structure the file.
+Skill portability. The skills live in one GitHub library for the firm. That is the marketplace we work from. I can point a different harness at it and not rewrite the playbooks. I test the move before I need it. The open Agent Skills format is one way to structure the file.
 
 ## 15. First week — 1:10 (23:30)
 
-I read the four. One tool. Two apps. One process written as a skill. One routine.
+I read the four. One tool. Two apps. One process written as a skill, into the GitHub library. One routine.
 
-If the job lives in Clio or Filevine, the tool can be Vincent or Lois. If it crosses systems, I pick one general agent and stay there for the week.
+The posture for the week: I manage. I do not do the task myself. The bot runs it once, or on a schedule.
+
+If the job lives in Clio or Filevine, the tool can be Vincent or Lois. If it crosses systems, I pick one general agent and stay there for the week. Whichever tool I pick has to connect. No solid MCP or API, and it does not make the list.
 
 Sample data until I have watched the draft. The worksheet is in the handout, which is separate from these slides.
 

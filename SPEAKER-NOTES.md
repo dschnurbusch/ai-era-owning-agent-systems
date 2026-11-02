@@ -1,6 +1,6 @@
 # Owning Your AI Agent Systems — speaker notes
 
-About twenty-five minutes, then questions. The times below are a rehearsal plan, not a measured run. If questions share the half hour, I shorten the science slides to the names and keep the demo to one pass.
+About twenty-six minutes, then questions. The times below are a rehearsal plan, not a measured run. If questions share the half hour, I shorten the science slides to the names and keep the demo to one pass.
 
 My talk track. Not a transcript. No firm results. I checked Grok Bot claims against public docs on October 27, 2026. I re-read the computer, approvals, and Team Bot pages before November 5.
 
@@ -181,7 +181,13 @@ Group chats are how that handoff is visible. They are not bots. I say that befor
 
 Then the limit, out loud. On one account there is one computer. Each bot has its own screen. Files and sign-ins are shared. A second bot is not a wall around a client's file. Home is not the firm, and it is still a bot. If it runs on my firm account, it shares that computer.
 
-## 13. Admin controls — 2:00 (17:00)
+## 13. How marketplaces are organized — 0:50 (15:50)
+
+I draw the boxes from the outside in. The marketplace is a GitHub repo. Ours is dschnurbusch/schnurbusch-law-plugins. Inside it are plugins. Inside each plugin are the pieces: skills, scripts, templates, and MCP connectors.
+
+I keep that marketplace in GitHub. ChatGPT, and any other tool that can import it, pulls the same plugins. That is why the firm is not maintaining a separate copy in each product. The next slide is the admin screen where I import it.
+
+## 14. Admin controls — 2:00 (17:50)
 
 Business account, not a personal login.
 
@@ -195,7 +201,7 @@ Claude. Business and enterprise plans include admin controls for the organizatio
 
 Then the point of the slide. The playbooks stay in the GitHub library, so I can point another harness at the same procedures. On a business account, an admin keeps the setup current. In my ChatGPT account that means the skills marketplace installs them for everyone. That is true as a category for ChatGPT, Claude, and Grok. Grok Bot is the one I use, because it is easy to use.
 
-## 14. Live demo — 4:30 (21:30)
+## 15. Live demo — 4:30 (22:20)
 
 What they are about to see: a few bots, handing work to each other, plus a routine, a skill, and a connector. This account has never held a client file. I will not send anything.
 
@@ -205,7 +211,7 @@ Pell is optional, and only with extra time. The sender has no authority, so the 
 
 If the network stalls, I do not troubleshoot. I narrate the same steps from the runbook. I do not sign into firm email, Clio, Filevine, trust, or 1Password.
 
-## 15. What you still own — 2:00 (23:30)
+## 16. What you still own — 2:00 (24:20)
 
 Confidentiality. Rule 1.6. Where the information goes, who can see it, whether it trains a model, how long it is kept. I answer that before a real matter is connected. Missouri numbers the same duty 4-1.6. I say the Missouri number only if the room needs it. Grok Bot stores data and does not offer Legacy Privacy Mode. Training choices follow the account's privacy settings.
 
@@ -215,7 +221,7 @@ Checking and supervising. Rules 5.3 and 1.1. I read the output. Competence inclu
 
 Skill portability. The skills live in one GitHub library for the firm. That is the marketplace we work from. I can point a different harness at it and not rewrite the playbooks. I test the move before I need it. The open Agent Skills format is one way to structure the file.
 
-## 16. First week — 1:10 (24:40)
+## 17. First week — 1:10 (25:30)
 
 I read the four. One tool. Two apps. One process written as a skill, into the GitHub library. One routine.
 
@@ -225,7 +231,7 @@ If the job lives in Clio or Filevine, the tool can be Vincent or Lois. If it cro
 
 Sample data until I have watched the draft. The worksheet is in the handout, which is separate from these slides.
 
-## 17. Sources — 0:30 (25:10)
+## 18. Sources — 0:30 (26:00)
 
 I do not read the list. I checked the docs in October 2026, and the current page wins if a control has moved. I point at the handout. Questions.
 

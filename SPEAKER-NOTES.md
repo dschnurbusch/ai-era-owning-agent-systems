@@ -1,14 +1,35 @@
 # Owning Your AI Agent Systems — speaker notes
 
-About twenty-four minutes, then questions. The times below are a rehearsal plan, not a measured run. If questions share the half hour, I shorten the science slides to the names and keep the demo to one pass.
+About twenty-five minutes, then questions. The times below are a rehearsal plan, not a measured run. If questions share the half hour, I shorten the science slides to the names and keep the demo to one pass.
 
 My talk track. Not a transcript. No firm results. I checked Grok Bot claims against public docs on October 27, 2026. I re-read the computer, approvals, and Team Bot pages before November 5.
 
 Demo rule: I use an account that has never held client information. Bots on one account share a computer. I do not use the account that runs my firm bots. The script and the fictional files are in `demo/RUNBOOK.md`.
 
-## 1. A capability shock — 1:00 (1:00)
+## 1. What changed in 2026 — 1:10 (1:10)
 
-I'm Dan Schnurbusch. This hour is for firm owners. The handout is separate. The demo uses fictional matters. Then the incident.
+I'm Dan Schnurbusch. This hour is for firm owners. The handout is separate. The demo uses fictional matters. Then I chart the year, so the room can see why this moment matters. I do not read every clause.
+
+January 4. GPT-5.2 Pro writes a new proof for open Erdős problem #728. Terence Tao called the solve more or less autonomous. I also say his warning: the win says more about speed than about the difficulty of the problem.
+
+January 12. Anthropic releases Claude Cowork. That is Claude Code's agent work, in the desktop app, for everyday work on my own files.
+
+July 11 to 13. During OpenAI security tests, agents leave the sandbox and get into parts of Hugging Face production, using leaked keys. Hugging Face discloses it on July 16. The next slide is the closer look. I do not narrate the exploit here.
+
+September 8. About 10,000 OpenAI agents, after about 88 hours, produce a finite-time blow-up for a forced version of Navier-Stokes. That is a variant of a Millennium Prize problem. Experts debate what it means. I do not say the prize problem is settled.
+
+October 16 and 17. OpenAI and, separately, Anthropic models refute the exponential-time hypothesis. Found October 16. Machine-checked in Lean on October 17. Published October 26. Human review is still pending. I do not call it a three-day solve.
+
+Sources:
+- https://the-decoder.com/terence-tao-says-gpt-5-2-pro-cracked-an-erdos-problem-but-warns-the-win-says-more-about-speed-than-difficulty/
+- https://support.claude.com/en/articles/12138966-release-notes
+- https://huggingface.co/blog/security-incident-july-2026
+- https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908/
+- https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/
+
+## 2. A capability shock — 1:00 (2:10)
+
+This is the July event from the timeline, up close.
 
 July 2026. During internal cybersecurity evaluations, OpenAI models harnessed as agents got out of sandbox controls that were supposed to keep them off the internet. They compromised parts of Hugging Face production infrastructure between July 11 and July 13. OpenAI disclosed it on July 21.
 
@@ -22,7 +43,7 @@ Sources:
 - https://www.redwoodresearch.org/research/hugging-face-incident
 - https://www.reuters.com/business/openai-report-says-its-network-was-hacked-by-its-own-rogue-ai-agents-2026-08-26/
 
-## 2. Math and hard science — 1:20 (2:20)
+## 3. Math and hard science — 1:20 (3:30)
 
 October 2026. OpenAI published a GitHub collection from an internal model. The catalogue they describe is about 721 manuscripts in 373 families. An earlier cut of the same release was 722 manuscripts and 372 families. Many results have Lean formalizations. The repository says some results that are not formalized could have issues. I say "released," not "proved."
 
@@ -42,7 +63,7 @@ Sources:
 - https://www.science.org/content/article/ai-cracks-27-year-old-pillar-computer-science-openai-and-anthropic-claim
 - https://www.scientificamerican.com/article/openais-blockbuster-navier-stokes-proof-isnt-what-we-thought-it-was/
 
-## 3. Biotech and medicine — 0:50 (3:10)
+## 4. Biotech and medicine — 0:50 (4:20)
 
 Anthropic has productized Claude for life sciences and, in January 2026, Claude for Healthcare: connectors and skills aimed at clinical-trial work, regulatory documents, and discovery tools. That is a vendor description of the product, not a result from a trial.
 
@@ -58,7 +79,7 @@ Sources:
 - https://claude.com/customers/novo-nordisk
 - https://www.iconplc.com/node/47841
 
-## 4. Astra and the physicists — 1:10 (4:20)
+## 5. Astra and the physicists — 1:10 (5:30)
 
 TheoPhysEval, arXiv:2610.16733, October 2026. Fifty unpublished theoretical-physics problems with checkable answers. The authors describe them as research calculations a world expert could do in about a day, not open prize problems. GPT-6-Astra, harnessed in Codex, scored 49 of 50 when it could use tools, including search. One run. The authors could not rule out data leakage.
 
@@ -68,7 +89,7 @@ On those items, the model was the check on the experts. Then my limit, in one se
 
 Source: https://arxiv.org/abs/2610.16733
 
-## 5. Raw problem-solving — 0:30 (4:50)
+## 6. Raw problem-solving — 0:30 (6:00)
 
 I read the sentence. Then I stop.
 
@@ -76,7 +97,7 @@ I read the sentence. Then I stop.
 
 This is my takeaway, for the pause. It is not a score from a paper. I do not add a citation. I let the room sit with it.
 
-## 6. Owning your agent systems — 0:50 (5:40)
+## 7. Owning your agent systems — 0:50 (6:50)
 
 This is the turn. Most of what a law firm actually does does not need a model that can work a Navier-Stokes claim. It needs a harness: the work gets done, the operation stays organized, and people can work on it together. The way I do that, and the way I move when a better tool shows up, is to own the agent system.
 
@@ -84,7 +105,7 @@ Then the posture. I stop doing the tasks myself. My bots do them, once, or on a 
 
 The next slide is what "owning" means. Skills, tools, data, and who approves what. Not the server.
 
-## 7. What owning means — 1:30 (7:10)
+## 8. What owning means — 1:30 (8:20)
 
 Owning used to sound like running the server. I tried that. It is not what this talk means.
 
@@ -92,7 +113,7 @@ The four parts. Skills and playbooks: how my firm does one job, including the st
 
 Those are the parts that make the firm different. A rack of servers is not one of them.
 
-## 8. The range of options — 1:20 (8:30)
+## 9. The range of options — 1:20 (9:40)
 
 Three places. I do not score them.
 
@@ -104,7 +125,7 @@ Running my own: Hermes. One slide, next.
 
 Firms can use more than one. The picture is a map.
 
-## 9. Hermes — 2:00 (10:30)
+## 10. Hermes — 2:00 (11:40)
 
 I say this plainly. I built it. It works. It is a lot of work.
 
@@ -122,7 +143,7 @@ Fair reasons to take this on: data sovereignty or security, a worry that prices 
 
 I do not explain how to install it.
 
-## 10. Grok Bot — 2:00 (12:30)
+## 11. Grok Bot — 2:00 (13:40)
 
 This is the product I use. I walk the six lines. I do not sell them.
 
@@ -140,7 +161,7 @@ It asks before sending. The card shows the action. Allow once, always allow, or 
 
 Phone calls, and private-network reach such as Tailscale, are coming. I do not build this month's workflow on either one. Voice chat inside the app is a different, shipped control. I separate the two only if someone mixes them up.
 
-## 11. One bot per job — 1:20 (13:50)
+## 12. One bot per job — 1:20 (15:00)
 
 This is the roster I run. One bot, one job, the way I would describe an employee. I do not read every line. I name the pattern, then point at two or three. They are not a pile of chats. They message each other and hand work off.
 
@@ -160,11 +181,13 @@ Group chats are how that handoff is visible. They are not bots. I say that befor
 
 Then the limit, out loud. On one account there is one computer. Each bot has its own screen. Files and sign-ins are shared. A second bot is not a wall around a client's file. Home is not the firm, and it is still a bot. If it runs on my firm account, it shares that computer.
 
-## 12. Admin controls — 2:00 (15:50)
+## 13. Admin controls — 2:00 (17:00)
 
 Business account, not a personal login.
 
 ChatGPT, and I say it is my firm's account, not every plan. The skills marketplace is connected at the admin level. Skills are packaged into plugins that install themselves for everyone in those ChatGPT accounts. The admin work is light.
+
+The screenshot is our Workspace Settings, Marketplaces. The GitHub repo is dschnurbusch/schnurbusch-law-plugins, on main, with 4 plugins. The Add menu is Upload plugin, Create MCP plugin, and Import marketplace, which keeps the plugins updated from GitHub. I point at Import marketplace. That is how the shared library reaches every account.
 
 Grok Bot, from the public Team Bot docs. A Team Bot shares plugins, secrets, skills, and memory. The owner sets those once, and changes reach the people using the bot. Each person signs in for their own connectors, so one person's login is not lent to the team. Admins set connector policy, including turning a connector off for the team. Team memory is shared. A person can keep private notes. If someone wants the finer print: only an owner or manager saves team skills, a key or token uses the bot's credential, and secret values stay hidden from teammates and from the model.
 
@@ -172,7 +195,7 @@ Claude. Business and enterprise plans include admin controls for the organizatio
 
 Then the point of the slide. The playbooks stay in the GitHub library, so I can point another harness at the same procedures. On a business account, an admin keeps the setup current. In my ChatGPT account that means the skills marketplace installs them for everyone. That is true as a category for ChatGPT, Claude, and Grok. Grok Bot is the one I use, because it is easy to use.
 
-## 13. Live demo — 4:30 (20:20)
+## 14. Live demo — 4:30 (21:30)
 
 What they are about to see: a few bots, handing work to each other, plus a routine, a skill, and a connector. This account has never held a client file. I will not send anything.
 
@@ -182,7 +205,7 @@ Pell is optional, and only with extra time. The sender has no authority, so the 
 
 If the network stalls, I do not troubleshoot. I narrate the same steps from the runbook. I do not sign into firm email, Clio, Filevine, trust, or 1Password.
 
-## 14. What you still own — 2:00 (22:20)
+## 15. What you still own — 2:00 (23:30)
 
 Confidentiality. Rule 1.6. Where the information goes, who can see it, whether it trains a model, how long it is kept. I answer that before a real matter is connected. Missouri numbers the same duty 4-1.6. I say the Missouri number only if the room needs it. Grok Bot stores data and does not offer Legacy Privacy Mode. Training choices follow the account's privacy settings.
 
@@ -192,7 +215,7 @@ Checking and supervising. Rules 5.3 and 1.1. I read the output. Competence inclu
 
 Skill portability. The skills live in one GitHub library for the firm. That is the marketplace we work from. I can point a different harness at it and not rewrite the playbooks. I test the move before I need it. The open Agent Skills format is one way to structure the file.
 
-## 15. First week — 1:10 (23:30)
+## 16. First week — 1:10 (24:40)
 
 I read the four. One tool. Two apps. One process written as a skill, into the GitHub library. One routine.
 
@@ -202,7 +225,7 @@ If the job lives in Clio or Filevine, the tool can be Vincent or Lois. If it cro
 
 Sample data until I have watched the draft. The worksheet is in the handout, which is separate from these slides.
 
-## 16. Sources — 0:30 (24:00)
+## 17. Sources — 0:30 (25:10)
 
 I do not read the list. I checked the docs in October 2026, and the current page wins if a control has moved. I point at the handout. Questions.
 

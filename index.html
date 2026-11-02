@@ -95,7 +95,25 @@ ul,ol{list-style:none;margin:0;padding:0}
 .notes li{font-size:24px;line-height:1.35;padding:4px 0 4px 22px;position:relative}
 .notes li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--clay)}
 
+.s-year{background:linear-gradient(115deg, #1A120F 0%, #0E0E0D 55%, #141820 100%)}
+.events{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;list-style:none;margin:8px 0 0;padding:0;position:relative}
+.events::before{content:"";position:absolute;left:1%;right:3%;top:58px;height:4px;background:var(--clay)}
+.events::after{content:"";position:absolute;right:0;top:50px;border-style:solid;border-width:10px 0 10px 16px;border-color:transparent transparent transparent var(--clay)}
+.events li{padding:0}
+.events .when{display:block;min-height:34px;font:14px var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--clay)}
+.events .dot{display:block;width:16px;height:16px;border-radius:50%;background:var(--clay);margin:8px 0 14px;position:relative;z-index:1;box-shadow:0 0 0 6px #120e0c}
+.events strong{display:block;font-family:var(--serif);font-weight:400;font-size:22px;line-height:1.15;margin-bottom:8px}
+.events .detail{display:block;font-size:16px;line-height:1.32;color:#E4DFD4}
+.s-year h1{font-size:60px;margin-bottom:18px}
 .s-admin{background:linear-gradient(128deg, #1A120F 0%, #0E0E0D 48%, #12161C 100%)}
+.s-admin h1{font-size:52px;margin-bottom:12px}
+.admin-split{display:grid;grid-template-columns:.9fr 1.15fr;gap:22px;align-items:start}
+.s-admin .lead-line{font-size:20px;margin:0 0 10px;max-width:none}
+.s-admin .cards{grid-template-columns:1fr;gap:8px;margin:0 0 10px}
+.s-admin .cards li{font-size:16px;line-height:1.32;padding:10px 12px}
+.shot{margin:0}
+.shot img{display:block;width:100%;height:500px;object-fit:cover;object-position:top center;border-radius:12px;background:#fff}
+.shot figcaption{margin-top:10px;font-size:18px;line-height:1.3;color:#E4DFD4}
 .cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:8px 0 16px}
 .cards li{padding:20px 18px;font-size:23px;line-height:1.32;border-top:4px solid var(--clay);background:rgba(250,249,245,.04)}
 .s-admin .lead-line{font-size:30px}
@@ -154,9 +172,23 @@ ul,ol{list-style:none;margin:0;padding:0}
 </header>
 <main class="stage" id="deck">
 
-  <article class="slide s-hermes" id="s1" data-title="A capability shock">
+  <article class="slide s-year" id="s1" data-title="What changed in 2026">
     <span class="num" aria-hidden="true">01</span>
     <p class="kicker rise" style="--i:0">01 <span>/</span> Schnurbusch Law · AI Era 2.0 · November 2026</p>
+    <h1 class="rise" style="--i:1">What changed in 2026</h1>
+    <ol class="events">
+      <li class="rise" style="--i:2"><span class="when">Jan 4</span><span class="dot" aria-hidden="true"></span><strong>Erdős #728</strong><span class="detail">GPT-5.2 Pro writes a new proof of an open problem. Tao called it more or less autonomous.</span></li>
+      <li class="rise" style="--i:3"><span class="when">Jan 12</span><span class="dot" aria-hidden="true"></span><strong>Claude Cowork</strong><span class="detail">Claude Code's agent work, in the desktop app, on my own files.</span></li>
+      <li class="rise" style="--i:4"><span class="when">Jul 11–13</span><span class="dot" aria-hidden="true"></span><strong>Hugging Face</strong><span class="detail">Agents leave the sandbox and enter parts of production, using leaked keys. Disclosed July 16.</span></li>
+      <li class="rise" style="--i:5"><span class="when">Sep 8</span><span class="dot" aria-hidden="true"></span><strong>Navier-Stokes</strong><span class="detail">About 10,000 agents, ~88 hours. Finite-time blow-up for a forced version. Experts debate what it means.</span></li>
+      <li class="rise" style="--i:6"><span class="when">Oct 16–17</span><span class="dot" aria-hidden="true"></span><strong>Exponential time</strong><span class="detail">OpenAI and Anthropic models refute the hypothesis. Found Oct 16. Lean check Oct 17. Published Oct 26. Human review still pending.</span></li>
+    </ol>
+    <p class="cite rise" style="--i:7">The Decoder. Claude release notes. Hugging Face, July 16. Quanta, Sep 8. TechCrunch, Oct 27.</p>
+  </article>
+
+  <article class="slide s-hermes" id="s2" data-title="A capability shock">
+    <span class="num" aria-hidden="true">02</span>
+    <p class="kicker rise" style="--i:0">02 <span>/</span> A capability shock</p>
     <h1 class="rise" style="--i:1">A capability shock</h1>
     <ul class="rail">
       <li class="rise" style="--i:2">July 2026. OpenAI evaluation agents escaped sandbox controls during a cyber test.</li>
@@ -167,9 +199,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     <p class="cite rise" style="--i:6">OpenAI incident report. Hugging Face disclosure, July 2026. Redwood Research on the count.</p>
   </article>
 
-  <article class="slide s-own" id="s2" data-title="Math and hard science">
-    <span class="num" aria-hidden="true">02</span>
-    <p class="kicker rise" style="--i:0">02 <span>/</span> Math and hard science</p>
+  <article class="slide s-own" id="s3" data-title="Math and hard science">
+    <span class="num" aria-hidden="true">03</span>
+    <p class="kicker rise" style="--i:0">03 <span>/</span> Math and hard science</p>
     <h1 class="rise" style="--i:1">Math and hard science</h1>
     <ul class="rail">
       <li class="rise" style="--i:2">October 2026. OpenAI released about 721 manuscripts, in 373 families, from an internal model. Many have Lean formalizations. Not all are checked.</li>
@@ -180,9 +212,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     </ul>
   </article>
 
-  <article class="slide s-grok" id="s3" data-title="Biotech and medicine">
-    <span class="num" aria-hidden="true">03</span>
-    <p class="kicker rise" style="--i:0">03 <span>/</span> Biotech and medicine</p>
+  <article class="slide s-grok" id="s4" data-title="Biotech and medicine">
+    <span class="num" aria-hidden="true">04</span>
+    <p class="kicker rise" style="--i:0">04 <span>/</span> Biotech and medicine</p>
     <h1 class="rise" style="--i:1">Biotech and medicine</h1>
     <ul class="icon-grid duty">
       <li class="rise" style="--i:2"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M18 8h12M24 8v8M16 16h16l-4 22a6 6 0 0 1-8 0z"/></svg>Claude for Healthcare, and Claude for Life Sciences.</li>
@@ -192,9 +224,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     </ul>
   </article>
 
-  <article class="slide s-range" id="s4" data-title="Astra and the physicists">
-    <span class="num" aria-hidden="true">04</span>
-    <p class="kicker rise" style="--i:0">04 <span>/</span> Astra and the physicists</p>
+  <article class="slide s-range" id="s5" data-title="Astra and the physicists">
+    <span class="num" aria-hidden="true">05</span>
+    <p class="kicker rise" style="--i:0">05 <span>/</span> Astra and the physicists</p>
     <h1 class="rise" style="--i:1">Astra and the physicists</h1>
     <p class="score rise" style="--i:2">49/50<small>GPT-6-Astra with Codex, on TheoPhysEval. October 2026.</small></p>
     <ul class="rail">
@@ -204,16 +236,16 @@ ul,ol{list-style:none;margin:0;padding:0}
     </ul>
   </article>
 
-  <article class="slide s-title" id="s5" data-title="Raw problem-solving">
-    <span class="num" aria-hidden="true">05</span>
-    <p class="kicker rise" style="--i:0">05 <span>/</span> Raw problem-solving</p>
+  <article class="slide s-title" id="s6" data-title="Raw problem-solving">
+    <span class="num" aria-hidden="true">06</span>
+    <p class="kicker rise" style="--i:0">06 <span>/</span> Raw problem-solving</p>
     <h1 class="rise" style="--i:1">Raw problem-solving</h1>
     <p class="pause-line rise" style="--i:2">Models are smarter, in raw problem-solving, than almost every human on Earth.</p>
   </article>
 
-  <article class="slide s-demo s-turn" id="s6" data-title="Owning your agent systems">
-    <span class="num" aria-hidden="true">06</span>
-    <p class="kicker rise" style="--i:0">06 <span>/</span> Owning your agent systems</p>
+  <article class="slide s-demo s-turn" id="s7" data-title="Owning your agent systems">
+    <span class="num" aria-hidden="true">07</span>
+    <p class="kicker rise" style="--i:0">07 <span>/</span> Owning your agent systems</p>
     <h1 class="rise" style="--i:1">Owning your agent systems</h1>
     <ul class="rail">
       <li class="rise" style="--i:2">Most law-firm work does not need a model that can work a Navier-Stokes claim.</li>
@@ -223,9 +255,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     </ul>
   </article>
 
-  <article class="slide s-own" id="s7" data-title="What owning means">
-    <span class="num" aria-hidden="true">07</span>
-    <p class="kicker rise" style="--i:0">07 <span>/</span> What owning means</p>
+  <article class="slide s-own" id="s8" data-title="What owning means">
+    <span class="num" aria-hidden="true">08</span>
+    <p class="kicker rise" style="--i:0">08 <span>/</span> What owning means</p>
     <h1 class="rise" style="--i:1">What owning means</h1>
     <p class="lead-line rise" style="--i:2">Not hosting the software.</p>
     <ul class="quad">
@@ -236,9 +268,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     </ul>
   </article>
 
-  <article class="slide s-range" id="s8" data-title="The range of options">
-    <span class="num" aria-hidden="true">08</span>
-    <p class="kicker rise" style="--i:0">08 <span>/</span> The range of options</p>
+  <article class="slide s-range" id="s9" data-title="The range of options">
+    <span class="num" aria-hidden="true">09</span>
+    <p class="kicker rise" style="--i:0">09 <span>/</span> The range of options</p>
     <h1 class="rise" style="--i:1">The range of options</h1>
     <div class="spectrum">
       <ul class="stations">
@@ -249,9 +281,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     </div>
   </article>
 
-  <article class="slide s-hermes" id="s9" data-title="Hermes">
-    <span class="num" aria-hidden="true">09</span>
-    <p class="kicker rise" style="--i:0">09 <span>/</span> Hermes</p>
+  <article class="slide s-hermes" id="s10" data-title="Hermes">
+    <span class="num" aria-hidden="true">10</span>
+    <p class="kicker rise" style="--i:0">10 <span>/</span> Hermes</p>
     <h1 class="rise" style="--i:1">Hermes</h1>
     <ul class="rail">
       <li class="rise" style="--i:2">I built my own setup. It is a lot of work.</li>
@@ -262,9 +294,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     </ul>
   </article>
 
-  <article class="slide s-grok" id="s10" data-title="Grok Bot">
-    <span class="num" aria-hidden="true">10</span>
-    <p class="kicker rise" style="--i:0">10 <span>/</span> Grok Bot</p>
+  <article class="slide s-grok" id="s11" data-title="Grok Bot">
+    <span class="num" aria-hidden="true">11</span>
+    <p class="kicker rise" style="--i:0">11 <span>/</span> Grok Bot</p>
     <h1 class="rise" style="--i:1">Grok Bot</h1>
     <ul class="icon-grid">
       <li class="rise" style="--i:2"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="14" cy="24" r="6"/><circle cx="34" cy="24" r="6"/><path d="M20 24h8"/></svg>Connect an app and sign in. No solid MCP or API, and I cut the tool.</li>
@@ -276,9 +308,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     </ul>
   </article>
 
-  <article class="slide s-bots" id="s11" data-title="One bot per job">
-    <span class="num" aria-hidden="true">11</span>
-    <p class="kicker rise" style="--i:0">11 <span>/</span> One bot per job</p>
+  <article class="slide s-bots" id="s12" data-title="One bot per job">
+    <span class="num" aria-hidden="true">12</span>
+    <p class="kicker rise" style="--i:0">12 <span>/</span> One bot per job</p>
     <h1 class="rise" style="--i:1">One bot per job</h1>
     <ul class="bot-grid">
       <li class="rise" style="--i:2"><span class="bot-name"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="16" r="6"/><path d="M12 38c2-8 8-12 12-12s10 4 12 12"/><path d="M36 14h6M39 11v6"/></svg>CEO</span><span class="job">Second brain and coordination. CLE planner, friction and learning reviews, usage oversight.</span></li>
@@ -300,22 +332,30 @@ ul,ol{list-style:none;margin:0;padding:0}
     </ul>
   </article>
 
-  <article class="slide s-admin" id="s12" data-title="Admin controls">
-    <span class="num" aria-hidden="true">12</span>
-    <p class="kicker rise" style="--i:0">12 <span>/</span> Admin controls</p>
+  <article class="slide s-admin" id="s13" data-title="Admin controls">
+    <span class="num" aria-hidden="true">13</span>
+    <p class="kicker rise" style="--i:0">13 <span>/</span> Admin controls</p>
     <h1 class="rise" style="--i:1">Admin controls</h1>
-    <p class="lead-line rise" style="--i:2">Business accounts, not a personal login.</p>
-    <ul class="cards">
-      <li class="rise" style="--i:3">ChatGPT, in our account: the skills marketplace is connected at the admin level. Skills are packaged into plugins that install for everyone.</li>
-      <li class="rise" style="--i:4">Grok Bot: a Team Bot shares plugins, secrets, skills, and memory. Each person signs in for their own connectors. Admins set connector policy.</li>
-      <li class="rise" style="--i:5">Claude business and enterprise plans include admin controls for the organization.</li>
-    </ul>
-    <p class="lead-line rise" style="--i:6">The playbooks stay in that GitHub library. An admin keeps the setup current. Grok Bot is the one I use, because it is easy to use.</p>
+    <div class="admin-split">
+      <div>
+        <p class="lead-line rise" style="--i:2">Business accounts, not a personal login.</p>
+        <ul class="cards">
+          <li class="rise" style="--i:3">ChatGPT, in our account: the skills marketplace is connected at the admin level. Skills are packaged into plugins that install for everyone.</li>
+          <li class="rise" style="--i:4">Grok Bot: a Team Bot shares plugins, secrets, skills, and memory. Each person signs in for their own connectors. Admins set connector policy.</li>
+          <li class="rise" style="--i:5">Claude business and enterprise plans include admin controls for the organization.</li>
+        </ul>
+        <p class="lead-line rise" style="--i:6">The playbooks stay in that GitHub library. An admin keeps the setup current. Grok Bot is the one I use, because it is easy to use.</p>
+      </div>
+      <figure class="shot rise" style="--i:7">
+        <img src="assets/chatgpt-marketplaces.png" alt="ChatGPT Workspace Settings, Marketplaces page. The marketplace dschnurbusch/schnurbusch-law-plugins on main has 4 plugins. The Add menu lists Upload plugin, Create MCP plugin, and Import marketplace, keep plugins updated from GitHub.">
+        <figcaption>ChatGPT admin: importing our GitHub skills marketplace.</figcaption>
+      </figure>
+    </div>
   </article>
 
-  <article class="slide s-demo" id="s13" data-title="Live demo">
-    <span class="num" aria-hidden="true">13</span>
-    <p class="kicker rise" style="--i:0">13 <span>/</span> Live demo</p>
+  <article class="slide s-demo" id="s14" data-title="Live demo">
+    <span class="num" aria-hidden="true">14</span>
+    <p class="kicker rise" style="--i:0">14 <span>/</span> Live demo</p>
     <h1 class="rise" style="--i:1">Live demo</h1>
     <ul class="demo-grid">
       <li class="rise" style="--i:2"><span class="mark" aria-hidden="true">01</span>A few bots. They hand work to each other.</li>
@@ -326,9 +366,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     <p class="stop rise" style="--i:6">Client information stays off this account. Nothing is sent.</p>
   </article>
 
-  <article class="slide s-duty" id="s14" data-title="What you still own">
-    <span class="num" aria-hidden="true">14</span>
-    <p class="kicker rise" style="--i:0">14 <span>/</span> What you still own</p>
+  <article class="slide s-duty" id="s15" data-title="What you still own">
+    <span class="num" aria-hidden="true">15</span>
+    <p class="kicker rise" style="--i:0">15 <span>/</span> What you still own</p>
     <h1 class="rise" style="--i:1">What you still own</h1>
     <ul class="icon-grid duty">
       <li class="rise" style="--i:2"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 8l14 6v10c0 9-6 14-14 16C16 38 10 33 10 24V14z"/></svg>Confidentiality. Rule 1.6.</li>
@@ -338,9 +378,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     </ul>
   </article>
 
-  <article class="slide s-week" id="s15" data-title="First week">
-    <span class="num" aria-hidden="true">15</span>
-    <p class="kicker rise" style="--i:0">15 <span>/</span> First week</p>
+  <article class="slide s-week" id="s16" data-title="First week">
+    <span class="num" aria-hidden="true">16</span>
+    <p class="kicker rise" style="--i:0">16 <span>/</span> First week</p>
     <h1 class="rise" style="--i:1">First week</h1>
     <ol class="steps">
       <li class="rise" style="--i:2"><span class="n" aria-hidden="true">1</span>One tool.</li>
@@ -351,9 +391,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     <p class="watch rise" style="--i:6">I manage. I do not do the task myself. The bot runs it, once or on a schedule. Sample data until I have watched it.</p>
   </article>
 
-  <article class="slide s-sources" id="s16" data-title="Sources">
-    <span class="num" aria-hidden="true">16</span>
-    <p class="kicker rise" style="--i:0">16 <span>/</span> Sources</p>
+  <article class="slide s-sources" id="s17" data-title="Sources">
+    <span class="num" aria-hidden="true">17</span>
+    <p class="kicker rise" style="--i:0">17 <span>/</span> Sources</p>
     <h1 class="rise" style="--i:1">Sources</h1>
     <ul class="sources">
       <li class="rise" style="--i:2"><a href="https://openai.com/index/hugging-face-incident-and-the-road-ahead/">OpenAI, Hugging Face incident</a></li>
@@ -392,7 +432,7 @@ ul,ol{list-style:none;margin:0;padding:0}
   <span class="hint" id="sceneName">Owning your AI agent systems</span>
   <div class="nav">
     <button id="prevBtn" aria-label="Previous slide">←</button>
-    <span class="counter" id="counter" aria-live="polite">01 / 16</span>
+    <span class="counter" id="counter" aria-live="polite">01 / 17</span>
     <button id="nextBtn" aria-label="Next slide">→</button>
   </div>
   <span class="hint">← → · Space · F fullscreen</span>

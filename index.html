@@ -125,6 +125,29 @@ ul,ol{list-style:none;margin:0;padding:0}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{border:1px solid var(--clay);border-radius:999px;padding:8px 14px;font-size:18px;line-height:1.2;color:#FAF9F5}
 .market-line{margin:18px 0 0;font-size:26px;line-height:1.35;max-width:1280px}
+.s-day{padding-top:48px;padding-bottom:36px}
+.s-day h1{font-size:42px;margin-bottom:6px}
+.s-day .kicker{margin-bottom:8px}
+.day-shot{margin:0}
+.day-shot img{display:block;width:100%;height:690px;object-fit:contain;object-position:center center;background:#f3f3f1;border-radius:12px}
+.day-shot figcaption{margin-top:6px;font-size:22px;line-height:1.25;color:#E4DFD4}
+.s-flow{background:linear-gradient(160deg,#1A1410 0%,#0C0C0B 60%)}
+.s-flow h1{font-size:56px;margin-bottom:16px}
+.loop-top{display:grid;grid-template-columns:1.05fr 84px 1.35fr 84px .85fr;gap:8px;align-items:stretch}
+.actor{border:3px solid var(--clay);border-radius:16px;padding:16px 16px 14px;background:rgba(217,119,87,.08)}
+.actor b{display:block;font-family:var(--serif);font-weight:400;font-size:36px;line-height:1.05}
+.actor span{display:block;margin-top:8px;font-size:18px;line-height:1.3;color:#E4DFD4}
+.hop{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:var(--clay)}
+.hop em{font-style:normal;font-family:var(--serif);font-size:28px;line-height:1}
+.hop svg{width:72px;height:22px;display:block}
+.loop-back{position:relative;margin:14px 8px 6px;height:54px}
+.loop-back .track{position:absolute;left:8%;right:8%;top:16px;height:4px;background:var(--clay)}
+.loop-back .track:before{content:"";position:absolute;left:-2px;top:-8px;border-style:solid;border-width:10px 16px 10px 0;border-color:transparent var(--clay) transparent transparent}
+.back-tags{display:flex;justify-content:space-between;position:relative;padding:0 6% 0 10%;font-size:18px;color:#E4DFD4}
+.back-tags b{color:var(--clay);font-family:var(--serif);font-weight:400;font-size:26px;margin-right:8px}
+.flowsteps{list-style:none;margin:8px 0 0;padding:0}
+.flowsteps li{display:grid;grid-template-columns:36px 1fr;gap:10px;align-items:start;font-size:22px;line-height:1.28;padding:5px 0}
+.flowsteps em{font-style:normal;font-family:var(--serif);font-size:26px;color:var(--clay);line-height:1.1}
 .cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:8px 0 16px}
 .cards li{padding:20px 18px;font-size:23px;line-height:1.32;border-top:4px solid var(--clay);background:rgba(250,249,245,.04)}
 .s-admin .lead-line{font-size:30px}
@@ -343,9 +366,19 @@ ul,ol{list-style:none;margin:0;padding:0}
     </ul>
   </article>
 
-  <article class="slide s-market" id="s13" data-title="How marketplaces are organized">
+  <article class="slide s-day" id="s13" data-title="What it looks like day to day">
     <span class="num" aria-hidden="true">13</span>
-    <p class="kicker rise" style="--i:0">13 <span>/</span> How marketplaces are organized</p>
+    <p class="kicker rise" style="--i:0">13 <span>/</span> What it looks like day to day</p>
+    <h1 class="rise" style="--i:1">What it looks like day to day</h1>
+    <figure class="shot day-shot rise" style="--i:2">
+      <img src="assets/day-to-day.png" alt="Grok Bot with Ops and CEO pinned, then Operations, Sales and Marketing, Admin, and Unassigned. Marketing's chat is open: it drafted probate posts, I approved them, and it is scheduling them in Buffer.">
+      <figcaption>Marketing drafts the posts. I approve them. It schedules them.</figcaption>
+    </figure>
+  </article>
+
+  <article class="slide s-market" id="s14" data-title="How marketplaces are organized">
+    <span class="num" aria-hidden="true">14</span>
+    <p class="kicker rise" style="--i:0">14 <span>/</span> How marketplaces are organized</p>
     <h1 class="rise" style="--i:1">How marketplaces are organized</h1>
     <div class="nest rise" style="--i:2">
       <span class="nest-name">Marketplace. A GitHub repo, for example dschnurbusch/schnurbusch-law-plugins.</span>
@@ -367,9 +400,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     <p class="market-line rise" style="--i:3">I keep the marketplace in GitHub. Each AI tool imports it, so everyone gets the same plugins.</p>
   </article>
 
-  <article class="slide s-admin" id="s14" data-title="Admin controls">
-    <span class="num" aria-hidden="true">14</span>
-    <p class="kicker rise" style="--i:0">14 <span>/</span> Admin controls</p>
+  <article class="slide s-admin" id="s15" data-title="Admin controls">
+    <span class="num" aria-hidden="true">15</span>
+    <p class="kicker rise" style="--i:0">15 <span>/</span> Admin controls</p>
     <h1 class="rise" style="--i:1">Admin controls</h1>
     <div class="admin-split">
       <div>
@@ -388,22 +421,32 @@ ul,ol{list-style:none;margin:0;padding:0}
     </div>
   </article>
 
-  <article class="slide s-demo" id="s15" data-title="Live demo">
-    <span class="num" aria-hidden="true">15</span>
-    <p class="kicker rise" style="--i:0">15 <span>/</span> Live demo</p>
-    <h1 class="rise" style="--i:1">Live demo</h1>
-    <ul class="demo-grid">
-      <li class="rise" style="--i:2"><span class="mark" aria-hidden="true">01</span>A few bots. They hand work to each other.</li>
-      <li class="rise" style="--i:3"><span class="mark" aria-hidden="true">02</span>A routine.</li>
-      <li class="rise" style="--i:4"><span class="mark" aria-hidden="true">03</span>A skill.</li>
-      <li class="rise" style="--i:5"><span class="mark" aria-hidden="true">04</span>A connector.</li>
-    </ul>
-    <p class="stop rise" style="--i:6">Client information stays off this account. Nothing is sent.</p>
+  <article class="slide s-flow" id="s16" data-title="How the work moves">
+    <span class="num" aria-hidden="true">16</span>
+    <p class="kicker rise" style="--i:0">16 <span>/</span> How the work moves</p>
+    <h1 class="rise" style="--i:1">How the work moves</h1>
+    <div class="loop-top rise" style="--i:2">
+      <div class="actor"><b>Comms</b><span>Scans the mail and the texts.</span></div>
+      <div class="hop" aria-hidden="true"><em>1</em><svg viewBox="0 0 72 24"><line x1="0" y1="12" x2="52" y2="12" stroke="currentColor" stroke-width="4"/><polygon points="52,4 70,12 52,20" fill="currentColor"/></svg></div>
+      <div class="actor"><b>Other bots</b><span>Ops, Hearings, Leads, Mailroom, and so on.</span></div>
+      <div class="hop" aria-hidden="true"><em>2</em><svg viewBox="0 0 72 24"><line x1="0" y1="12" x2="52" y2="12" stroke="currentColor" stroke-width="4"/><polygon points="52,4 70,12 52,20" fill="currentColor"/></svg></div>
+      <div class="actor"><b>Me</b><span>I approve, or I follow up.</span></div>
+    </div>
+    <div class="loop-back rise" style="--i:3" aria-hidden="true">
+      <div class="track"></div>
+      <div class="back-tags"><span><b>4</b>Back to Comms</span><span><b>3</b>Back to the bot</span></div>
+    </div>
+    <ol class="flowsteps">
+      <li class="rise" style="--i:4"><em>1</em><span>Comms scans email and text every hour and assigns correspondence follow-up to another bot.</span></li>
+      <li class="rise" style="--i:5"><em>2</em><span>That bot handles triage, takes action, and delivers me a list of things that need my approval.</span></li>
+      <li class="rise" style="--i:6"><em>3</em><span>I approve or follow up, and the bot takes further action.</span></li>
+      <li class="rise" style="--i:7"><em>4</em><span>Comms checks in with the bots it assigned work to and asks whether the job is done. If it is, Comms archives or closes the email or text thread.</span></li>
+    </ol>
   </article>
 
-  <article class="slide s-duty" id="s16" data-title="What you still own">
-    <span class="num" aria-hidden="true">16</span>
-    <p class="kicker rise" style="--i:0">16 <span>/</span> What you still own</p>
+  <article class="slide s-duty" id="s17" data-title="What you still own">
+    <span class="num" aria-hidden="true">17</span>
+    <p class="kicker rise" style="--i:0">17 <span>/</span> What you still own</p>
     <h1 class="rise" style="--i:1">What you still own</h1>
     <ul class="icon-grid duty">
       <li class="rise" style="--i:2"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 8l14 6v10c0 9-6 14-14 16C16 38 10 33 10 24V14z"/></svg>Confidentiality. Rule 1.6.</li>
@@ -413,9 +456,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     </ul>
   </article>
 
-  <article class="slide s-week" id="s17" data-title="First week">
-    <span class="num" aria-hidden="true">17</span>
-    <p class="kicker rise" style="--i:0">17 <span>/</span> First week</p>
+  <article class="slide s-week" id="s18" data-title="First week">
+    <span class="num" aria-hidden="true">18</span>
+    <p class="kicker rise" style="--i:0">18 <span>/</span> First week</p>
     <h1 class="rise" style="--i:1">First week</h1>
     <ol class="steps">
       <li class="rise" style="--i:2"><span class="n" aria-hidden="true">1</span>One tool.</li>
@@ -426,9 +469,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     <p class="watch rise" style="--i:6">I manage. I do not do the task myself. The bot runs it, once or on a schedule. Sample data until I have watched it.</p>
   </article>
 
-  <article class="slide s-sources" id="s18" data-title="Sources">
-    <span class="num" aria-hidden="true">18</span>
-    <p class="kicker rise" style="--i:0">18 <span>/</span> Sources</p>
+  <article class="slide s-sources" id="s19" data-title="Sources">
+    <span class="num" aria-hidden="true">19</span>
+    <p class="kicker rise" style="--i:0">19 <span>/</span> Sources</p>
     <h1 class="rise" style="--i:1">Sources</h1>
     <ul class="sources">
       <li class="rise" style="--i:2"><a href="https://openai.com/index/hugging-face-incident-and-the-road-ahead/">OpenAI, Hugging Face incident</a></li>
@@ -467,7 +510,7 @@ ul,ol{list-style:none;margin:0;padding:0}
   <span class="hint" id="sceneName">Owning your AI agent systems</span>
   <div class="nav">
     <button id="prevBtn" aria-label="Previous slide">←</button>
-    <span class="counter" id="counter" aria-live="polite">01 / 18</span>
+    <span class="counter" id="counter" aria-live="polite">01 / 19</span>
     <button id="nextBtn" aria-label="Next slide">→</button>
   </div>
   <span class="hint">← → · Space · F fullscreen</span>

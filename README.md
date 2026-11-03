@@ -1,6 +1,6 @@
 # Owning Your AI Agent Systems
 
-Slide deck, field guide, and first-week worksheet for Dan Schnurbusch's AI Era 2.0 talk. About twenty-six minutes, then questions. The audience is law firm owners.
+Slide deck, field guide, and first-week worksheet for Dan Schnurbusch's AI Era 2.0 talk. About twenty-three minutes, then questions. The audience is law firm owners.
 
 Owning an agent system means owning the setup: skills, the tools you choose to connect, your data, and the approval rules. Hermes is a powerful open-source agent. Deploying its skills and connectors across a team took more technical work. A newer portal has improved that, and it is still more to run than a business admin console. The takeaway is that maintaining your own agent setup is now very easy with the admin controls in business-level accounts for ChatGPT, Claude, and Grok. Grok Bot is Dan's favorite right now because it is so easy to use. Grok Bot claims stay inside publicly documented features. The ChatGPT admin example is his firm's business account.
 
@@ -11,7 +11,7 @@ Owning an agent system means owning the setup: skills, the tools you choose to c
 - `downloads/attendee-handout.pdf`: guide and first-week worksheet.
 - `downloads/owning-agent-systems-offline.zip`: offline copy of the site, the PDF, and the demo packet.
 - `SPEAKER-NOTES.md`: proposed pacing and talk track.
-- `demo/RUNBOOK.md`: the live demo. `demo/sample-matters/` holds fictional matters only.
+- `demo/RUNBOOK.md`: an earlier stage script. `demo/sample-matters/` holds fictional matters only. Neither is used on the current slides.
 
 ## Run
 
@@ -25,7 +25,7 @@ Open `index.html`. It is the deck.
 
 Keys: Right, Down, Page Down, or Space advance. Left, Up, or Page Up go back. Home and End jump to the first or last slide. F toggles fullscreen.
 
-The slides run without a network. The live demo needs a separate Grok Bot account and a network. The demo script is `demo/RUNBOOK.md`. The attendee handout is `handout.html` and the PDF, separate from the deck. Relative PDF links need this folder, not a lone copy of `index.html`. No analytics, external fonts, or client information are embedded. The browser remembers the last slide locally.
+The slides run without a network. There is no live bot on stage. The day-to-day slide is a screenshot, and the work loop is a diagram. The attendee handout is `handout.html` and the PDF, separate from the deck. Relative PDF links need this folder, not a lone copy of `index.html`. No analytics, external fonts, or client information are embedded. The browser remembers the last slide locally.
 
 ## PDF
 
@@ -33,7 +33,7 @@ Print `handout.html` from Chrome with backgrounds on and the CSS page size respe
 
 ## Demo boundary
 
-Use a Grok Bot account that has never held client information. Bots on one account share a computer. Do not run the demo on a firm account. The sample estates of June Calder and Arthur Pell are fictional.
+Bots on one account share a computer. The sample estates of June Calder and Arthur Pell in `demo/` are fictional and are not used on stage.
 
 ## Content limits
 

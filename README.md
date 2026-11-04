@@ -7,7 +7,7 @@ Owning an agent system means owning the setup: skills, the tools you choose to c
 ## Files
 
 - `index.html`: the slide deck. Dark full-bleed slides, one clay accent, inline SVG only. One idea per slide. No build step and no external assets.
-- `handout.html`: printable source for the six-page attendee PDF.
+- `handout.html`: printable source for the eleven-page attendee PDF.
 - `downloads/attendee-handout.pdf`: guide and first-week worksheet.
 - `downloads/owning-agent-systems-offline.zip`: offline copy of the site, the PDF, and the demo packet.
 - `SPEAKER-NOTES.md`: proposed pacing and talk track.
@@ -29,7 +29,7 @@ The slides run without a network. There is no live bot on stage. The day-to-day 
 
 ## PDF
 
-Print `handout.html` from Chrome with backgrounds on and the CSS page size respected. The committed PDF was generated with headless Chrome, `printBackground: true`, `preferCSSPageSize: true`, and no header or footer. After a content change, confirm six content pages and no trailing blank page.
+Print `handout.html` from Chrome with backgrounds on and the CSS page size respected. The committed PDF was generated with headless Chrome, `printBackground: true`, `preferCSSPageSize: true`, and no header or footer. After a content change, confirm eleven content pages at Letter size and no trailing blank page.
 
 ## Demo boundary
 

@@ -1,6 +1,6 @@
 # Owning Your AI Agent Systems — speaker notes
 
-About twenty-three minutes, then questions. The times below are a rehearsal plan, not a measured run. If questions share the half hour, I shorten the science slides to the names.
+About twenty-four minutes, then questions. The times below are a rehearsal plan, not a measured run. If questions share the half hour, I shorten the science slides to the names.
 
 My talk track. Not a transcript. No firm results. I checked Grok Bot claims against public docs on October 27, 2026. I re-read the computer, approvals, and Team Bot pages before November 5.
 
@@ -215,7 +215,21 @@ That bot triages, acts, and brings me only what needs a yes. I approve or I foll
 
 Comms comes back and asks whether the job is done. If it is, Comms archives or closes the thread. Then the hour starts again. The arrow back to Comms is that close.
 
-## 17. What you still own — 2:00 (21:40)
+## 17. The routines running my firm — 0:50 (20:30)
+
+These are scheduled jobs, not a wish list. I do not read every line. I name the pattern: Comms runs every hour on weekdays, Ops watches the cases through the day, and the others keep intake, the books, and the AI briefing on a clock.
+
+Comms: Missive inbox sweep, Quo texts and files, and Quo calls and voicemails, hourly on weekdays. The afternoon handoff check confirms the work is done, then closes the thread.
+
+Ops: Probate Pulse each morning. Case heartbeat at noon and 3 PM on weekdays. Court deficiency notices on weekday mornings. Pending applications on Tuesday and Thursday. Creditor-claim deadlines on Monday and Thursday. Servicer notices weekly. Overdue tasks on weekday afternoons.
+
+Leads: a weekday-morning follow-up, with the Monday pipeline sweep and the Thursday chase for engagements and deposits. Twice a month I review why leads were lost.
+
+Finance: categorize and post on Monday, Wednesday, and Friday. Receivables and unbilled work every other week. Trust refund checks on the 1st and the 15th.
+
+Research: AI news for lawyers, weekday mornings. AI, ethics, and changes in Grok Bot.
+
+## 18. What you still own — 2:00 (22:30)
 
 Confidentiality. Rule 1.6. Where the information goes, who can see it, whether it trains a model, how long it is kept. I answer that before a real matter is connected. Missouri numbers the same duty 4-1.6. I say the Missouri number only if the room needs it. Grok Bot stores data and does not offer Legacy Privacy Mode. Training choices follow the account's privacy settings.
 
@@ -225,7 +239,7 @@ Checking and supervising. Rules 5.3 and 1.1. I read the output. Competence inclu
 
 Skill portability. The skills live in one GitHub library for the firm. That is the marketplace we work from. I can point a different harness at it and not rewrite the playbooks. I test the move before I need it. The open Agent Skills format is one way to structure the file.
 
-## 18. First week — 1:10 (22:50)
+## 19. First week — 1:10 (23:40)
 
 I read the four. One tool. Two apps. One process written as a skill, into the GitHub library. One routine.
 
@@ -235,7 +249,7 @@ If the job lives in Clio or Filevine, the tool can be Vincent or Lois. If it cro
 
 Sample data until I have watched the draft. The worksheet is in the handout, which is separate from these slides.
 
-## 19. Sources — 0:30 (23:20)
+## 20. Sources — 0:30 (24:10)
 
 I do not read the list. I checked the docs in October 2026, and the current page wins if a control has moved. I point at the handout. Questions.
 

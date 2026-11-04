@@ -1,6 +1,6 @@
 # Owning Your AI Agent Systems — speaker notes
 
-About twenty-four minutes, then questions. The times below are a rehearsal plan, not a measured run. If questions share the half hour, I shorten the science slides to the names.
+About twenty-five minutes, then questions. The times below are a rehearsal plan, not a measured run. If questions share the half hour, I shorten the science slides to the names.
 
 My talk track. Not a transcript. No firm results. I checked Grok Bot claims against public docs on October 27, 2026. I re-read the computer, approvals, and Team Bot pages before November 5.
 
@@ -229,7 +229,25 @@ Finance: categorize and post on Monday, Wednesday, and Friday. Receivables and u
 
 Research: AI news for lawyers, weekday mornings. AI, ethics, and changes in Grok Bot.
 
-## 18. What you still own — 2:00 (22:30)
+## 18. The tools behind the agents — 0:50 (21:20)
+
+These are the APIs the bots call. I do not read the whole list. I name the groups.
+
+Mail goes out through DocuPost or Lob, and through EasyPost for labels in the office. Earth Class Mail scans what comes in. Phaxio is fax.
+
+Email and phones: Missive for the shared inboxes, Gmail and Resend to send and read, Quo for texts, calls, and voicemail, CallRail for marketing calls.
+
+Cases and clients: Lawmatics, Airtable, Calendly, and Documenso for signatures.
+
+Legal research: CourtListener, and Case.net for Missouri.
+
+Money: QuickBooks Online and Gusto.
+
+Marketing and the site: Buffer, Google Analytics, Search Console, Ahrefs, Google Ads, and Meta Ads.
+
+The plumbing is my own MCP server on Railway, one gateway to more than 240 firm tools, and Make or Zapier for the rest.
+
+## 19. What you still own — 2:00 (23:20)
 
 Confidentiality. Rule 1.6. Where the information goes, who can see it, whether it trains a model, how long it is kept. I answer that before a real matter is connected. Missouri numbers the same duty 4-1.6. I say the Missouri number only if the room needs it. Grok Bot stores data and does not offer Legacy Privacy Mode. Training choices follow the account's privacy settings.
 
@@ -239,7 +257,7 @@ Checking and supervising. Rules 5.3 and 1.1. I read the output. Competence inclu
 
 Skill portability. The skills live in one GitHub library for the firm. That is the marketplace we work from. I can point a different harness at it and not rewrite the playbooks. I test the move before I need it. The open Agent Skills format is one way to structure the file.
 
-## 19. First week — 1:10 (23:40)
+## 20. First week — 1:10 (24:30)
 
 I read the four. One tool. Two apps. One process written as a skill, into the GitHub library. One routine.
 
@@ -249,7 +267,7 @@ If the job lives in Clio or Filevine, the tool can be Vincent or Lois. If it cro
 
 Sample data until I have watched the draft. The worksheet is in the handout, which is separate from these slides.
 
-## 20. Sources — 0:30 (24:10)
+## 21. Sources — 0:30 (25:00)
 
 I do not read the list. I checked the docs in October 2026, and the current page wins if a control has moved. I point at the handout. Questions.
 

@@ -148,6 +148,15 @@ ul,ol{list-style:none;margin:0;padding:0}
 .flowsteps{list-style:none;margin:8px 0 0;padding:0}
 .flowsteps li{display:grid;grid-template-columns:36px 1fr;gap:10px;align-items:start;font-size:22px;line-height:1.28;padding:5px 0}
 .flowsteps em{font-style:normal;font-family:var(--serif);font-size:26px;color:var(--clay);line-height:1.1}
+.s-routines{background:linear-gradient(180deg,#16120f 0%,#0c0c0b 70%)}
+.s-routines h1{font-size:52px;margin-bottom:16px}
+.routine-cols{display:grid;grid-template-columns:1.05fr 1.2fr 1fr;gap:26px;align-items:start}
+.routine-cols h3{font-family:var(--serif);font-weight:400;font-size:26px;color:var(--clay);margin:0 0 8px;padding-bottom:4px;border-bottom:2px solid var(--clay)}
+.routine-cols h3.later{margin-top:14px}
+.routine-cols ul{list-style:none;margin:0;padding:0}
+.routine-cols li{margin:0 0 10px}
+.routine-cols strong{display:block;font-size:17px;font-weight:650;line-height:1.2}
+.routine-cols li span{display:block;font-size:16px;line-height:1.28;color:#E4DFD4}
 .cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:8px 0 16px}
 .cards li{padding:20px 18px;font-size:23px;line-height:1.32;border-top:4px solid var(--clay);background:rgba(250,249,245,.04)}
 .s-admin .lead-line{font-size:30px}
@@ -444,9 +453,55 @@ ul,ol{list-style:none;margin:0;padding:0}
     </ol>
   </article>
 
-  <article class="slide s-duty" id="s17" data-title="What you still own">
+  <article class="slide s-routines" id="s17" data-title="The routines running my firm">
     <span class="num" aria-hidden="true">17</span>
-    <p class="kicker rise" style="--i:0">17 <span>/</span> What you still own</p>
+    <p class="kicker rise" style="--i:0">17 <span>/</span> The routines running my firm</p>
+    <h1 class="rise" style="--i:1">The routines running my firm</h1>
+    <div class="routine-cols">
+      <section class="rise" style="--i:2">
+        <h3>Comms</h3>
+        <ul>
+          <li><strong>Missive inbox sweep</strong><span>Hourly on weekdays. Triages email and hands follow-up to the right bot.</span></li>
+          <li><strong>Quo texts and files</strong><span>Hourly on weekdays. Scans client texts and routes follow-up.</span></li>
+          <li><strong>Quo calls and voicemails</strong><span>Hourly on weekdays. Reviews calls and routes callbacks.</span></li>
+          <li><strong>Bot handoff completion check</strong><span>Weekday afternoons. Confirms the work is done, then closes the thread.</span></li>
+        </ul>
+      </section>
+      <section class="rise" style="--i:3">
+        <h3>Ops</h3>
+        <ul>
+          <li><strong>Probate Pulse</strong><span>Each morning. Snapshot of where every case stands.</span></li>
+          <li><strong>Case heartbeat</strong><span>Weekdays at noon and 3 PM. Flags cases needing action.</span></li>
+          <li><strong>Court deficiency notice resolver</strong><span>Weekday mornings. Works court deficiency notices toward a cure.</span></li>
+          <li><strong>App Pending court follow-up audit</strong><span>Tue and Thu. Chases court action on pending applications.</span></li>
+          <li><strong>Client claim deadline watch</strong><span>Mon and Thu. Flags creditor-claim deadlines.</span></li>
+          <li><strong>Mortgage servicer notice sweep</strong><span>Weekly. Sweeps servicer notices on estate homes.</span></li>
+          <li><strong>Probate overdue task cleanup</strong><span>Weekday afternoons. Clears or flags overdue tasks.</span></li>
+        </ul>
+      </section>
+      <section class="rise" style="--i:4">
+        <h3>Leads</h3>
+        <ul>
+          <li><strong>Daily leads follow-up check</strong><span>Weekday mornings. Open leads, the Monday pipeline sweep, and Thursday engagements and deposits.</span></li>
+          <li><strong>Intake lost-disposition review</strong><span>Twice a month. Reviews why leads were lost.</span></li>
+        </ul>
+        <h3 class="later">Finance</h3>
+        <ul>
+          <li><strong>Categorize and post</strong><span>Mon, Wed, and Fri. Keeps the books current.</span></li>
+          <li><strong>Receivables and unbilled work</strong><span>Every other week. Flags overdue invoices and unbilled time.</span></li>
+          <li><strong>Trust check watch</strong><span>The 1st and the 15th. Confirms trust refund checks cleared.</span></li>
+        </ul>
+        <h3 class="later">Research</h3>
+        <ul>
+          <li><strong>AI news for lawyers</strong><span>Weekday mornings. Briefing on AI, ethics, and Grok Bot changes.</span></li>
+        </ul>
+      </section>
+    </div>
+  </article>
+
+  <article class="slide s-duty" id="s18" data-title="What you still own">
+    <span class="num" aria-hidden="true">18</span>
+    <p class="kicker rise" style="--i:0">18 <span>/</span> What you still own</p>
     <h1 class="rise" style="--i:1">What you still own</h1>
     <ul class="icon-grid duty">
       <li class="rise" style="--i:2"><svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 8l14 6v10c0 9-6 14-14 16C16 38 10 33 10 24V14z"/></svg>Confidentiality. Rule 1.6.</li>
@@ -456,9 +511,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     </ul>
   </article>
 
-  <article class="slide s-week" id="s18" data-title="First week">
-    <span class="num" aria-hidden="true">18</span>
-    <p class="kicker rise" style="--i:0">18 <span>/</span> First week</p>
+  <article class="slide s-week" id="s19" data-title="First week">
+    <span class="num" aria-hidden="true">19</span>
+    <p class="kicker rise" style="--i:0">19 <span>/</span> First week</p>
     <h1 class="rise" style="--i:1">First week</h1>
     <ol class="steps">
       <li class="rise" style="--i:2"><span class="n" aria-hidden="true">1</span>One tool.</li>
@@ -469,9 +524,9 @@ ul,ol{list-style:none;margin:0;padding:0}
     <p class="watch rise" style="--i:6">I manage. I do not do the task myself. The bot runs it, once or on a schedule. Sample data until I have watched it.</p>
   </article>
 
-  <article class="slide s-sources" id="s19" data-title="Sources">
-    <span class="num" aria-hidden="true">19</span>
-    <p class="kicker rise" style="--i:0">19 <span>/</span> Sources</p>
+  <article class="slide s-sources" id="s20" data-title="Sources">
+    <span class="num" aria-hidden="true">20</span>
+    <p class="kicker rise" style="--i:0">20 <span>/</span> Sources</p>
     <h1 class="rise" style="--i:1">Sources</h1>
     <ul class="sources">
       <li class="rise" style="--i:2"><a href="https://openai.com/index/hugging-face-incident-and-the-road-ahead/">OpenAI, Hugging Face incident</a></li>
@@ -510,7 +565,7 @@ ul,ol{list-style:none;margin:0;padding:0}
   <span class="hint" id="sceneName">Owning your AI agent systems</span>
   <div class="nav">
     <button id="prevBtn" aria-label="Previous slide">←</button>
-    <span class="counter" id="counter" aria-live="polite">01 / 19</span>
+    <span class="counter" id="counter" aria-live="polite">01 / 20</span>
     <button id="nextBtn" aria-label="Next slide">→</button>
   </div>
   <span class="hint">← → · Space · F fullscreen</span>
